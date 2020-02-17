@@ -1,0 +1,1 @@
+src/STUDENT_RECORD.o: ../src/STUDENT_RECORD.c
