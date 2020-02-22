@@ -95,13 +95,11 @@ void take_new_staff_details()
 			//rewind(fp);
 			//fread(&s2,sizeof(Staff),1,fp);
 			//printf("\nENTERD STAFF DETAILS :\n%d\n%s\n%s\n%s\n",s2.id,s2.name,s2.email,s2.mobile);
-
 		}
 		else
 		{
 			printf("\n###ERROR STORING STAFF RECORD###\n");
 		}
-
 
 		fclose(fp);
 	}
@@ -331,7 +329,7 @@ void write_work_entry_to_file()
 		//printf("hello");
 		if(fwrite(&e,sizeof(Entry),1,fp)!=0)
 				{
-					printf("\nWORK ENTRY RECORD SUCCESSFULLY SAVED IN MODULE FILE\n");
+					printf("\nWORK ENTRY RECORD SUCCESSFULLY SAVED IN ENTRY FILE\n");
 					//rewind(fp);
 					//fread(&e1,sizeof(Entry),1,fp);
 					//printf("\nENTERD WORK ENTRY DETAILS IS :\n%d\n%d\n%d\n%d/%d/%d\n%d:%d:%d\n%d\n%s\n",e1.id,e1.staff_id,e1.module_id,e1.work_date.day,e1.work_date.month,e1.work_date.year,e1.start_time.hours,e1.start_time.mins,e1.start_time.seconds,e1.duration,e1.status);
@@ -339,6 +337,90 @@ void write_work_entry_to_file()
 		fclose(fp);
 	}
 }
+
+void delete_specific_module()
+{
+	FILE *fp;
+	Module m;
+	int count=0;
+	char course_name[30];
+			fp = fopen("modules.dat","rb+");
+			if(fp != NULL)
+			{
+					rewind(fp);
+					printf("\nENTER MODULE NAME :");
+					getchar();
+					scanf("%[^\n]s",course_name);
+					while((fread(&m,sizeof(Module),1,fp)))
+					{
+						if(!(strcasestr(m.name,course_name)!=NULL))
+						{
+								//printf("\n%d\n%s\n%s\n%d\n",m.id,m.name,m.course,m.duration);
+								count++;
+								printf("%d",count);
+						}
+					}
+				}
+				else
+				{
+					printf("\n###ERROR STORING STAFF RECORD###\n");
+				}
+				fclose(fp);
+
+	Module ARRAY_MODULE[count];
+	//printf("%d\n%s,%s,%d",ARRAY_MODULE[0].id,ARRAY_MODULE[0].name,ARRAY_MODULE[0].course,ARRAY_MODULE[0].duration);
+	int len =0;
+
+			fp = fopen("modules.dat","rb+");
+				if(fp != NULL)
+				{
+						rewind(fp);
+						while((fread(&m,sizeof(Module),1,fp)))
+						{
+							if(!(strcasestr(m.name,course_name)!=NULL))
+							{
+
+											copy_module_to_array(&ARRAY_MODULE[len],&m);
+											len++;
+							}
+						}
+					}
+					else
+					{
+						printf("\n###ERROR IN COPYING MODULE FROM ARRAY###\n");
+					}
+					fclose(fp);
+
+	//printf("%d\n%s,%s,%d",ARRAY_MODULE[0].id,ARRAY_MODULE[0].name,ARRAY_MODULE[0].course,ARRAY_MODULE[0].duration);
+
+
+			//code for rewriting array file to file
+
+					fp=fopen("modules.dat","wb");
+					Module m5;
+					if(fp == NULL)
+					{
+						printf("\n###ERROR CREATING MODULE FILE###");
+					}
+					else
+					{
+						for(int i=0;i<count;i++)
+						{
+							m5.id= ARRAY_MODULE[i].id;
+							strcpy(&m5.name,&ARRAY_MODULE[i].name);
+							strcpy(&m5.course,&ARRAY_MODULE[i].course);
+							m5.duration= ARRAY_MODULE[i].duration;
+
+						fwrite(&m5,sizeof(Module),1,fp);
+						}
+						printf("\nMODULE RECORD SUCCESSFULLY SUCCESSFULLY DELETED FROM MODULE FILE\n");
+					fclose(fp);
+					}
+
+
+
+}
+
 
 void list_pending_entries()
 {
@@ -410,6 +492,7 @@ void approve_entry()
 								printf("\nENTERD WORK ENTRY DETAILS IS :\n%d\n%d\n%d\n%d/%d/%d\n%d:%d:%d\n%d\n%s\n",e1.id,e1.staff_id,e1.module_id,e1.work_date.day,e1.work_date.month,e1.work_date.year,e1.start_time.hours,e1.start_time.mins,e1.start_time.seconds,e1.duration,e1.status);
 								printf("THIS ABOVE RECORD IS APPROVED : ");
 								strcpy(e1.status,status);
+								fwrite(&e1,sizeof(Entry),1,fp);
 								printf("\nENTERD WORK ENTRY DETAILS IS :\n%d\n%d\n%d\n%d/%d/%d\n%d:%d:%d\n%d\n%s\n",e1.id,e1.staff_id,e1.module_id,e1.work_date.day,e1.work_date.month,e1.work_date.year,e1.start_time.hours,e1.start_time.mins,e1.start_time.seconds,e1.duration,e1.status);
 							}
 						}
@@ -419,8 +502,6 @@ void approve_entry()
 						printf("\n###ERROR STORING STAFF RECORD###\n");
 					}
 					fclose(fp);
-
-
 }
 
 
@@ -428,7 +509,7 @@ int admin_Sub_Menu()
 {
 	int choice;
 	printf("\n0.EXIT\n1.LIST_COURSES\n2.ADD_COURSE\n3.LIST_ALL_MODULES\n4.FIND_MODULES_BY_COURSE_AND_NAME\n");
-	printf("5.EDIT_MODULE\n6.DELETE_MODULE\n7.LIST_PENDING_ENTRIES\n8.LIST_APPROVED_ENTRIES\n9.APPROVED_ENTRIES\n10.ADD_MODULE\n");
+	printf("5.EDIT_MODULE\n6.DELETE_MODULE\n7.LIST_PENDING_ENTRIES\n8.LIST_APPROVED_ENTRIES\n9.APPROVE_ENTRIES\n10.ADD_MODULE\n");
 	printf("ENTER OPTION : ");
 	scanf("%d",&choice);
 	return choice;
@@ -445,7 +526,7 @@ void add_courses_to_file()
 		}
 		else
 		{
-			fseek(fp, 0, SEEK_END);
+			//fseek(fp, 0, SEEK_END);
 			char buffer[20];
 			printf("ENTER COURSE NAME : ");
 			scanf("%s",buffer);
@@ -465,7 +546,6 @@ void display_all_modules()
 		if(fp != NULL)
 		{
 				rewind(fp);
-				printf("\nENTERD STAFF DETAILS :");
 				while((fread(&m,sizeof(Module),1,fp)))
 				{
 				printf("\n%d\n%s\n%s\n%d\n",m.id,m.name,m.course,m.duration);
@@ -643,7 +723,7 @@ int main()
 	printf("Roll Number  : 36009\n");
 	printf("Center Name   : Sunbeam\n");
 	printf("Course Name  : PG-DAC 2020\n");
-	printf("Group Name   : ___________\n");
+	printf("Group Name   : _____D-2____\n");
 	printf("MISSION STATEMENT : I WILL NEVER QUIT\n");
 
 	while((main_menu_choice = MAIN_MENU())!=EXIT)
@@ -705,6 +785,7 @@ int main()
 					edit_module();
 					break;
 				case DELETE_MODULE:
+					delete_specific_module();
 					break;
 				case LIST_PENDING_ENTRIES:
 					list_pending_entries();
@@ -720,9 +801,7 @@ int main()
 					break;
 				default :
 					printf("\n#ENTER VALID OPTION#\n");
-
 				}
-
 			}
 			break;
 		default:
