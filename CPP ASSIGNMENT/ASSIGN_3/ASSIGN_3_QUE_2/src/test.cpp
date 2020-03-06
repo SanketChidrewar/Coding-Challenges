@@ -119,13 +119,14 @@ public:
 		{
 		//int *add_mat = new int[p1->row * p2->column];
 
-		for(int i=0;i<this->row;i++)
+		for(int i=0;i<this->column;i++)
 		{
 			for(int j=0;j<this->column;j++)
 			{
+				val =0;
 				for(int k=0;k<this->column;k++)
 				{
-				val += *(ptr1 + i*this->column + j) - *(ptr2 + i*this->column + j);
+				val += *(ptr1 + i*this->column + k) * *(ptr2 + k*this->column + j);
 				//*(add_mat + i*this->column + j) = val;
 				}
 				cout<<val<<" ";
@@ -141,7 +142,19 @@ public:
 	}
 
 
-	void Transpose(Matrix *p1,Matrix *p2);
+	void Transpose()
+	{
+		int val;
+		for(int i=0;i<this->column;i++)
+		{
+			for(int j=0;j<this->row;j++)
+			{
+				val = *(this->mat + j*this->column + i);
+				cout<<val<<" ";
+			}
+			cout<<"\n";
+		}
+	}
 };
 
 int main()
@@ -171,18 +184,11 @@ int main()
 	cout<<"MULTIPLICATION OF TWO MATRIX IS :\n";
 	m1.Mul(&m1,&m2);
 
+	cout<<"TRANSPOSE OF FIRST MATRIX IS :\n";
+	m1.Transpose();
+
+	cout<<"TRANSPOSE OF SECOND MATRIX IS :\n";
+	m2.Transpose();
+
 	return 0;
 }
-
-
-/*	void print_add_mat(int * add_mat)
-	{
-		for(int i=0;i<row;i++)
-		{
-			for(int j=0;j<column;j++)
-			{
-				cout<<*(add_mat + i*column + j)<<" ";
-			}
-			cout<<"\n";
-		}
-	}*/
