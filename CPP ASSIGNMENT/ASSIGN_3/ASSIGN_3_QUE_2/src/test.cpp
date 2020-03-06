@@ -25,8 +25,7 @@ public:
 	{
 		this->row=row;
 		this->column=column;
-		int *mat = new int[this->row * this->column];
-		this->mat = mat;
+		this->mat = new int[this->row * this->column];
 	}
 
 	void Get_Matrix_values()
