@@ -1,0 +1,24 @@
+/*
+ * book.h
+ *
+ *  Created on: 10-Mar-2020
+ *      Author: sunbeam
+ */
+
+#ifndef BOOK_H_
+#define BOOK_H_
+#include "product.h"
+
+
+class book :public product {
+private :
+	char title[30];
+public:
+	book();
+	book(char * title,int price):product(price) ;
+	const char* getTitle() const;
+	void setTitle(char * title);
+	virtual ~book();
+};
+
+#endif /* BOOK_H_ */

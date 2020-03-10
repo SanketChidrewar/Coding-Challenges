@@ -1,0 +1,39 @@
+
+/*1) A shop sells book or tapes. There is 5% discount on tapes,
+while 10% discount on books. Assuming that each user purchase
+3 products (either book or tape), calculate final bill. The
+program should be menu driven and should not cause memory
+leakage.*/
+
+
+#include<iostream>
+#include"product.h"
+#include"tapes.h"
+#include"book.h"
+
+
+using namespace std;
+int main()
+{
+	product* p[3];
+	int choice=0;
+	for(int i=0;i<3;i++)
+	{
+		cout<<"====MENU OPTIONS====";
+		cout<<"1.BOOK \n2.TAPES\n";
+		cout<<"ENTER YOUR CHOICE :";
+		cin>>choice;
+		switch(choice)
+		{
+		case 1:
+			p[i]=new book;
+			break;
+		case 2:
+			p[i]=new tapes;
+		}
+	}
+
+
+	return 0;
+
+}

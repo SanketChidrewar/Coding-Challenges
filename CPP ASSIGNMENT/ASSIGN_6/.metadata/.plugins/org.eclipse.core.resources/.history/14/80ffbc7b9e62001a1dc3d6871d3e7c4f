@@ -1,0 +1,19 @@
+/*
+ * square.h
+ *
+ *  Created on: 10-Mar-2020
+ *      Author: sunbeam
+ */
+
+#ifndef SQUARE_H_
+#define SQUARE_H_
+#include"shape.h"
+
+
+class square {
+public:
+	square();
+	virtual ~square();
+};
+
+#endif /* SQUARE_H_ */

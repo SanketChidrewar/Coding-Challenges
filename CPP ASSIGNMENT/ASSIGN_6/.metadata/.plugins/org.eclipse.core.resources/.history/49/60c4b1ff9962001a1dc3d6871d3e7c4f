@@ -1,0 +1,30 @@
+/*
+ * tapes.h
+ *
+ *  Created on: 10-Mar-2020
+ *      Author: sunbeam
+ */
+
+#ifndef TAPES_H_
+#define TAPES_H_
+#include"product.h"
+
+class tapes :public product {
+private:
+	int duration;
+public:
+	tapes();
+	tapes(int duration,int price);
+	int getDuration() const;
+	void setDuration(int duration);
+
+	void accept();
+	void display();
+	int calc_discount();
+
+
+	virtual ~tapes();
+
+};
+
+#endif /* TAPES_H_ */

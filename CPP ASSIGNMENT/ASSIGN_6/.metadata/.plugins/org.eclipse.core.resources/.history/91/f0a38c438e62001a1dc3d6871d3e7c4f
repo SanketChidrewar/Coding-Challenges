@@ -1,0 +1,20 @@
+/*
+ * book.h
+ *
+ *  Created on: 10-Mar-2020
+ *      Author: sunbeam
+ */
+
+#ifndef BOOK_H_
+#define BOOK_H_
+
+class book {
+private :
+	char title[30];
+public:
+	book();
+	const char* getTitle() const;
+	virtual ~book();
+};
+
+#endif /* BOOK_H_ */

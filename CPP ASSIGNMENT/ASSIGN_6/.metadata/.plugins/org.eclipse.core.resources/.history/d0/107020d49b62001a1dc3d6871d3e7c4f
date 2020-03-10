@@ -1,0 +1,22 @@
+/*
+ * shape.h
+ *
+ *  Created on: 10-Mar-2020
+ *      Author: sunbeam
+ */
+
+#ifndef SHAPE_H_
+#define SHAPE_H_
+
+class shape {
+public:
+	shape();
+
+	virtual void accept()=0;
+	void display()=0;
+	void calc_area()=0;
+	void calc_peri()=0;
+	virtual ~shape();
+};
+
+#endif /* SHAPE_H_ */

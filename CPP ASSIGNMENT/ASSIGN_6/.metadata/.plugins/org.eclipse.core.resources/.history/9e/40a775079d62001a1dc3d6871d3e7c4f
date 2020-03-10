@@ -1,0 +1,18 @@
+/*
+ * circle.cpp
+ *
+ *  Created on: 10-Mar-2020
+ *      Author: sunbeam
+ */
+
+#include "circle.h"
+
+circle::circle() {
+	// TODO Auto-generated constructor stub
+
+}
+
+circle::~circle() {
+	// TODO Auto-generated destructor stub
+}
+

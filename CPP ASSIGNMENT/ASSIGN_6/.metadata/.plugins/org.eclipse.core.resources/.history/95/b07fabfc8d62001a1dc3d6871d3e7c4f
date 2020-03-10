@@ -1,0 +1,19 @@
+/*
+ * product.h
+ *
+ *  Created on: 10-Mar-2020
+ *      Author: sunbeam
+ */
+
+#ifndef PRODUCT_H_
+#define PRODUCT_H_
+
+class product {
+private:
+	int price;
+public:
+	product();
+	virtual ~product();
+};
+
+#endif /* PRODUCT_H_ */

@@ -1,0 +1,35 @@
+/*
+ * book.cpp
+ *
+ *  Created on: 10-Mar-2020
+ *      Author: sunbeam
+ */
+
+#include "book.h"
+#include "product.h"
+
+#include<cstring>
+
+book::book() {
+	// TODO Auto-generated constructor stub
+
+}
+book::book(char * title,int price):product(price)
+{
+	strcpy(this->title,title);
+}
+
+
+const char* book::getTitle() const {
+	return title;
+}
+void book::setTitle(char * title)
+{
+	strcpy(this->title,title);
+}
+
+
+book::~book() {
+	// TODO Auto-generated destructor stub
+}
+

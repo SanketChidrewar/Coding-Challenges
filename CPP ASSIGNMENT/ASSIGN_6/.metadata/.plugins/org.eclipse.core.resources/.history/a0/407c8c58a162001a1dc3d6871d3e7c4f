@@ -1,0 +1,68 @@
+
+/*2) A geometric application needs various shapes like rectangle,
+square or circle. Write a program to input 5 shape details
+from the user (as per user choice). Implement a global
+function to calculate total area and another global function
+to calculate total perimeter.*/
+
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+
+	shape* p[5];
+		int choice=0;
+		for(int i=0;i<3;i++)
+		{
+			cout<<"\n\n====MENU OPTIONS===="<<endl;
+			cout<<"1.BOOK \n2.TAPES"<<endl;
+			cout<<"ENTER YOUR CHOICE :";
+			cin>>choice;
+			cout<<"\n";
+			switch(choice)
+			{
+			case 1:
+				p[i]=new book;
+				p[i]->accept();
+				break;
+			case 2:
+				p[i]=new tapes;
+				p[i]->accept();
+				break;
+			default:
+				cout<<"WRONG INPUT :"<<endl;
+				exit (2) ;
+			}
+		}
+
+		int total_price=0 , total_discount =0, total_discounted_price =0;
+		for(int i=0;i<3;i++)
+		{
+			cout<<"\n";
+			p[i]->display();
+		}
+
+		for(int i=0;i<3;i++)
+		{
+			total_price =  total_price + p[i]->getPrice() ;
+			total_discount = total_discount + p[i]->calc_discount();
+			total_discounted_price = total_discounted_price + (p[i]->getPrice() - p[i]->calc_discount());
+		}
+
+		cout<<"\nTOTAL PRICE :"<<total_price<<endl;
+		cout<<"TOTAL DISCOUNT :"<<total_discount<<endl;
+		cout<<"TOTAL DISCOUNTED PRICE :"<<total_discounted_price<<endl;
+
+		for (int i=0;i<3;i++)
+		{
+			delete p[i];
+		}
+
+
+	return 0;
+
+}
+
+

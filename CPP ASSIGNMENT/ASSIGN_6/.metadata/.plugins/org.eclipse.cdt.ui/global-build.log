@@ -1,0 +1,1997 @@
+10:41:52 **** Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+Building file: ../src/book.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/book.d" -MT"src/book.o" -o "src/book.o" "../src/book.cpp"
+Finished building: ../src/book.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building file: ../src/product.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/product.d" -MT"src/product.o" -o "src/product.o" "../src/product.cpp"
+Finished building: ../src/product.cpp
+ 
+Building file: ../src/tapes.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tapes.d" -MT"src/tapes.o" -o "src/tapes.o" "../src/tapes.cpp"
+Finished building: ../src/tapes.cpp
+ 
+Building target: ASSIGN_6_QUE_1
+Invoking: GCC C++ Linker
+g++  -o "ASSIGN_6_QUE_1"  ./src/book.o ./src/main.o ./src/product.o ./src/tapes.o   
+Finished building target: ASSIGN_6_QUE_1
+ 
+10:41:58 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+make: Nothing to be done for 'all'.
+10:47:35 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+Building file: ../src/book.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/book.d" -MT"src/book.o" -o "src/book.o" "../src/book.cpp"
+Finished building: ../src/book.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building file: ../src/product.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/product.d" -MT"src/product.o" -o "src/product.o" "../src/product.cpp"
+Finished building: ../src/product.cpp
+ 
+Building target: ASSIGN_6_QUE_1
+Invoking: GCC C++ Linker
+g++  -o "ASSIGN_6_QUE_1"  ./src/book.o ./src/main.o ./src/product.o ./src/tapes.o   
+Finished building target: ASSIGN_6_QUE_1
+ 
+10:48:05 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+make: Nothing to be done for 'all'.
+10:49:10 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+Building file: ../src/book.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/book.d" -MT"src/book.o" -o "src/book.o" "../src/book.cpp"
+In file included from ../src/book.cpp:8:0:
+../src/book.h: In constructor ‘book::book(char*, int)’:
+../src/book.h:16:31: error: class ‘book’ does not have any field named ‘product’
+  book(char * title,int price):product(price);
+src/subdir.mk:27: recipe for target 'src/book.o' failed
+                               ^~~~~~~
+../src/book.h:16:44: error: expected ‘{’ at end of input
+  book(char * title,int price):product(price);
+                                            ^
+../src/book.cpp: At global scope:
+../src/book.cpp:15:1: error: redefinition of ‘book::book(char*, int)’
+ book::book(char * title,int price):product(price)
+ ^~~~
+In file included from ../src/book.cpp:8:0:
+../src/book.h:16:2: note: ‘book::book(char*, int)’ previously defined here
+  book(char * title,int price):product(price);
+  ^~~~
+make: *** [src/book.o] Error 1
+10:49:27 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+Building file: ../src/book.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/book.d" -MT"src/book.o" -o "src/book.o" "../src/book.cpp"
+In file included from ../src/book.cpp:8:0:
+../src/book.h: In constructor ‘book::book(char*, int)’:
+../src/book.h:16:31: error: class ‘book’ does not have any field named ‘product’
+  book(char * title,int price):product(price);
+                               ^~~~~~~
+../src/book.h:16:44: error: expected ‘{’ at end of input
+  book(char * title,int price):product(price);
+                                            ^
+src/subdir.mk:27: recipe for target 'src/book.o' failed
+../src/book.cpp: At global scope:
+../src/book.cpp:15:1: error: redefinition of ‘book::book(char*, int)’
+ book::book(char * title,int price)
+ ^~~~
+In file included from ../src/book.cpp:8:0:
+../src/book.h:16:2: note: ‘book::book(char*, int)’ previously defined here
+  book(char * title,int price):product(price);
+  ^~~~
+make: *** [src/book.o] Error 1
+10:50:35 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+Building file: ../src/book.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/book.d" -MT"src/book.o" -o "src/book.o" "../src/book.cpp"
+In file included from ../src/book.cpp:8:0:
+../src/book.h: In constructor ‘book::book(char*, int)’:
+../src/book.h:16:31: error: class ‘book’ does not have any field named ‘product’
+  book(char * title,int price):product(price);
+                               ^~~~~~~
+../src/book.h:16:44: error: expected ‘{’ at end of input
+  book(char * title,int price):product(price);
+                                            ^
+../src/book.cpp: At global scope:
+../src/book.cpp:15:1: error: redefinition of ‘book::book(char*, int)’
+ book::book(char * title,int price):product(price)
+ ^~~~
+src/subdir.mk:27: recipe for target 'src/book.o' failed
+In file included from ../src/book.cpp:8:0:
+../src/book.h:16:2: note: ‘book::book(char*, int)’ previously defined here
+  book(char * title,int price):product(price);
+  ^~~~
+make: *** [src/book.o] Error 1
+10:50:47 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+Building file: ../src/book.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/book.d" -MT"src/book.o" -o "src/book.o" "../src/book.cpp"
+In file included from ../src/book.cpp:8:0:
+../src/book.h: In constructor ‘book::book(char*, int)’:
+../src/book.h:16:31: error: class ‘book’ does not have any field named ‘product’
+  book(char * title,int price):product(price) ;
+                               ^~~~~~~
+../src/book.h:16:44: error: expected ‘{’ at end of input
+  book(char * title,int price):product(price) ;
+                                            ^
+../src/book.cpp: At global scope:
+../src/book.cpp:15:1: error: redefinition of ‘book::book(char*, int)’
+ book::book(char * title,int price):product(price)
+ ^~~~
+In file included from ../src/book.cpp:8:0:
+../src/book.h:16:2: note: ‘book::book(char*, int)’ previously defined here
+  book(char * title,int price):product(price) ;
+  ^~~~
+src/subdir.mk:27: recipe for target 'src/book.o' failed
+make: *** [src/book.o] Error 1
+10:51:32 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+Building file: ../src/book.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/book.d" -MT"src/book.o" -o "src/book.o" "../src/book.cpp"
+In file included from ../src/book.cpp:8:0:
+../src/book.h: In constructor ‘book::book(char*, int)’:
+../src/book.h:18:31: error: type ‘product’ is not a direct base of ‘book’
+  book(char * title,int price):product(price) ;
+                               ^~~~~~~
+../src/book.h:18:44: error: expected ‘{’ at end of input
+  book(char * title,int price):product(price) ;
+                                            ^
+../src/book.cpp: At global scope:
+../src/book.cpp:17:1: error: redefinition of ‘book::book(char*, int)’
+ book::book(char * title,int price):product(price)
+ ^~~~
+In file included from ../src/book.cpp:8:0:
+src/subdir.mk:27: recipe for target 'src/book.o' failed
+../src/book.h:18:2: note: ‘book::book(char*, int)’ previously defined here
+  book(char * title,int price):product(price) ;
+  ^~~~
+make: *** [src/book.o] Error 1
+10:51:51 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+Building file: ../src/book.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/book.d" -MT"src/book.o" -o "src/book.o" "../src/book.cpp"
+In file included from ../src/book.cpp:8:0:
+../src/book.h: In constructor ‘book::book(char*, int)’:
+../src/book.h:18:44: error: no matching function for call to ‘product::product(int&)’
+  book(char * title,int price):product(price) ;
+                                            ^
+In file included from ../src/book.h:10:0,
+                 from ../src/book.cpp:8:
+../src/product.h:15:2: note: candidate: product::product()
+  product();
+  ^~~~~~~
+../src/product.h:15:2: note:   candidate expects 0 arguments, 1 provided
+../src/product.h:11:7: note: candidate: constexpr product::product(const product&)
+ class product {
+       ^~~~~~~
+../src/product.h:11:7: note:   no known conversion for argument 1 from ‘int’ to ‘const product&’
+In file included from ../src/book.cpp:8:0:
+../src/book.h:18:44: error: expected ‘{’ at end of input
+  book(char * title,int price):product(price) ;
+                                            ^
+../src/book.cpp: At global scope:
+../src/book.cpp:17:1: error: redefinition of ‘book::book(char*, int)’
+ book::book(char * title,int price):product(price)
+ ^~~~
+In file included from ../src/book.cpp:8:0:
+../src/book.h:18:2: note: ‘book::book(char*, int)’ previously defined here
+  book(char * title,int price):product(price) ;
+  ^~~~
+make: *** [src/book.o] Error 1
+src/subdir.mk:27: recipe for target 'src/book.o' failed
+10:52:01 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+Building file: ../src/book.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/book.d" -MT"src/book.o" -o "src/book.o" "../src/book.cpp"
+In file included from ../src/book.cpp:8:0:
+../src/book.h: In constructor ‘book::book(char*, int)’:
+../src/book.h:18:44: error: no matching function for call to ‘product::product(int&)’
+  book(char * title,int price):product(price) ;
+                                            ^
+In file included from ../src/book.h:10:0,
+                 from ../src/book.cpp:8:
+../src/product.h:15:2: note: candidate: product::product()
+  product();
+  ^~~~~~~
+../src/product.h:15:2: note:   candidate expects 0 arguments, 1 provided
+../src/product.h:11:7: note: candidate: constexpr product::product(const product&)
+ class product {
+       ^~~~~~~
+../src/product.h:11:7: note:   no known conversion for argument 1 from ‘int’ to ‘const product&’
+In file included from ../src/book.cpp:8:0:
+../src/book.h:18:44: error: expected ‘{’ at end of input
+  book(char * title,int price):product(price) ;
+                                            ^
+src/subdir.mk:27: recipe for target 'src/book.o' failed
+../src/book.cpp: At global scope:
+../src/book.cpp:17:1: error: redefinition of ‘book::book(char*, int)’
+ book::book(char * title,int price):product(price)
+ ^~~~
+In file included from ../src/book.cpp:8:0:
+../src/book.h:18:2: note: ‘book::book(char*, int)’ previously defined here
+  book(char * title,int price):product(price) ;
+  ^~~~
+make: *** [src/book.o] Error 1
+10:52:28 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+Building file: ../src/book.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/book.d" -MT"src/book.o" -o "src/book.o" "../src/book.cpp"
+In file included from ../src/book.cpp:8:0:
+../src/book.h: In constructor ‘book::book(char*, int)’:
+../src/book.h:18:44: error: no matching function for call to ‘product::product(int&)’
+  book(char * title,int price):product(price) ;
+                                            ^
+In file included from ../src/book.h:10:0,
+                 from ../src/book.cpp:8:
+../src/product.h:15:2: note: candidate: product::product()
+  product();
+  ^~~~~~~
+../src/product.h:15:2: note:   candidate expects 0 arguments, 1 provided
+../src/product.h:11:7: note: candidate: constexpr product::product(const product&)
+ class product {
+       ^~~~~~~
+../src/product.h:11:7: note:   no known conversion for argument 1 from ‘int’ to ‘const product&’
+In file included from ../src/book.cpp:8:0:
+../src/book.h:18:44: error: expected ‘{’ at end of input
+  book(char * title,int price):product(price) ;
+                                            ^
+../src/book.cpp: At global scope:
+../src/book.cpp:17:1: error: redefinition of ‘book::book(char*, int)’
+src/subdir.mk:27: recipe for target 'src/book.o' failed
+ book::book(char * title,int price):product(price)
+ ^~~~
+In file included from ../src/book.cpp:8:0:
+../src/book.h:18:2: note: ‘book::book(char*, int)’ previously defined here
+  book(char * title,int price):product(price) ;
+  ^~~~
+make: *** [src/book.o] Error 1
+10:53:03 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+Building file: ../src/book.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/book.d" -MT"src/book.o" -o "src/book.o" "../src/book.cpp"
+../src/book.cpp:18:1: error: expected unqualified-id before ‘{’ token
+ {
+ ^
+make: *** [src/book.o] Error 1
+src/subdir.mk:27: recipe for target 'src/book.o' failed
+10:53:13 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+Building file: ../src/book.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/book.d" -MT"src/book.o" -o "src/book.o" "../src/book.cpp"
+Finished building: ../src/book.cpp
+ 
+Building target: ASSIGN_6_QUE_1
+Invoking: GCC C++ Linker
+g++  -o "ASSIGN_6_QUE_1"  ./src/book.o ./src/main.o ./src/product.o ./src/tapes.o   
+Finished building target: ASSIGN_6_QUE_1
+ 
+10:54:17 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+Building file: ../src/book.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/book.d" -MT"src/book.o" -o "src/book.o" "../src/book.cpp"
+Finished building: ../src/book.cpp
+ 
+Building file: ../src/product.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/product.d" -MT"src/product.o" -o "src/product.o" "../src/product.cpp"
+Finished building: ../src/product.cpp
+ 
+Building target: ASSIGN_6_QUE_1
+Invoking: GCC C++ Linker
+g++  -o "ASSIGN_6_QUE_1"  ./src/book.o ./src/main.o ./src/product.o ./src/tapes.o   
+Finished building target: ASSIGN_6_QUE_1
+ 
+10:54:40 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+Building file: ../src/book.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/book.d" -MT"src/book.o" -o "src/book.o" "../src/book.cpp"
+In file included from ../src/book.cpp:8:0:
+../src/book.h: In constructor ‘book::book(char*, int)’:
+../src/book.h:18:44: error: expected ‘{’ at end of input
+  book(char * title,int price):product(price) ;
+                                            ^
+../src/book.cpp: At global scope:
+../src/book.cpp:17:1: error: redefinition of ‘book::book(char*, int)’
+ book::book(char * title,int price):product(price)
+ ^~~~
+In file included from ../src/book.cpp:8:0:
+../src/book.h:18:2: note: ‘book::book(char*, int)’ previously defined here
+  book(char * title,int price):product(price) ;
+  ^~~~
+src/subdir.mk:27: recipe for target 'src/book.o' failed
+make: *** [src/book.o] Error 1
+10:56:09 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+Building file: ../src/book.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/book.d" -MT"src/book.o" -o "src/book.o" "../src/book.cpp"
+In file included from ../src/book.cpp:8:0:
+../src/book.h: In constructor ‘book::book(char*, int)’:
+../src/book.h:18:43: error: expected ‘{’ at end of input
+  book(char* title,int price):product(price);
+                                           ^
+../src/book.cpp: At global scope:
+../src/book.cpp:17:1: error: redefinition of ‘book::book(char*, int)’
+ book::book(char * title,int price):product(price)
+ ^~~~
+In file included from ../src/book.cpp:8:0:
+../src/book.h:18:2: note: ‘book::book(char*, int)’ previously defined here
+  book(char* title,int price):product(price);
+  ^~~~
+make: *** [src/book.o] Error 1
+src/subdir.mk:27: recipe for target 'src/book.o' failed
+10:56:38 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+Building file: ../src/book.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/book.d" -MT"src/book.o" -o "src/book.o" "../src/book.cpp"
+In file included from ../src/book.cpp:8:0:
+../src/book.h: In constructor ‘book::book(char*, int)’:
+../src/book.h:18:43: error: expected ‘{’ at end of input
+  book(char* title,int price):product(price);
+                                           ^
+../src/book.cpp: At global scope:
+../src/book.cpp:17:1: error: redefinition of ‘book::book(char*, int)’
+ book::book(char * title,int price):product(price)
+ ^~~~
+In file included from ../src/book.cpp:8:0:
+../src/book.h:18:2: note: ‘book::book(char*, int)’ previously defined here
+  book(char* title,int price):product(price);
+  ^~~~
+src/subdir.mk:27: recipe for target 'src/book.o' failed
+make: *** [src/book.o] Error 1
+10:56:41 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+Building file: ../src/book.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/book.d" -MT"src/book.o" -o "src/book.o" "../src/book.cpp"
+In file included from ../src/book.cpp:8:0:
+../src/book.h: In constructor ‘book::book(char*, int)’:
+../src/book.h:18:43: error: expected ‘{’ at end of input
+  book(char* title,int price):product(price);
+                                           ^
+../src/book.cpp: At global scope:
+../src/book.cpp:17:1: error: redefinition of ‘book::book(char*, int)’
+ book::book(char * title,int price):product(price)
+ ^~~~
+In file included from ../src/book.cpp:8:0:
+../src/book.h:18:2: note: ‘book::book(char*, int)’ previously defined here
+  book(char* title,int price):product(price);
+  ^~~~
+src/subdir.mk:27: recipe for target 'src/book.o' failed
+make: *** [src/book.o] Error 1
+10:57:05 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+Building file: ../src/book.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/book.d" -MT"src/book.o" -o "src/book.o" "../src/book.cpp"
+Finished building: ../src/book.cpp
+ 
+Building target: ASSIGN_6_QUE_1
+Invoking: GCC C++ Linker
+g++  -o "ASSIGN_6_QUE_1"  ./src/book.o ./src/main.o ./src/product.o ./src/tapes.o   
+Finished building target: ASSIGN_6_QUE_1
+ 
+10:57:19 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+make: Nothing to be done for 'all'.
+10:59:29 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+make: Nothing to be done for 'all'.
+10:59:45 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+make: Nothing to be done for 'all'.
+11:00:44 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+Building file: ../src/book.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/book.d" -MT"src/book.o" -o "src/book.o" "../src/book.cpp"
+Finished building: ../src/book.cpp
+ 
+Building file: ../src/tapes.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tapes.d" -MT"src/tapes.o" -o "src/tapes.o" "../src/tapes.cpp"
+Finished building: ../src/tapes.cpp
+ 
+Building target: ASSIGN_6_QUE_1
+Invoking: GCC C++ Linker
+g++  -o "ASSIGN_6_QUE_1"  ./src/book.o ./src/main.o ./src/product.o ./src/tapes.o   
+Finished building target: ASSIGN_6_QUE_1
+ 
+11:00:50 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+make: Nothing to be done for 'all'.
+11:02:17 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+Building file: ../src/tapes.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tapes.d" -MT"src/tapes.o" -o "src/tapes.o" "../src/tapes.cpp"
+../src/tapes.cpp: In constructor ‘tapes::tapes(int, int)’:
+../src/tapes.cpp:14:38: error: class ‘tapes’ does not have any field named ‘product’
+ tapes::tapes(int duration,int price):product(price)
+                                      ^~~~~~~
+../src/tapes.cpp:17:1: error: expected ‘;’ before ‘}’ token
+ }
+ ^
+src/subdir.mk:27: recipe for target 'src/tapes.o' failed
+make: *** [src/tapes.o] Error 1
+11:02:42 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+Building file: ../src/tapes.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tapes.d" -MT"src/tapes.o" -o "src/tapes.o" "../src/tapes.cpp"
+../src/tapes.cpp: In constructor ‘tapes::tapes(int, int)’:
+../src/tapes.cpp:15:38: error: type ‘product’ is not a direct base of ‘tapes’
+ tapes::tapes(int duration,int price):product(price)
+                                      ^~~~~~~
+src/subdir.mk:27: recipe for target 'src/tapes.o' failed
+make: *** [src/tapes.o] Error 1
+11:03:30 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+Building file: ../src/tapes.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tapes.d" -MT"src/tapes.o" -o "src/tapes.o" "../src/tapes.cpp"
+../src/tapes.cpp: In constructor ‘tapes::tapes()’:
+../src/tapes.cpp:11:16: error: type ‘product’ is not a direct base of ‘tapes’
+ tapes::tapes():product() {
+                ^~~~~~~
+../src/tapes.cpp: In constructor ‘tapes::tapes(int, int)’:
+../src/tapes.cpp:15:38: error: type ‘product’ is not a direct base of ‘tapes’
+ tapes::tapes(int duration,int price):product(price)
+                                      ^~~~~~~
+src/subdir.mk:27: recipe for target 'src/tapes.o' failed
+make: *** [src/tapes.o] Error 1
+11:03:41 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+Building file: ../src/book.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/book.d" -MT"src/book.o" -o "src/book.o" "../src/book.cpp"
+Finished building: ../src/book.cpp
+ 
+Building file: ../src/tapes.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tapes.d" -MT"src/tapes.o" -o "src/tapes.o" "../src/tapes.cpp"
+../src/tapes.cpp: In constructor ‘tapes::tapes()’:
+../src/tapes.cpp:11:16: error: type ‘product’ is not a direct base of ‘tapes’
+ tapes::tapes():product() {
+                ^~~~~~~
+../src/tapes.cpp: In constructor ‘tapes::tapes(int, int)’:
+../src/tapes.cpp:15:38: error: type ‘product’ is not a direct base of ‘tapes’
+ tapes::tapes(int duration,int price):product(price)
+                                      ^~~~~~~
+make: *** [src/tapes.o] Error 1
+src/subdir.mk:27: recipe for target 'src/tapes.o' failed
+11:04:14 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+Building file: ../src/tapes.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tapes.d" -MT"src/tapes.o" -o "src/tapes.o" "../src/tapes.cpp"
+In file included from ../src/tapes.cpp:8:0:
+../src/tapes.h:11:29: error: expected class-name before ‘{’ token
+ class tapes :public product {
+                             ^
+../src/tapes.cpp: In constructor ‘tapes::tapes()’:
+../src/tapes.cpp:11:16: error: type ‘product’ is not a direct base of ‘tapes’
+ tapes::tapes():product() {
+                ^~~~~~~
+../src/tapes.cpp: In constructor ‘tapes::tapes(int, int)’:
+../src/tapes.cpp:15:38: error: type ‘product’ is not a direct base of ‘tapes’
+src/subdir.mk:27: recipe for target 'src/tapes.o' failed
+ tapes::tapes(int duration,int price):product(price)
+                                      ^~~~~~~
+make: *** [src/tapes.o] Error 1
+11:04:19 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+Building file: ../src/tapes.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tapes.d" -MT"src/tapes.o" -o "src/tapes.o" "../src/tapes.cpp"
+In file included from ../src/tapes.cpp:8:0:
+../src/tapes.h:11:29: error: expected class-name before ‘{’ token
+ class tapes :public product {
+                             ^
+../src/tapes.cpp: In constructor ‘tapes::tapes()’:
+../src/tapes.cpp:11:16: error: type ‘product’ is not a direct base of ‘tapes’
+ tapes::tapes():product() {
+                ^~~~~~~
+../src/tapes.cpp: In constructor ‘tapes::tapes(int, int)’:
+../src/tapes.cpp:15:38: error: type ‘product’ is not a direct base of ‘tapes’
+src/subdir.mk:27: recipe for target 'src/tapes.o' failed
+ tapes::tapes(int duration,int price):product(price)
+                                      ^~~~~~~
+make: *** [src/tapes.o] Error 1
+11:04:33 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+Building file: ../src/tapes.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tapes.d" -MT"src/tapes.o" -o "src/tapes.o" "../src/tapes.cpp"
+In file included from ../src/tapes.cpp:8:0:
+../src/tapes.h:11:29: error: expected class-name before ‘{’ token
+ class tapes :public product {
+                             ^
+../src/tapes.cpp: In constructor ‘tapes::tapes()’:
+../src/tapes.cpp:11:16: error: type ‘product’ is not a direct base of ‘tapes’
+ tapes::tapes():product() {
+                ^~~~~~~
+../src/tapes.cpp: In constructor ‘tapes::tapes(int, int)’:
+../src/tapes.cpp:15:38: error: type ‘product’ is not a direct base of ‘tapes’
+ tapes::tapes(int duration,int price):product(price)
+                                      ^~~~~~~
+make: *** [src/tapes.o] Error 1
+src/subdir.mk:27: recipe for target 'src/tapes.o' failed
+11:04:46 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+Building file: ../src/tapes.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tapes.d" -MT"src/tapes.o" -o "src/tapes.o" "../src/tapes.cpp"
+Finished building: ../src/tapes.cpp
+ 
+Building target: ASSIGN_6_QUE_1
+Invoking: GCC C++ Linker
+g++  -o "ASSIGN_6_QUE_1"  ./src/book.o ./src/main.o ./src/product.o ./src/tapes.o   
+Finished building target: ASSIGN_6_QUE_1
+ 
+11:08:09 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:18:11: warning: unused variable ‘p’ [-Wunused-variable]
+  product* p[3];
+           ^
+Finished building: ../src/main.cpp
+ 
+Building target: ASSIGN_6_QUE_1
+Invoking: GCC C++ Linker
+g++  -o "ASSIGN_6_QUE_1"  ./src/book.o ./src/main.o ./src/product.o ./src/tapes.o   
+Finished building target: ASSIGN_6_QUE_1
+ 
+11:12:06 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:35:11: error: expected ‘:’ before ‘<<’ token
+    default<<"WRONG INPUT :";
+           ^~
+../src/main.cpp:35:11: error: expected primary-expression before ‘<<’ token
+../src/main.cpp:36:9: error: expected ‘;’ before numeric constant
+    exit 2;
+         ^
+../src/main.cpp:36:10: warning: statement is a reference, not call, to function ‘exit’ [-Waddress]
+    exit 2;
+          ^
+../src/main.cpp:36:10: warning: statement has no effect [-Wunused-value]
+make: *** [src/main.o] Error 1
+src/subdir.mk:27: recipe for target 'src/main.o' failed
+11:12:14 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:36:4: error: expected ‘:’ before ‘cout’
+    cout<<"WRONG INPUT :";
+    ^~~~
+../src/main.cpp:37:9: error: expected ‘;’ before numeric constant
+    exit 2;
+         ^
+../src/main.cpp:37:10: warning: statement is a reference, not call, to function ‘exit’ [-Waddress]
+    exit 2;
+          ^
+../src/main.cpp:37:10: warning: statement has no effect [-Wunused-value]
+src/subdir.mk:27: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+11:12:17 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:37:9: error: expected ‘;’ before numeric constant
+    exit 2;
+         ^
+../src/main.cpp:37:10: warning: statement is a reference, not call, to function ‘exit’ [-Waddress]
+    exit 2;
+          ^
+../src/main.cpp:37:10: warning: statement has no effect [-Wunused-value]
+src/subdir.mk:27: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+11:12:33 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:19:11: warning: variable ‘p’ set but not used [-Wunused-but-set-variable]
+  product* p[3];
+           ^
+Finished building: ../src/main.cpp
+ 
+Building target: ASSIGN_6_QUE_1
+Invoking: GCC C++ Linker
+g++  -o "ASSIGN_6_QUE_1"  ./src/book.o ./src/main.o ./src/product.o ./src/tapes.o   
+Finished building target: ASSIGN_6_QUE_1
+ 
+11:14:26 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:19:11: warning: variable ‘p’ set but not used [-Wunused-but-set-variable]
+  product* p[3];
+           ^
+Finished building: ../src/main.cpp
+ 
+Building target: ASSIGN_6_QUE_1
+Invoking: GCC C++ Linker
+g++  -o "ASSIGN_6_QUE_1"  ./src/book.o ./src/main.o ./src/product.o ./src/tapes.o   
+Finished building target: ASSIGN_6_QUE_1
+ 
+11:17:37 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+make: Nothing to be done for 'all'.
+11:20:42 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+Building file: ../src/book.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/book.d" -MT"src/book.o" -o "src/book.o" "../src/book.cpp"
+Finished building: ../src/book.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:19:11: warning: variable ‘p’ set but not used [-Wunused-but-set-variable]
+  product* p[3];
+           ^
+Finished building: ../src/main.cpp
+ 
+Building file: ../src/product.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/product.d" -MT"src/product.o" -o "src/product.o" "../src/product.cpp"
+Finished building: ../src/product.cpp
+ 
+Building file: ../src/tapes.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tapes.d" -MT"src/tapes.o" -o "src/tapes.o" "../src/tapes.cpp"
+Finished building: ../src/tapes.cpp
+ 
+Building target: ASSIGN_6_QUE_1
+Invoking: GCC C++ Linker
+g++  -o "ASSIGN_6_QUE_1"  ./src/book.o ./src/main.o ./src/product.o ./src/tapes.o   
+./src/book.o: In function `book::book()':
+/home/sunbeam/classwoek_data/CPP/ASSIGN_6/ASSIGN_6_QUE_1/Debug/../src/book.cpp:13: undefined reference to `vtable for book'
+makefile:45: recipe for target 'ASSIGN_6_QUE_1' failed
+./src/book.o: In function `book::book(char*, int)':
+/home/sunbeam/classwoek_data/CPP/ASSIGN_6/ASSIGN_6_QUE_1/Debug/../src/book.cpp:17: undefined reference to `vtable for book'
+./src/book.o: In function `book::~book()':
+/home/sunbeam/classwoek_data/CPP/ASSIGN_6/ASSIGN_6_QUE_1/Debug/../src/book.cpp:31: undefined reference to `vtable for book'
+collect2: error: ld returned 1 exit status
+make: *** [ASSIGN_6_QUE_1] Error 1
+11:21:09 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+Building file: ../src/product.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/product.d" -MT"src/product.o" -o "src/product.o" "../src/product.cpp"
+Finished building: ../src/product.cpp
+ 
+Building target: ASSIGN_6_QUE_1
+Invoking: GCC C++ Linker
+g++  -o "ASSIGN_6_QUE_1"  ./src/book.o ./src/main.o ./src/product.o ./src/tapes.o   
+./src/book.o: In function `book::book()':
+/home/sunbeam/classwoek_data/CPP/ASSIGN_6/ASSIGN_6_QUE_1/Debug/../src/book.cpp:13: undefined reference to `vtable for book'
+makefile:45: recipe for target 'ASSIGN_6_QUE_1' failed
+./src/book.o: In function `book::book(char*, int)':
+/home/sunbeam/classwoek_data/CPP/ASSIGN_6/ASSIGN_6_QUE_1/Debug/../src/book.cpp:17: undefined reference to `vtable for book'
+./src/book.o: In function `book::~book()':
+/home/sunbeam/classwoek_data/CPP/ASSIGN_6/ASSIGN_6_QUE_1/Debug/../src/book.cpp:31: undefined reference to `vtable for book'
+collect2: error: ld returned 1 exit status
+make: *** [ASSIGN_6_QUE_1] Error 1
+11:21:14 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+Building target: ASSIGN_6_QUE_1
+Invoking: GCC C++ Linker
+g++  -o "ASSIGN_6_QUE_1"  ./src/book.o ./src/main.o ./src/product.o ./src/tapes.o   
+./src/book.o: In function `book::book()':
+/home/sunbeam/classwoek_data/CPP/ASSIGN_6/ASSIGN_6_QUE_1/Debug/../src/book.cpp:13: undefined reference to `vtable for book'
+makefile:45: recipe for target 'ASSIGN_6_QUE_1' failed
+./src/book.o: In function `book::book(char*, int)':
+/home/sunbeam/classwoek_data/CPP/ASSIGN_6/ASSIGN_6_QUE_1/Debug/../src/book.cpp:17: undefined reference to `vtable for book'
+./src/book.o: In function `book::~book()':
+/home/sunbeam/classwoek_data/CPP/ASSIGN_6/ASSIGN_6_QUE_1/Debug/../src/book.cpp:31: undefined reference to `vtable for book'
+collect2: error: ld returned 1 exit status
+make: *** [ASSIGN_6_QUE_1] Error 1
+11:22:58 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+Building file: ../src/book.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/book.d" -MT"src/book.o" -o "src/book.o" "../src/book.cpp"
+../src/book.cpp: In member function ‘virtual void book::accept()’:
+../src/book.cpp:33:2: error: ‘cout’ was not declared in this scope
+  cout<<"ENTER TITLE :";
+  ^~~~
+../src/book.cpp:34:2: error: ‘cin’ was not declared in this scope
+  cin.get(this->title,30);
+  ^~~
+src/subdir.mk:27: recipe for target 'src/book.o' failed
+make: *** [src/book.o] Error 1
+11:23:50 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+Building file: ../src/book.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/book.d" -MT"src/book.o" -o "src/book.o" "../src/book.cpp"
+Finished building: ../src/book.cpp
+ 
+Building target: ASSIGN_6_QUE_1
+Invoking: GCC C++ Linker
+g++  -o "ASSIGN_6_QUE_1"  ./src/book.o ./src/main.o ./src/product.o ./src/tapes.o   
+Finished building target: ASSIGN_6_QUE_1
+ 
+11:24:34 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+Building file: ../src/book.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/book.d" -MT"src/book.o" -o "src/book.o" "../src/book.cpp"
+Finished building: ../src/book.cpp
+ 
+Building target: ASSIGN_6_QUE_1
+Invoking: GCC C++ Linker
+g++  -o "ASSIGN_6_QUE_1"  ./src/book.o ./src/main.o ./src/product.o ./src/tapes.o   
+Finished building target: ASSIGN_6_QUE_1
+ 
+11:27:02 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:45:7: error: no match for ‘operator<<’ (operand types are ‘std::ostream {aka std::basic_ostream<char>}’ and ‘void’)
+   cout<<p[i]->display()<<"\n";
+   ~~~~^~~~~~~~~~~~~~~~~
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../src/main.cpp:9:
+/usr/include/c++/7/ostream:108:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ostream_type& (*)(std::basic_ostream<_CharT, _Traits>::__ostream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(__ostream_type& (*__pf)(__ostream_type&))
+       ^~~~~~~~
+/usr/include/c++/7/ostream:108:7: note:   no known conversion for argument 1 from ‘void’ to ‘std::basic_ostream<char>::__ostream_type& (*)(std::basic_ostream<char>::__ostream_type&) {aka std::basic_ostream<char>& (*)(std::basic_ostream<char>&)}’
+/usr/include/c++/7/ostream:117:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ios_type& (*)(std::basic_ostream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>; std::basic_ostream<_CharT, _Traits>::__ios_type = std::basic_ios<char>]
+       operator<<(__ios_type& (*__pf)(__ios_type&))
+       ^~~~~~~~
+/usr/include/c++/7/ostream:117:7: note:   no known conversion for argument 1 from ‘void’ to ‘std::basic_ostream<char>::__ios_type& (*)(std::basic_ostream<char>::__ios_type&) {aka std::basic_ios<char>& (*)(std::basic_ios<char>&)}’
+/usr/include/c++/7/ostream:127:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(ios_base& (*__pf) (ios_base&))
+       ^~~~~~~~
+/usr/include/c++/7/ostream:127:7: note:   no known conversion for argument 1 from ‘void’ to ‘std::ios_base& (*)(std::ios_base&)’
+/usr/include/c++/7/ostream:166:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long __n)
+       ^~~~~~~~
+/usr/include/c++/7/ostream:166:7: note:   no known conversion for argument 1 from ‘void’ to ‘long int’
+/usr/include/c++/7/ostream:170:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned long __n)
+       ^~~~~~~~
+/usr/include/c++/7/ostream:170:7: note:   no known conversion for argument 1 from ‘void’ to ‘long unsigned int’
+/usr/include/c++/7/ostream:174:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(bool) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(bool __n)
+       ^~~~~~~~
+/usr/include/c++/7/ostream:174:7: note:   no known conversion for argument 1 from ‘void’ to ‘bool’
+In file included from /usr/include/c++/7/ostream:693:0,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../src/main.cpp:9:
+/usr/include/c++/7/bits/ostream.tcc:91:5: note: candidate: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(short int) [with _CharT = char; _Traits = std::char_traits<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/7/bits/ostream.tcc:91:5: note:   no known conversion for argument 1 from ‘void’ to ‘short int’
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../src/main.cpp:9:
+/usr/include/c++/7/ostream:181:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(short unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned short __n)
+       ^~~~~~~~
+/usr/include/c++/7/ostream:181:7: note:   no known conversion for argument 1 from ‘void’ to ‘short unsigned int’
+In file included from /usr/include/c++/7/ostream:693:0,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../src/main.cpp:9:
+/usr/include/c++/7/bits/ostream.tcc:105:5: note: candidate: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(int) [with _CharT = char; _Traits = std::char_traits<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/7/bits/ostream.tcc:105:5: note:   no known conversion for argument 1 from ‘void’ to ‘int’
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../src/main.cpp:9:
+/usr/include/c++/7/ostream:192:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned int __n)
+       ^~~~~~~~
+/usr/include/c++/7/ostream:192:7: note:   no known conversion for argument 1 from ‘void’ to ‘unsigned int’
+/usr/include/c++/7/ostream:201:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long long __n)
+       ^~~~~~~~
+/usr/include/c++/7/ostream:201:7: note:   no known conversion for argument 1 from ‘void’ to ‘long long int’
+/usr/include/c++/7/ostream:205:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned long long __n)
+       ^~~~~~~~
+/usr/include/c++/7/ostream:205:7: note:   no known conversion for argument 1 from ‘void’ to ‘long long unsigned int’
+/usr/include/c++/7/ostream:220:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(double __f)
+       ^~~~~~~~
+/usr/include/c++/7/ostream:220:7: note:   no known conversion for argument 1 from ‘void’ to ‘double’
+/usr/include/c++/7/ostream:224:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(float) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(float __f)
+       ^~~~~~~~
+/usr/include/c++/7/ostream:224:7: note:   no known conversion for argument 1 from ‘void’ to ‘float’
+/usr/include/c++/7/ostream:232:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long double __f)
+       ^~~~~~~~
+/usr/include/c++/7/ostream:232:7: note:   no known conversion for argument 1 from ‘void’ to ‘long double’
+/usr/include/c++/7/ostream:245:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(const void*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(const void* __p)
+       ^~~~~~~~
+/usr/include/c++/7/ostream:245:7: note:   no known conversion for argument 1 from ‘void’ to ‘const void*’
+In file included from /usr/include/c++/7/ostream:693:0,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../src/main.cpp:9:
+/usr/include/c++/7/bits/ostream.tcc:119:5: note: candidate: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/7/bits/ostream.tcc:119:5: note:   no known conversion for argument 1 from ‘void’ to ‘std::basic_ostream<char>::__streambuf_type* {aka std::basic_streambuf<char>*}’
+In file included from /usr/include/c++/7/string:52:0,
+                 from /usr/include/c++/7/bits/locale_classes.h:40,
+                 from /usr/include/c++/7/bits/ios_base.h:41,
+                 from /usr/include/c++/7/ios:42,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../src/main.cpp:9:
+/usr/include/c++/7/bits/basic_string.h:6284:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<<(basic_ostream<_CharT, _Traits>& __os,
+     ^~~~~~~~
+/usr/include/c++/7/bits/basic_string.h:6284:5: note:   template argument deduction/substitution failed:
+../src/main.cpp:45:23: note:   mismatched types ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’ and ‘void’
+   cout<<p[i]->display()<<"\n";
+                       ^
+In file included from /usr/include/c++/7/bits/ios_base.h:46:0,
+                 from /usr/include/c++/7/ios:42,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../src/main.cpp:9:
+/usr/include/c++/7/system_error:217:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::error_code&)
+     operator<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __e)
+     ^~~~~~~~
+/usr/include/c++/7/system_error:217:5: note:   template argument deduction/substitution failed:
+../src/main.cpp:45:22: note:   cannot convert ‘p[i]->product::display()’ (type ‘void’) to type ‘const std::error_code&’
+   cout<<p[i]->display()<<"\n";
+         ~~~~~~~~~~~~~^~
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../src/main.cpp:9:
+/usr/include/c++/7/ostream:497:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+     ^~~~~~~~
+/usr/include/c++/7/ostream:497:5: note:   template argument deduction/substitution failed:
+../src/main.cpp:45:23: note:   deduced conflicting types for parameter ‘_CharT’ (‘char’ and ‘void’)
+   cout<<p[i]->display()<<"\n";
+                       ^
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../src/main.cpp:9:
+/usr/include/c++/7/ostream:502:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+     ^~~~~~~~
+/usr/include/c++/7/ostream:502:5: note:   template argument deduction/substitution failed:
+../src/main.cpp:45:22: note:   cannot convert ‘p[i]->product::display()’ (type ‘void’) to type ‘char’
+   cout<<p[i]->display()<<"\n";
+         ~~~~~~~~~~~~~^~
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../src/main.cpp:9:
+/usr/include/c++/7/ostream:508:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)
+     operator<<(basic_ostream<char, _Traits>& __out, char __c)
+     ^~~~~~~~
+/usr/include/c++/7/ostream:508:5: note:   template argument deduction/substitution failed:
+../src/main.cpp:45:22: note:   cannot convert ‘p[i]->product::display()’ (type ‘void’) to type ‘char’
+   cout<<p[i]->display()<<"\n";
+         ~~~~~~~~~~~~~^~
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../src/main.cpp:9:
+/usr/include/c++/7/ostream:514:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)
+     operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+     ^~~~~~~~
+/usr/include/c++/7/ostream:514:5: note:   template argument deduction/substitution failed:
+src/subdir.mk:27: recipe for target 'src/main.o' failed
+../src/main.cpp:45:22: note:   cannot convert ‘p[i]->product::display()’ (type ‘void’) to type ‘signed char’
+   cout<<p[i]->display()<<"\n";
+         ~~~~~~~~~~~~~^~
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../src/main.cpp:9:
+/usr/include/c++/7/ostream:519:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)
+     operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+     ^~~~~~~~
+/usr/include/c++/7/ostream:519:5: note:   template argument deduction/substitution failed:
+../src/main.cpp:45:22: note:   cannot convert ‘p[i]->product::display()’ (type ‘void’) to type ‘unsigned char’
+   cout<<p[i]->display()<<"\n";
+         ~~~~~~~~~~~~~^~
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../src/main.cpp:9:
+/usr/include/c++/7/ostream:539:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+     ^~~~~~~~
+/usr/include/c++/7/ostream:539:5: note:   template argument deduction/substitution failed:
+../src/main.cpp:45:23: note:   mismatched types ‘const _CharT*’ and ‘void’
+   cout<<p[i]->display()<<"\n";
+                       ^
+In file included from /usr/include/c++/7/ostream:693:0,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../src/main.cpp:9:
+/usr/include/c++/7/bits/ostream.tcc:321:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+     ^~~~~~~~
+/usr/include/c++/7/bits/ostream.tcc:321:5: note:   template argument deduction/substitution failed:
+../src/main.cpp:45:22: note:   cannot convert ‘p[i]->product::display()’ (type ‘void’) to type ‘const char*’
+   cout<<p[i]->display()<<"\n";
+         ~~~~~~~~~~~~~^~
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../src/main.cpp:9:
+/usr/include/c++/7/ostream:556:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const char* __s)
+     ^~~~~~~~
+/usr/include/c++/7/ostream:556:5: note:   template argument deduction/substitution failed:
+../src/main.cpp:45:22: note:   cannot convert ‘p[i]->product::display()’ (type ‘void’) to type ‘const char*’
+   cout<<p[i]->display()<<"\n";
+         ~~~~~~~~~~~~~^~
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../src/main.cpp:9:
+/usr/include/c++/7/ostream:569:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+     ^~~~~~~~
+/usr/include/c++/7/ostream:569:5: note:   template argument deduction/substitution failed:
+../src/main.cpp:45:22: note:   cannot convert ‘p[i]->product::display()’ (type ‘void’) to type ‘const signed char*’
+   cout<<p[i]->display()<<"\n";
+         ~~~~~~~~~~~~~^~
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../src/main.cpp:9:
+/usr/include/c++/7/ostream:574:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+     ^~~~~~~~
+/usr/include/c++/7/ostream:574:5: note:   template argument deduction/substitution failed:
+../src/main.cpp:45:22: note:   cannot convert ‘p[i]->product::display()’ (type ‘void’) to type ‘const unsigned char*’
+   cout<<p[i]->display()<<"\n";
+         ~~~~~~~~~~~~~^~
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from ../src/main.cpp:9:
+/usr/include/c++/7/ostream:682:5: note: candidate: template<class _Ostream, class _Tp> typename std::enable_if<std::__and_<std::__not_<std::is_lvalue_reference<_Tp> >, std::__is_convertible_to_basic_ostream<_Ostream>, std::__is_insertable<typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type, const _Tp&, void> >::value, typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type>::type std::operator<<(_Ostream&&, const _Tp&)
+     operator<<(_Ostream&& __os, const _Tp& __x)
+     ^~~~~~~~
+/usr/include/c++/7/ostream:682:5: note:   template argument deduction/substitution failed:
+/usr/include/c++/7/ostream: In substitution of ‘template<class _Ostream, class _Tp> typename std::enable_if<std::__and_<std::__not_<std::is_lvalue_reference<_Tp> >, std::__is_convertible_to_basic_ostream<_Ostream>, std::__is_insertable<typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type, const _Tp&, void> >::value, typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type>::type std::operator<<(_Ostream&&, const _Tp&) [with _Ostream = std::basic_ostream<char>&; _Tp = void]’:
+../src/main.cpp:45:23:   required from here
+/usr/include/c++/7/ostream:682:5: error: forming reference to void
+make: *** [src/main.o] Error 1
+11:27:15 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building file: ../src/tapes.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tapes.d" -MT"src/tapes.o" -o "src/tapes.o" "../src/tapes.cpp"
+Finished building: ../src/tapes.cpp
+ 
+Building target: ASSIGN_6_QUE_1
+Invoking: GCC C++ Linker
+g++  -o "ASSIGN_6_QUE_1"  ./src/book.o ./src/main.o ./src/product.o ./src/tapes.o   
+Finished building target: ASSIGN_6_QUE_1
+ 
+11:27:22 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+Building file: ../src/book.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/book.d" -MT"src/book.o" -o "src/book.o" "../src/book.cpp"
+Finished building: ../src/book.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: ASSIGN_6_QUE_1
+Invoking: GCC C++ Linker
+g++  -o "ASSIGN_6_QUE_1"  ./src/book.o ./src/main.o ./src/product.o ./src/tapes.o   
+Finished building target: ASSIGN_6_QUE_1
+ 
+11:29:07 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+make: Nothing to be done for 'all'.
+11:30:20 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+Building file: ../src/book.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/book.d" -MT"src/book.o" -o "src/book.o" "../src/book.cpp"
+Finished building: ../src/book.cpp
+ 
+Building file: ../src/tapes.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tapes.d" -MT"src/tapes.o" -o "src/tapes.o" "../src/tapes.cpp"
+Finished building: ../src/tapes.cpp
+ 
+Building target: ASSIGN_6_QUE_1
+Invoking: GCC C++ Linker
+g++  -o "ASSIGN_6_QUE_1"  ./src/book.o ./src/main.o ./src/product.o ./src/tapes.o   
+Finished building target: ASSIGN_6_QUE_1
+ 
+11:30:23 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+make: Nothing to be done for 'all'.
+11:31:36 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+Building file: ../src/book.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/book.d" -MT"src/book.o" -o "src/book.o" "../src/book.cpp"
+Finished building: ../src/book.cpp
+ 
+Building target: ASSIGN_6_QUE_1
+Invoking: GCC C++ Linker
+g++  -o "ASSIGN_6_QUE_1"  ./src/book.o ./src/main.o ./src/product.o ./src/tapes.o   
+Finished building target: ASSIGN_6_QUE_1
+ 
+11:31:39 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+make: Nothing to be done for 'all'.
+11:35:56 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: ASSIGN_6_QUE_1
+Invoking: GCC C++ Linker
+g++  -o "ASSIGN_6_QUE_1"  ./src/book.o ./src/main.o ./src/product.o ./src/tapes.o   
+Finished building target: ASSIGN_6_QUE_1
+ 
+11:40:53 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+Building file: ../src/tapes.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tapes.d" -MT"src/tapes.o" -o "src/tapes.o" "../src/tapes.cpp"
+Finished building: ../src/tapes.cpp
+ 
+Building target: ASSIGN_6_QUE_1
+Invoking: GCC C++ Linker
+g++  -o "ASSIGN_6_QUE_1"  ./src/book.o ./src/main.o ./src/product.o ./src/tapes.o   
+Finished building target: ASSIGN_6_QUE_1
+ 
+11:40:57 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+make: Nothing to be done for 'all'.
+11:44:08 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+Building file: ../src/book.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/book.d" -MT"src/book.o" -o "src/book.o" "../src/book.cpp"
+../src/book.cpp: In member function ‘virtual int book::calc_discount()’:
+../src/book.cpp:48:15: error: ‘int product::price’ is private within this context
+  return this->price * 0.10;
+               ^~~~~
+In file included from ../src/book.h:10:0,
+                 from ../src/book.cpp:8:
+../src/product.h:13:6: note: declared private here
+  int price;
+      ^~~~~
+src/subdir.mk:27: recipe for target 'src/book.o' failed
+make: *** [src/book.o] Error 1
+11:44:17 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+Building file: ../src/book.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/book.d" -MT"src/book.o" -o "src/book.o" "../src/book.cpp"
+../src/book.cpp: In member function ‘virtual int book::calc_discount()’:
+../src/book.cpp:48:15: error: ‘int product::price’ is private within this context
+  return this->price * 0.10;
+               ^~~~~
+In file included from ../src/book.h:10:0,
+                 from ../src/book.cpp:8:
+../src/product.h:13:6: note: declared private here
+  int price;
+      ^~~~~
+src/subdir.mk:27: recipe for target 'src/book.o' failed
+make: *** [src/book.o] Error 1
+11:44:38 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+Building file: ../src/book.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/book.d" -MT"src/book.o" -o "src/book.o" "../src/book.cpp"
+Finished building: ../src/book.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building file: ../src/product.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/product.d" -MT"src/product.o" -o "src/product.o" "../src/product.cpp"
+Finished building: ../src/product.cpp
+ 
+Building file: ../src/tapes.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tapes.d" -MT"src/tapes.o" -o "src/tapes.o" "../src/tapes.cpp"
+../src/tapes.cpp: In member function ‘virtual int tapes::calc_discount()’:
+../src/tapes.cpp:46:15: error: ‘int product::price’ is private within this context
+  return this->price * 0.05;
+               ^~~~~
+In file included from ../src/tapes.h:10:0,
+                 from ../src/tapes.cpp:8:
+../src/product.h:13:6: note: declared private here
+  int price;
+      ^~~~~
+src/subdir.mk:27: recipe for target 'src/tapes.o' failed
+make: *** [src/tapes.o] Error 1
+11:44:52 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+Building file: ../src/tapes.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tapes.d" -MT"src/tapes.o" -o "src/tapes.o" "../src/tapes.cpp"
+Finished building: ../src/tapes.cpp
+ 
+Building target: ASSIGN_6_QUE_1
+Invoking: GCC C++ Linker
+g++  -o "ASSIGN_6_QUE_1"  ./src/book.o ./src/main.o ./src/product.o ./src/tapes.o   
+Finished building target: ASSIGN_6_QUE_1
+ 
+11:46:40 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:52:38: error: ‘int product::price’ is private within this context
+   total_price =  total_price + p[i]->price ;
+                                      ^~~~~
+In file included from ../src/main.cpp:11:0:
+../src/product.h:13:6: note: declared private here
+  int price;
+      ^~~~~
+../src/main.cpp:44:19: warning: unused variable ‘discount’ [-Wunused-variable]
+  int total_price, discount, discounted_price;
+                   ^~~~~~~~
+../src/main.cpp:44:29: warning: unused variable ‘discounted_price’ [-Wunused-variable]
+  int total_price, discount, discounted_price;
+                             ^~~~~~~~~~~~~~~~
+make: *** [src/main.o] Error 1
+src/subdir.mk:27: recipe for target 'src/main.o' failed
+11:46:52 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:44:19: warning: unused variable ‘discount’ [-Wunused-variable]
+  int total_price, discount, discounted_price;
+                   ^~~~~~~~
+../src/main.cpp:44:29: warning: unused variable ‘discounted_price’ [-Wunused-variable]
+  int total_price, discount, discounted_price;
+                             ^~~~~~~~~~~~~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: ASSIGN_6_QUE_1
+Invoking: GCC C++ Linker
+g++  -o "ASSIGN_6_QUE_1"  ./src/book.o ./src/main.o ./src/product.o ./src/tapes.o   
+Finished building target: ASSIGN_6_QUE_1
+ 
+11:50:57 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: ASSIGN_6_QUE_1
+Invoking: GCC C++ Linker
+g++  -o "ASSIGN_6_QUE_1"  ./src/book.o ./src/main.o ./src/product.o ./src/tapes.o   
+Finished building target: ASSIGN_6_QUE_1
+ 
+11:51:01 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+make: Nothing to be done for 'all'.
+11:51:30 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+make: Nothing to be done for 'all'.
+11:51:33 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+make: Nothing to be done for 'all'.
+11:54:02 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:48:3: error: expected ‘;’ before ‘p’
+   p[i]->display();
+   ^
+src/subdir.mk:27: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+11:54:07 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:48:3: error: expected ‘;’ before ‘p’
+   p[i]->display();
+   ^
+make: *** [src/main.o] Error 1
+src/subdir.mk:27: recipe for target 'src/main.o' failed
+11:54:14 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: ASSIGN_6_QUE_1
+Invoking: GCC C++ Linker
+g++  -o "ASSIGN_6_QUE_1"  ./src/book.o ./src/main.o ./src/product.o ./src/tapes.o   
+Finished building target: ASSIGN_6_QUE_1
+ 
+11:54:17 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+make: Nothing to be done for 'all'.
+11:55:00 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: ASSIGN_6_QUE_1
+Invoking: GCC C++ Linker
+g++  -o "ASSIGN_6_QUE_1"  ./src/book.o ./src/main.o ./src/product.o ./src/tapes.o   
+Finished building target: ASSIGN_6_QUE_1
+ 
+11:55:50 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:64:17: error: expected primary-expression before ‘[’ token
+   delete product[i];
+                 ^
+make: *** [src/main.o] Error 1
+src/subdir.mk:27: recipe for target 'src/main.o' failed
+11:55:55 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:64:18: error: expected primary-expression before ‘[’ token
+   delete product [i];
+                  ^
+src/subdir.mk:27: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+11:56:02 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:64:18: error: expected primary-expression before ‘[’ token
+   delete product [i];
+                  ^
+make: *** [src/main.o] Error 1
+src/subdir.mk:27: recipe for target 'src/main.o' failed
+11:56:05 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:64:18: error: expected primary-expression before ‘[’ token
+   delete product [i];
+                  ^
+src/subdir.mk:27: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+11:56:13 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:64:18: error: expected primary-expression before ‘[’ token
+   delete product [i];
+                  ^
+make: *** [src/main.o] Error 1
+src/subdir.mk:27: recipe for target 'src/main.o' failed
+11:56:23 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:64:18: error: expected primary-expression before ‘[’ token
+   delete product [i];
+                  ^
+make: *** [src/main.o] Error 1
+src/subdir.mk:27: recipe for target 'src/main.o' failed
+11:56:38 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:64:13: warning: deleting object of abstract class type ‘product’ which has non-virtual destructor will cause undefined behavior [-Wdelete-non-virtual-dtor]
+   delete p[i];
+             ^
+Finished building: ../src/main.cpp
+ 
+Building target: ASSIGN_6_QUE_1
+Invoking: GCC C++ Linker
+g++  -o "ASSIGN_6_QUE_1"  ./src/book.o ./src/main.o ./src/product.o ./src/tapes.o   
+Finished building target: ASSIGN_6_QUE_1
+ 
+11:57:34 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+Building file: ../src/book.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/book.d" -MT"src/book.o" -o "src/book.o" "../src/book.cpp"
+Finished building: ../src/book.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building file: ../src/product.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/product.d" -MT"src/product.o" -o "src/product.o" "../src/product.cpp"
+Finished building: ../src/product.cpp
+ 
+Building file: ../src/tapes.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tapes.d" -MT"src/tapes.o" -o "src/tapes.o" "../src/tapes.cpp"
+Finished building: ../src/tapes.cpp
+ 
+Building target: ASSIGN_6_QUE_1
+Invoking: GCC C++ Linker
+g++  -o "ASSIGN_6_QUE_1"  ./src/book.o ./src/main.o ./src/product.o ./src/tapes.o   
+Finished building target: ASSIGN_6_QUE_1
+ 
+11:57:40 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+make: Nothing to be done for 'all'.
+12:06:46 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+Building file: ../src/book.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/book.d" -MT"src/book.o" -o "src/book.o" "../src/book.cpp"
+Finished building: ../src/book.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:64:13: warning: deleting object of abstract class type ‘product’ which has non-virtual destructor will cause undefined behavior [-Wdelete-non-virtual-dtor]
+   delete p[i];
+             ^
+Finished building: ../src/main.cpp
+ 
+Building file: ../src/product.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/product.d" -MT"src/product.o" -o "src/product.o" "../src/product.cpp"
+Finished building: ../src/product.cpp
+ 
+Building file: ../src/tapes.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tapes.d" -MT"src/tapes.o" -o "src/tapes.o" "../src/tapes.cpp"
+Finished building: ../src/tapes.cpp
+ 
+Building target: ASSIGN_6_QUE_1
+Invoking: GCC C++ Linker
+g++  -o "ASSIGN_6_QUE_1"  ./src/book.o ./src/main.o ./src/product.o ./src/tapes.o   
+Finished building target: ASSIGN_6_QUE_1
+ 
+12:08:31 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+Building file: ../src/book.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/book.d" -MT"src/book.o" -o "src/book.o" "../src/book.cpp"
+Finished building: ../src/book.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building file: ../src/product.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/product.d" -MT"src/product.o" -o "src/product.o" "../src/product.cpp"
+Finished building: ../src/product.cpp
+ 
+Building file: ../src/tapes.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tapes.d" -MT"src/tapes.o" -o "src/tapes.o" "../src/tapes.cpp"
+Finished building: ../src/tapes.cpp
+ 
+Building target: ASSIGN_6_QUE_1
+Invoking: GCC C++ Linker
+g++  -o "ASSIGN_6_QUE_1"  ./src/book.o ./src/main.o ./src/product.o ./src/tapes.o   
+Finished building target: ASSIGN_6_QUE_1
+ 
+12:10:00 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+Building file: ../src/book.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/book.d" -MT"src/book.o" -o "src/book.o" "../src/book.cpp"
+Finished building: ../src/book.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:64:13: warning: deleting object of abstract class type ‘product’ which has non-virtual destructor will cause undefined behavior [-Wdelete-non-virtual-dtor]
+   delete p[i];
+             ^
+Finished building: ../src/main.cpp
+ 
+Building file: ../src/product.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/product.d" -MT"src/product.o" -o "src/product.o" "../src/product.cpp"
+Finished building: ../src/product.cpp
+ 
+Building file: ../src/tapes.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tapes.d" -MT"src/tapes.o" -o "src/tapes.o" "../src/tapes.cpp"
+Finished building: ../src/tapes.cpp
+ 
+Building target: ASSIGN_6_QUE_1
+Invoking: GCC C++ Linker
+g++  -o "ASSIGN_6_QUE_1"  ./src/book.o ./src/main.o ./src/product.o ./src/tapes.o   
+Finished building target: ASSIGN_6_QUE_1
+ 
+12:10:15 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:64:13: warning: deleting object of abstract class type ‘product’ which has non-virtual destructor will cause undefined behavior [-Wdelete-non-virtual-dtor]
+   delete p[i];
+             ^
+Finished building: ../src/main.cpp
+ 
+Building file: ../src/tapes.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tapes.d" -MT"src/tapes.o" -o "src/tapes.o" "../src/tapes.cpp"
+Finished building: ../src/tapes.cpp
+ 
+Building target: ASSIGN_6_QUE_1
+Invoking: GCC C++ Linker
+g++  -o "ASSIGN_6_QUE_1"  ./src/book.o ./src/main.o ./src/product.o ./src/tapes.o   
+Finished building target: ASSIGN_6_QUE_1
+ 
+12:10:49 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+Building file: ../src/book.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/book.d" -MT"src/book.o" -o "src/book.o" "../src/book.cpp"
+Finished building: ../src/book.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building file: ../src/product.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/product.d" -MT"src/product.o" -o "src/product.o" "../src/product.cpp"
+Finished building: ../src/product.cpp
+ 
+Building file: ../src/tapes.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tapes.d" -MT"src/tapes.o" -o "src/tapes.o" "../src/tapes.cpp"
+Finished building: ../src/tapes.cpp
+ 
+Building target: ASSIGN_6_QUE_1
+Invoking: GCC C++ Linker
+g++  -o "ASSIGN_6_QUE_1"  ./src/book.o ./src/main.o ./src/product.o ./src/tapes.o   
+Finished building target: ASSIGN_6_QUE_1
+ 
+12:15:31 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+Building file: ../src/book.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/book.d" -MT"src/book.o" -o "src/book.o" "../src/book.cpp"
+Finished building: ../src/book.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:64:13: warning: deleting object of abstract class type ‘product’ which has non-virtual destructor will cause undefined behavior [-Wdelete-non-virtual-dtor]
+   delete p[i];
+             ^
+Finished building: ../src/main.cpp
+ 
+Building file: ../src/product.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/product.d" -MT"src/product.o" -o "src/product.o" "../src/product.cpp"
+Finished building: ../src/product.cpp
+ 
+Building file: ../src/tapes.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tapes.d" -MT"src/tapes.o" -o "src/tapes.o" "../src/tapes.cpp"
+Finished building: ../src/tapes.cpp
+ 
+Building target: ASSIGN_6_QUE_1
+Invoking: GCC C++ Linker
+g++  -o "ASSIGN_6_QUE_1"  ./src/book.o ./src/main.o ./src/product.o ./src/tapes.o   
+Finished building target: ASSIGN_6_QUE_1
+ 
+12:16:57 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+make: Nothing to be done for 'all'.
+12:17:04 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+Building file: ../src/book.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/book.d" -MT"src/book.o" -o "src/book.o" "../src/book.cpp"
+Finished building: ../src/book.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building file: ../src/product.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/product.d" -MT"src/product.o" -o "src/product.o" "../src/product.cpp"
+Finished building: ../src/product.cpp
+ 
+Building file: ../src/tapes.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tapes.d" -MT"src/tapes.o" -o "src/tapes.o" "../src/tapes.cpp"
+Finished building: ../src/tapes.cpp
+ 
+Building target: ASSIGN_6_QUE_1
+Invoking: GCC C++ Linker
+g++  -o "ASSIGN_6_QUE_1"  ./src/book.o ./src/main.o ./src/product.o ./src/tapes.o   
+Finished building target: ASSIGN_6_QUE_1
+ 
+12:26:33 **** Build of configuration Debug for project ASSIGN_6_QUE_2 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building file: ../src/shape.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/shape.d" -MT"src/shape.o" -o "src/shape.o" "../src/shape.cpp"
+Finished building: ../src/shape.cpp
+ 
+Building target: ASSIGN_6_QUE_2
+Invoking: GCC C++ Linker
+g++  -o "ASSIGN_6_QUE_2"  ./src/main.o ./src/shape.o   
+/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':
+(.text+0x20): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+makefile:45: recipe for target 'ASSIGN_6_QUE_2' failed
+make: *** [ASSIGN_6_QUE_2] Error 1
+12:27:10 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_2 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: ASSIGN_6_QUE_2
+Invoking: GCC C++ Linker
+g++  -o "ASSIGN_6_QUE_2"  ./src/main.o ./src/shape.o   
+Finished building target: ASSIGN_6_QUE_2
+ 
+12:31:31 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_2 ****
+make all 
+Building file: ../src/circle.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/circle.d" -MT"src/circle.o" -o "src/circle.o" "../src/circle.cpp"
+In file included from ../src/circle.h:10:0,
+                 from ../src/circle.cpp:8:
+../src/shape.h:11:22: error: invalid use of incomplete type ‘class shape’
+ class shape : public shape{
+                      ^~~~~
+../src/shape.h:11:7: note: forward declaration of ‘class shape’
+ class shape : public shape{
+       ^~~~~
+src/subdir.mk:30: recipe for target 'src/circle.o' failed
+make: *** [src/circle.o] Error 1
+12:37:55 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_2 ****
+make all 
+Building file: ../src/circle.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/circle.d" -MT"src/circle.o" -o "src/circle.o" "../src/circle.cpp"
+In file included from ../src/circle.h:10:0,
+                 from ../src/circle.cpp:8:
+../src/shape.h:11:22: error: invalid use of incomplete type ‘class shape’
+ class shape : public shape{
+                      ^~~~~
+../src/shape.h:11:7: note: forward declaration of ‘class shape’
+ class shape : public shape{
+       ^~~~~
+../src/circle.cpp: In member function ‘virtual float circle::calc_area()’:
+../src/circle.cpp:40:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../src/circle.cpp: In member function ‘virtual float circle::calc_peri()’:
+../src/circle.cpp:44:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+src/subdir.mk:30: recipe for target 'src/circle.o' failed
+make: *** [src/circle.o] Error 1
+12:38:18 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_2 ****
+make all 
+Building file: ../src/circle.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/circle.d" -MT"src/circle.o" -o "src/circle.o" "../src/circle.cpp"
+In file included from ../src/circle.h:10:0,
+                 from ../src/circle.cpp:8:
+../src/shape.h:11:22: error: invalid use of incomplete type ‘class shape’
+ class shape : public shape{
+                      ^~~~~
+../src/shape.h:11:7: note: forward declaration of ‘class shape’
+ class shape : public shape{
+       ^~~~~
+../src/circle.cpp: In member function ‘virtual float circle::calc_area()’:
+../src/circle.cpp:40:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../src/circle.cpp: In member function ‘virtual float circle::calc_peri()’:
+../src/circle.cpp:44:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+src/subdir.mk:30: recipe for target 'src/circle.o' failed
+make: *** [src/circle.o] Error 1
+12:38:48 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_2 ****
+make all 
+Building file: ../src/circle.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/circle.d" -MT"src/circle.o" -o "src/circle.o" "../src/circle.cpp"
+../src/circle.cpp: In member function ‘virtual float circle::calc_area()’:
+../src/circle.cpp:40:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../src/circle.cpp: In member function ‘virtual float circle::calc_peri()’:
+../src/circle.cpp:44:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/circle.cpp
+ 
+Building file: ../src/rectangle.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/rectangle.d" -MT"src/rectangle.o" -o "src/rectangle.o" "../src/rectangle.cpp"
+Finished building: ../src/rectangle.cpp
+ 
+Building file: ../src/shape.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/shape.d" -MT"src/shape.o" -o "src/shape.o" "../src/shape.cpp"
+Finished building: ../src/shape.cpp
+ 
+Building file: ../src/square.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/square.d" -MT"src/square.o" -o "src/square.o" "../src/square.cpp"
+Finished building: ../src/square.cpp
+ 
+Building target: ASSIGN_6_QUE_2
+Invoking: GCC C++ Linker
+g++  -o "ASSIGN_6_QUE_2"  ./src/circle.o ./src/main.o ./src/rectangle.o ./src/shape.o ./src/square.o   
+Finished building target: ASSIGN_6_QUE_2
+ 
+12:39:16 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_2 ****
+make all 
+Building file: ../src/rectangle.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/rectangle.d" -MT"src/rectangle.o" -o "src/rectangle.o" "../src/rectangle.cpp"
+Finished building: ../src/rectangle.cpp
+ 
+Building target: ASSIGN_6_QUE_2
+Invoking: GCC C++ Linker
+g++  -o "ASSIGN_6_QUE_2"  ./src/circle.o ./src/main.o ./src/rectangle.o ./src/shape.o ./src/square.o   
+Finished building target: ASSIGN_6_QUE_2
+ 
+12:39:47 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_2 ****
+make all 
+Building file: ../src/circle.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/circle.d" -MT"src/circle.o" -o "src/circle.o" "../src/circle.cpp"
+Finished building: ../src/circle.cpp
+ 
+Building target: ASSIGN_6_QUE_2
+Invoking: GCC C++ Linker
+g++  -o "ASSIGN_6_QUE_2"  ./src/circle.o ./src/main.o ./src/rectangle.o ./src/shape.o ./src/square.o   
+Finished building target: ASSIGN_6_QUE_2
+ 
+12:47:31 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_2 ****
+make all 
+Building file: ../src/rectangle.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/rectangle.d" -MT"src/rectangle.o" -o "src/rectangle.o" "../src/rectangle.cpp"
+../src/rectangle.cpp:15:1: error: prototype for ‘rectangle::rectangle(float)’ does not match any in class ‘rectangle’
+ rectangle::rectangle(float length)
+ ^~~~~~~~~
+In file included from ../src/rectangle.cpp:8:0:
+../src/rectangle.h:13:7: error: candidates are: constexpr rectangle::rectangle(const rectangle&)
+ class rectangle :public shape{
+       ^~~~~~~~~
+../src/rectangle.cpp:10:1: error:                 rectangle::rectangle()
+ rectangle::rectangle() {
+ ^~~~~~~~~
+../src/rectangle.cpp:19:29: error: no ‘float rectangle::get_length()’ member function declared in class ‘rectangle’
+ float rectangle::get_length()
+                             ^
+../src/rectangle.cpp:23:40: error: no ‘void rectangle::set_length(float)’ member function declared in class ‘rectangle’
+ void rectangle::set_length(float length)
+                                        ^
+../src/rectangle.cpp:27:24: error: no ‘void rectangle::accept()’ member function declared in class ‘rectangle’
+src/subdir.mk:30: recipe for target 'src/rectangle.o' failed
+ void rectangle::accept()
+                        ^
+../src/rectangle.cpp:32:25: error: no ‘void rectangle::display()’ member function declared in class ‘rectangle’
+ void rectangle::display()
+                         ^
+../src/rectangle.cpp:36:28: error: no ‘float rectangle::calc_area()’ member function declared in class ‘rectangle’
+ float rectangle::calc_area()
+                            ^
+../src/rectangle.cpp:40:28: error: no ‘float rectangle::calc_peri()’ member function declared in class ‘rectangle’
+ float rectangle::calc_peri()
+                            ^
+make: *** [src/rectangle.o] Error 1
+12:48:41 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_2 ****
+make all 
+Building file: ../src/rectangle.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/rectangle.d" -MT"src/rectangle.o" -o "src/rectangle.o" "../src/rectangle.cpp"
+../src/rectangle.cpp:15:1: error: prototype for ‘rectangle::rectangle(float, float)’ does not match any in class ‘rectangle’
+ rectangle::rectangle(float length,float breadth)
+ ^~~~~~~~~
+In file included from ../src/rectangle.cpp:8:0:
+../src/rectangle.h:13:7: error: candidates are: constexpr rectangle::rectangle(const rectangle&)
+ class rectangle :public shape{
+       ^~~~~~~~~
+../src/rectangle.cpp:10:1: error:                 rectangle::rectangle()
+ rectangle::rectangle() {
+ ^~~~~~~~~
+../src/rectangle.cpp:20:29: error: no ‘float rectangle::get_length()’ member function declared in class ‘rectangle’
+ float rectangle::get_length()
+src/subdir.mk:30: recipe for target 'src/rectangle.o' failed
+                             ^
+../src/rectangle.cpp:24:40: error: no ‘void rectangle::set_length(float)’ member function declared in class ‘rectangle’
+ void rectangle::set_length(float length)
+                                        ^
+../src/rectangle.cpp:28:24: error: no ‘void rectangle::accept()’ member function declared in class ‘rectangle’
+ void rectangle::accept()
+                        ^
+../src/rectangle.cpp:33:25: error: no ‘void rectangle::display()’ member function declared in class ‘rectangle’
+ void rectangle::display()
+                         ^
+../src/rectangle.cpp:37:28: error: no ‘float rectangle::calc_area()’ member function declared in class ‘rectangle’
+ float rectangle::calc_area()
+                            ^
+../src/rectangle.cpp:41:28: error: no ‘float rectangle::calc_peri()’ member function declared in class ‘rectangle’
+ float rectangle::calc_peri()
+                            ^
+make: *** [src/rectangle.o] Error 1
+12:49:53 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_2 ****
+make all 
+Building file: ../src/rectangle.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/rectangle.d" -MT"src/rectangle.o" -o "src/rectangle.o" "../src/rectangle.cpp"
+../src/rectangle.cpp:15:1: error: prototype for ‘rectangle::rectangle(float, float)’ does not match any in class ‘rectangle’
+ rectangle::rectangle(float length,float breadth)
+ ^~~~~~~~~
+In file included from ../src/rectangle.cpp:8:0:
+../src/rectangle.h:13:7: error: candidates are: constexpr rectangle::rectangle(const rectangle&)
+ class rectangle : public shape{
+       ^~~~~~~~~
+../src/rectangle.h:20:2: error:                 rectangle::rectangle(float)
+  rectangle(float length);
+  ^~~~~~~~~
+../src/rectangle.cpp:10:1: error:                 rectangle::rectangle()
+ rectangle::rectangle() {
+ ^~~~~~~~~
+../src/rectangle.cpp: In member function ‘virtual void rectangle::accept()’:
+../src/rectangle.cpp:30:2: error: ‘cout’ was not declared in this scope
+  cout<<"ENTER length OF rectangle :";
+  ^~~~
+../src/rectangle.cpp:31:2: error: ‘cin’ was not declared in this scope
+  cin>>this->length;
+  ^~~
+../src/rectangle.cpp: In member function ‘virtual void rectangle::display()’:
+../src/rectangle.cpp:35:2: error: ‘cout’ was not declared in this scope
+  cout<<"length OF rectangle IS :"<<this->length;
+  ^~~~
+src/subdir.mk:30: recipe for target 'src/rectangle.o' failed
+make: *** [src/rectangle.o] Error 1
+12:50:03 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_2 ****
+make all 
+Building file: ../src/rectangle.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/rectangle.d" -MT"src/rectangle.o" -o "src/rectangle.o" "../src/rectangle.cpp"
+../src/rectangle.cpp: In member function ‘virtual void rectangle::accept()’:
+../src/rectangle.cpp:30:2: error: ‘cout’ was not declared in this scope
+  cout<<"ENTER length OF rectangle :";
+  ^~~~
+../src/rectangle.cpp:31:2: error: ‘cin’ was not declared in this scope
+  cin>>this->length;
+  ^~~
+../src/rectangle.cpp: In member function ‘virtual void rectangle::display()’:
+../src/rectangle.cpp:35:2: error: ‘cout’ was not declared in this scope
+  cout<<"length OF rectangle IS :"<<this->length;
+  ^~~~
+src/subdir.mk:30: recipe for target 'src/rectangle.o' failed
+make: *** [src/rectangle.o] Error 1
+12:50:27 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_2 ****
+make all 
+Building file: ../src/rectangle.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/rectangle.d" -MT"src/rectangle.o" -o "src/rectangle.o" "../src/rectangle.cpp"
+Finished building: ../src/rectangle.cpp
+ 
+Building file: ../src/square.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/square.d" -MT"src/square.o" -o "src/square.o" "../src/square.cpp"
+../src/square.cpp: In member function ‘virtual void square::accept()’:
+../src/square.cpp:28:2: error: ‘cout’ was not declared in this scope
+  cout<<"ENTER side OF square :";
+  ^~~~
+../src/square.cpp:29:2: error: ‘cin’ was not declared in this scope
+  cin>>this->side;
+  ^~~
+../src/square.cpp: In member function ‘virtual void square::display()’:
+../src/square.cpp:33:2: error: ‘cout’ was not declared in this scope
+  cout<<"side OF square IS :"<<this->side;
+  ^~~~
+src/subdir.mk:30: recipe for target 'src/square.o' failed
+make: *** [src/square.o] Error 1
+12:50:35 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_2 ****
+make all 
+Building file: ../src/square.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/square.d" -MT"src/square.o" -o "src/square.o" "../src/square.cpp"
+../src/square.cpp: In member function ‘virtual void square::accept()’:
+../src/square.cpp:28:2: error: ‘cout’ was not declared in this scope
+  cout<<"ENTER side OF square :";
+  ^~~~
+../src/square.cpp:29:2: error: ‘cin’ was not declared in this scope
+  cin>>this->side;
+  ^~~
+../src/square.cpp: In member function ‘virtual void square::display()’:
+../src/square.cpp:33:2: error: ‘cout’ was not declared in this scope
+  cout<<"side OF square IS :"<<this->side;
+  ^~~~
+src/subdir.mk:30: recipe for target 'src/square.o' failed
+make: *** [src/square.o] Error 1
+12:50:55 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_2 ****
+make all 
+Building file: ../src/square.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/square.d" -MT"src/square.o" -o "src/square.o" "../src/square.cpp"
+Finished building: ../src/square.cpp
+ 
+Building target: ASSIGN_6_QUE_2
+Invoking: GCC C++ Linker
+g++  -o "ASSIGN_6_QUE_2"  ./src/circle.o ./src/main.o ./src/rectangle.o ./src/shape.o ./src/square.o   
+Finished building target: ASSIGN_6_QUE_2
+ 
+12:54:16 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_2 ****
+make all 
+Building file: ../src/rectangle.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/rectangle.d" -MT"src/rectangle.o" -o "src/rectangle.o" "../src/rectangle.cpp"
+Finished building: ../src/rectangle.cpp
+ 
+Building target: ASSIGN_6_QUE_2
+Invoking: GCC C++ Linker
+g++  -o "ASSIGN_6_QUE_2"  ./src/circle.o ./src/main.o ./src/rectangle.o ./src/shape.o ./src/square.o   
+Finished building target: ASSIGN_6_QUE_2
+ 
+12:55:27 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_2 ****
+make all 
+Building file: ../src/rectangle.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/rectangle.d" -MT"src/rectangle.o" -o "src/rectangle.o" "../src/rectangle.cpp"
+Finished building: ../src/rectangle.cpp
+ 
+Building target: ASSIGN_6_QUE_2
+Invoking: GCC C++ Linker
+g++  -o "ASSIGN_6_QUE_2"  ./src/circle.o ./src/main.o ./src/rectangle.o ./src/shape.o ./src/square.o   
+Finished building target: ASSIGN_6_QUE_2
+ 
+12:59:21 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_2 ****
+make all 
+Building file: ../src/rectangle.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/rectangle.d" -MT"src/rectangle.o" -o "src/rectangle.o" "../src/rectangle.cpp"
+Finished building: ../src/rectangle.cpp
+ 
+Building target: ASSIGN_6_QUE_2
+Invoking: GCC C++ Linker
+g++  -o "ASSIGN_6_QUE_2"  ./src/circle.o ./src/main.o ./src/rectangle.o ./src/shape.o ./src/square.o   
+Finished building target: ASSIGN_6_QUE_2
+ 
+12:59:50 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_2 ****
+make all 
+make: Nothing to be done for 'all'.
+13:01:59 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_2 ****
+make all 
+Building file: ../src/square.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/square.d" -MT"src/square.o" -o "src/square.o" "../src/square.cpp"
+Finished building: ../src/square.cpp
+ 
+Building target: ASSIGN_6_QUE_2
+Invoking: GCC C++ Linker
+g++  -o "ASSIGN_6_QUE_2"  ./src/circle.o ./src/main.o ./src/rectangle.o ./src/shape.o ./src/square.o   
+Finished building target: ASSIGN_6_QUE_2
+ 
+13:06:40 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_1 ****
+make all 
+make: Nothing to be done for 'all'.
+13:06:40 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_2 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: ASSIGN_6_QUE_2
+Invoking: GCC C++ Linker
+g++  -o "ASSIGN_6_QUE_2"  ./src/circle.o ./src/main.o ./src/rectangle.o ./src/shape.o ./src/square.o   
+Finished building target: ASSIGN_6_QUE_2
+ 
+13:07:23 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_2 ****
+make all 
+make: Nothing to be done for 'all'.
+13:07:34 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_2 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building file: ../src/rectangle.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/rectangle.d" -MT"src/rectangle.o" -o "src/rectangle.o" "../src/rectangle.cpp"
+Finished building: ../src/rectangle.cpp
+ 
+Building target: ASSIGN_6_QUE_2
+Invoking: GCC C++ Linker
+g++  -o "ASSIGN_6_QUE_2"  ./src/circle.o ./src/main.o ./src/rectangle.o ./src/shape.o ./src/square.o   
+Finished building target: ASSIGN_6_QUE_2
+ 

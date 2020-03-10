@@ -1,0 +1,25 @@
+/*
+ * circle.cpp
+ *
+ *  Created on: 10-Mar-2020
+ *      Author: sunbeam
+ */
+
+#include "circle.h"
+
+circle::circle() {
+	this->radius=0;
+}
+
+circle(float radius);
+float get_radius();
+void set_radius(float radius);
+void accept();
+void display();
+float calc_area();
+float calc_peri();
+
+circle::~circle() {
+	// TODO Auto-generated destructor stub
+}
+

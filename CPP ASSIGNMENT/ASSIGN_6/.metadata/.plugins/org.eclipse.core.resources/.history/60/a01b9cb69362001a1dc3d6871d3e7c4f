@@ -1,0 +1,31 @@
+/*
+ * tapes.cpp
+ *
+ *  Created on: 10-Mar-2020
+ *      Author: sunbeam
+ */
+
+#include "tapes.h"
+#include"product.h"
+
+tapes::tapes():product() {
+	this->duration=0;
+}
+
+tapes::tapes(int duration,int price):product(price)
+{
+	this->duration=duration;
+}
+
+int tapes::getDuration() const {
+	return duration;
+}
+
+void tapes::setDuration(int duration) {
+	this->duration = duration;
+}
+
+tapes::~tapes() {
+	// TODO Auto-generated destructor stub
+}
+

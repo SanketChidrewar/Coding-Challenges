@@ -1,0 +1,18 @@
+/*
+ * book.cpp
+ *
+ *  Created on: 10-Mar-2020
+ *      Author: sunbeam
+ */
+
+#include "book.h"
+
+book::book() {
+	// TODO Auto-generated constructor stub
+
+}
+
+book::~book() {
+	// TODO Auto-generated destructor stub
+}
+

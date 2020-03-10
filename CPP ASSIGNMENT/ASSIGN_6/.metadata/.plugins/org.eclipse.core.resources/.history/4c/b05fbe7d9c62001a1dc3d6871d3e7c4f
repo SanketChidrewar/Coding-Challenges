@@ -1,0 +1,17 @@
+/*
+ * circle.h
+ *
+ *  Created on: 10-Mar-2020
+ *      Author: sunbeam
+ */
+
+#ifndef CIRCLE_H_
+#define CIRCLE_H_
+
+class circle {
+public:
+	circle();
+	virtual ~circle();
+};
+
+#endif /* CIRCLE_H_ */

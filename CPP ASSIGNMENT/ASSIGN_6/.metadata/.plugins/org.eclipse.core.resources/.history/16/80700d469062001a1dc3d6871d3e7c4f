@@ -1,0 +1,19 @@
+/*
+ * tapes.h
+ *
+ *  Created on: 10-Mar-2020
+ *      Author: sunbeam
+ */
+
+#ifndef TAPES_H_
+#define TAPES_H_
+
+class tapes {
+private:
+	int duration;
+public:
+	tapes();
+	virtual ~tapes();
+};
+
+#endif /* TAPES_H_ */

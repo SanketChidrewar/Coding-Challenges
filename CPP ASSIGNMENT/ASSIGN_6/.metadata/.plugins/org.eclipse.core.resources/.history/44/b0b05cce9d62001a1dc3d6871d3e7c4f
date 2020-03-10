@@ -1,0 +1,44 @@
+/*
+ * circle.cpp
+ *
+ *  Created on: 10-Mar-2020
+ *      Author: sunbeam
+ */
+
+#include "circle.h"
+
+circle::circle() {
+	this->radius=0;
+}
+
+circle::circle(float radius)
+{
+	this->radius = radius;
+}
+float circle::get_radius()
+{
+	return this->radius;
+}
+void circle::set_radius(float radius)
+{
+	this->radius=radius;
+}
+void circle::accept()
+{
+	cout<<"ENTER RADIUS OF CIRCLE :";
+	cin>>this->radius;
+}
+void circle::display()
+{
+	cout<<"RADIUS OF CIRCLE IS :"<<this->radius;
+}
+float circle::calc_area()
+{
+	cout<<"AREA OF CIRCLE IS :  "<<3.14*this->radius*this->radius;
+}
+float circle::calc_peri();
+
+circle::~circle() {
+	// TODO Auto-generated destructor stub
+}
+
