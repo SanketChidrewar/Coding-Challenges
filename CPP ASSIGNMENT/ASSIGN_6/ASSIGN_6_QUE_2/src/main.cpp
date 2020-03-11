@@ -13,6 +13,29 @@ to calculate total perimeter.*/
 
 using namespace std;
 
+float total_area(shape* p[],int size)
+{
+	float total_area=0 ;
+
+	for(int i=0;i<size;i++)
+			{
+				total_area =  total_area + p[i]->calc_area() ;
+				//total_perimeter = total_perimeter + p[i]->calc_peri();
+			}
+	return total_area;
+}
+
+float total_perimeter(shape* p[],int size)
+{
+	float total_perimeter =0;
+
+	for(int i=0;i<size;i++)
+			{
+				//total_area =  total_area + p[i]->calc_area() ;
+				total_perimeter = total_perimeter + p[i]->calc_peri();
+			}
+	return total_perimeter;
+}
 int main()
 {
 
@@ -52,14 +75,16 @@ int main()
 			p[i]->display();
 		}
 
-		for(int i=0;i<5;i++)
+/*		for(int i=0;i<5;i++)
 		{
 			total_area =  total_area + p[i]->calc_area() ;
 			total_perimeter = total_perimeter + p[i]->calc_peri();
-		}
+		}*/
+		float area =::total_area(p,5);
+		float peri =::total_perimeter(p,5);
 
-		cout<<"\nTOTAL AREA :"<<total_area<<endl;
-		cout<<"TOTAL PERIMETER :"<<total_perimeter<<endl;
+		cout<<"\nTOTAL AREA :"<<area<<endl;
+		cout<<"TOTAL PERIMETER :"<<peri<<endl;
 
 		for (int i=0;i<5;i++)
 		{

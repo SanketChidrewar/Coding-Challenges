@@ -1,20 +1,6 @@
-13:07:34 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_2 ****
+08:58:23 **** Incremental Build of configuration Debug for project ASSIGN_6_QUE_2 ****
 make all 
-Building file: ../src/main.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
-Finished building: ../src/main.cpp
- 
-Building file: ../src/rectangle.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/rectangle.d" -MT"src/rectangle.o" -o "src/rectangle.o" "../src/rectangle.cpp"
-Finished building: ../src/rectangle.cpp
- 
-Building target: ASSIGN_6_QUE_2
-Invoking: GCC C++ Linker
-g++  -o "ASSIGN_6_QUE_2"  ./src/circle.o ./src/main.o ./src/rectangle.o ./src/shape.o ./src/square.o   
-Finished building target: ASSIGN_6_QUE_2
- 
+make: Nothing to be done for 'all'.
 
-13:07:35 Build Finished. 0 errors, 0 warnings. (took 1s.439ms)
+08:58:24 Build Finished. 0 errors, 0 warnings. (took 672ms)
 
