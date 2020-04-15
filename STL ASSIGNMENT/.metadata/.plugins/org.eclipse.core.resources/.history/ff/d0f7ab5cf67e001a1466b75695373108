@@ -1,0 +1,41 @@
+/*
+ * main.cpp
+ *
+ *  Created on: 14-Apr-2020
+ *      Author: sunbeam
+ */
+
+//7. A text file contains set of integer (in range of 1 to 9) values separated by spaces. Read them into
+//STL vector. Find the missing numbers from them.
+//Input: 3 7 9 4 3 7 9 8 6 4 7 2
+//Output: 1 5
+
+#include<iostream>
+#include <fstream>
+#include<vector>
+
+using namespace std;
+
+int main()
+{
+	ifstream is("src/numbers.txt");
+	string num;
+
+	vector<int> n;
+
+	if(is.is_open())
+	{
+		while(getline(is,num))
+		{
+			cout<<num<<endl;
+		}
+		is.close();
+	}
+	else
+	{
+		cout<<"FILE OPENING IS FAIL. "<<endl;
+	}
+	return 0;
+}
+
+

@@ -1,0 +1,31 @@
+//============================================================================
+// Name        : STL_ASS1_QUE1.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description :
+//============================================================================
+
+//Create STL list of string and add following names of your 10 friends.
+//Sort the list and display in reverse order using reverse iterator.
+
+#include <iostream>
+#include<string>
+#include<list>
+using namespace std;
+
+int main() {
+
+	list<string> name;
+
+	string frn_name;
+	for(int i=0;i<3;i++)
+	{
+		cin>>frn_name;
+		name.push_back(frn_name)_back(frn_name);
+	}
+
+
+
+	return 0;
+}

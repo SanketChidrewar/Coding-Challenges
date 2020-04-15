@@ -1,0 +1,20 @@
+/*
+ * main.cpp
+ *
+ *  Created on: 14-Apr-2020
+ *      Author: sunbeam
+ */
+
+#include<iostream>
+
+
+using namespace std;
+
+int main()
+{
+
+	return 0;
+}
+
+
+

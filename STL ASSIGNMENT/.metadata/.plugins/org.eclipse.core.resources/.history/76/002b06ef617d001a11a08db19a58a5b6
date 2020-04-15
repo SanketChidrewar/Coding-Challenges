@@ -1,0 +1,24 @@
+/*
+ * main.cpp
+ *
+ *  Created on: 13-Apr-2020
+ *      Author: sunbeam
+ */
+
+//2. Create STL vector of float of size given by the user. Input values from the user. Iterate through
+//the vector two times to find minimum value and maximum value. Use subscript operator for the
+//first iteration, while iterator for the second iteration.
+
+
+#include<iostream>
+#include<vector>
+using namespace std;
+
+int main()
+{
+
+
+	return 0;
+}
+
+

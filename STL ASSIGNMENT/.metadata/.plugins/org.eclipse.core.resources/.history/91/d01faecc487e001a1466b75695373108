@@ -1,0 +1,56 @@
+/*
+ * main.cpp
+ *
+ *  Created on: 14-Apr-2020
+ *      Author: sunbeam
+ */
+
+//4. Create STL list of int values. Add 100 random values in it (use rand() function of C). Display all
+//unique elements in list. Hint: use set.
+
+#include<iostream>
+#include<set>
+#include<list>
+
+using namespace std;
+
+
+using namespace std;
+
+int main()
+{
+	list<int>mylist(100,0);
+
+	list<int>::iterator it = mylist.begin();
+
+	while(it!=mylist.end())
+	{
+		mylist.insert(it,rand());
+		it++;
+	}
+
+	set<int>myset;
+	int j=0;
+
+	it = mylist.begin();
+
+	while(it!=mylist.end())
+	{
+		myset.insert(mylist.front());
+	}
+
+	for(int i :myset)
+	{
+		j++;
+		cout<<j <<" : "<<i<<endl;
+	}
+
+	//cout<<rand()<<endl;
+	//cout<<rand();
+
+
+	return 0;
+}
+
+
+

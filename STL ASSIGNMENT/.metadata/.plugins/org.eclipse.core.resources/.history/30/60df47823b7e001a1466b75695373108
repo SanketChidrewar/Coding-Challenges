@@ -1,0 +1,24 @@
+/*
+ * main.cpp
+ *
+ *  Created on: 14-Apr-2020
+ *      Author: sunbeam
+ */
+
+//3. Create STL queue of double values. Write a menu driven program to push, pop, peek and delete
+//all values in queue. After each operation display current size of queue.
+
+#include<iostream>
+#include<queue>
+
+int main()
+{
+	queue<int>q;
+
+
+
+
+	return 0;
+}
+
+

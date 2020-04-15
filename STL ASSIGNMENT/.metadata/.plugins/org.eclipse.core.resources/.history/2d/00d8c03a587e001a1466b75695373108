@@ -1,0 +1,45 @@
+/*
+ * main.cpp
+ *
+ *  Created on: 14-Apr-2020
+ *      Author: sunbeam
+ */
+
+//6. Create matrix using STL vector of size NxN where N is odd number entered by user. Input values
+//from user and check if its both diagonal sum is same or not. Print the message accordingly.
+
+#include<iostream>
+#include<vector>
+
+using namespace std;
+
+int main()
+{
+	int size=0;
+	cout<<"ENTER SIZE OF MATRIX :";
+	cin>>size;
+    vector<vector<int> > MAT( size , vector<int> (size));
+
+    cout<<"ENTER MATRIX ELEMENT :";
+
+    for(int i=0;i<MAT.size();i++)
+    {
+    	for(int j=0;j<MAT[0].size();j++)
+    	{
+    		cout<<"ENTER ELE OF POS MAT["<<i<<"]["<<j<<"] :";
+    		cin>>MAT[i][j];
+    	}
+    }
+
+    for(int i=0;i<MAT.size();i++)
+    {
+    	for(int j=0;j<MAT[0].size();j++)
+    	{
+    		cout<<MAT[i][j]<<" ";
+    	}
+    }
+	return 0;
+}
+
+
+

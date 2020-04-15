@@ -1,0 +1,42 @@
+/*
+ * main.cpp
+ *
+ *  Created on: 14-Apr-2020
+ *      Author: sunbeam
+ */
+
+//3. Create STL queue of double values. Write a menu driven program to push, pop, peek and delete
+//all values in queue. After each operation display current size of queue.
+
+#include<iostream>
+#include<queue>
+using namespace std;
+
+typedef enum{EXIT,PUSH,POP,PEEK,DELETE};
+
+int qchoice()
+{
+	cout<<"0.EXIT \n1.PUSH\n 2.POP \n3.PEEK \n4.DELETE \nENTER YOUR CHOICE: ";
+	return choice;
+}
+
+int main()
+{
+	queue<int> q;
+
+	int choice =0;
+
+	while(choice = qchoice()!=EXIT)
+	{
+		switch(choice)
+		{
+
+		}
+	}
+
+
+
+	return 0;
+}
+
+
