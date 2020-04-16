@@ -1,0 +1,55 @@
+/*
+ * main.cpp
+ *
+ *  Created on: 15-Apr-2020
+ *      Author: sunbeam
+ */
+
+//8. Create a student class storing roll number, name (use char[] not string) and marks. Write a menu
+//driven File IO program using C++ library classes to add student, display all students, find student
+//by roll number and edit student.
+
+
+#include<iostream>
+#include<fstream>
+
+using namespace std;
+
+int main()
+{
+
+    fstream fout;
+
+    // opens an existing csv file or creates a new file.
+    fout.open("reportcard.csv");
+
+    cout << "Enter the details of 5 students:"
+         << " roll name maths phy chem bio"<< endl;
+
+    int i, roll, phy, chem, math, bio;
+    string name;
+
+    // Read the input
+    for (i = 0; i < 5; i++) {
+
+        cin >> roll
+            >> name
+            >> math
+            >> phy
+            >> chem
+            >> bio;
+
+        // Insert the data to file
+        fout << roll << ", "
+             << name << ", "
+             << math << ", "
+             << phy << ", "
+             << chem << ", "
+             << bio
+             << "\n";
+    }
+	return 0;
+}
+
+
+

@@ -1,4 +1,4 @@
-14:44:27 **** Build of configuration Debug for project STL_ASS1_QUE8 ****
+15:02:30 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
 make all 
 Building file: ../src/main.cpp
 Invoking: GCC C++ Compiler
@@ -7,9 +7,9 @@ Finished building: ../src/main.cpp
  
 Building target: STL_ASS1_QUE8
 Invoking: GCC C++ Linker
-g++  -o "STL_ASS1_QUE8"  ./src/main.o   
+g++  -o "STL_ASS1_QUE8"  ./src/Student.o ./src/main.o   
 Finished building target: STL_ASS1_QUE8
  
 
-14:44:28 Build Finished. 0 errors, 0 warnings. (took 1s.124ms)
+15:02:31 Build Finished. 0 errors, 0 warnings. (took 1s.223ms)
 

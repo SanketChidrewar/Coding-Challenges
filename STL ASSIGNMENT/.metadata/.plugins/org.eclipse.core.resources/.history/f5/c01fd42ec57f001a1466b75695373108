@@ -1,0 +1,159 @@
+
+//============================================================================
+// Name        : Assignment_FILE_8.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include <fstream>
+#include <cstring>
+using namespace std;
+using std::ofstream;
+using std::ifstream;
+class student
+{
+public:
+	int roll;
+	char name[20];
+	float marks;
+};
+
+int menu()
+{
+	int ch;
+	cout<<"\n MENU..";
+	cout<<"\n 1. Add Student..";
+	cout<<"\n 2. Display all Student..";
+	cout<<"\n 3. Search Student by Roll Number..";
+	cout<<"\n 4. Edit Student..";
+	cout<<"\n Enter Your Choice : ";
+	cin>>ch;
+	return ch;
+}
+
+void add(student s)
+{
+	student obj;
+	cout<<"Enter Roll Number : ";
+	cin>>s.roll;
+	cout<<"Enter Name : ";
+	cin>>s.name;
+	cout<<"Enter Marks : ";
+	cin>>s.marks;
+	ofstream f;
+	// Opening file in append mode
+	f.open("stud.dat", ios::app);
+	
+	if(!f)
+	{
+		cout << "failed to open file" << endl;
+	}
+	f.write((const char *)&s,sizeof(s));
+}
+
+void display()
+{
+	ifstream file_obj;
+
+	// Opening file in input mode
+	file_obj.open("stud.dat", ios::in);
+
+	student obj;
+
+	// Reading from file into object "obj"
+	while(file_obj.read((char*)&obj, sizeof(obj)))
+	{
+		cout<<obj.roll<<" "<<obj.name<<" "<<obj.marks<<endl;
+	}
+}
+
+void search()
+{
+	ifstream file_obj;
+	int rollno,found=0;
+	// Opening file in input mode
+	file_obj.open("stud.dat", ios::in);
+
+	student obj;
+	cout<<"\n Enter roll number which you want to search : ";
+	cin>>rollno;
+	// Reading from file into object "obj"
+	while(file_obj.read((char*)&obj, sizeof(obj)))
+	{
+		if(obj.roll==rollno)
+		{
+			cout<<"Student Found for given Roll Number!!!"<<endl;
+			cout<<obj.roll<<" "<<obj.name<<" "<<obj.marks<<endl;
+			found=1;
+		}
+	}
+	if(found==0)
+		cout<<"Student Not Found for given Roll Number!!!"<<endl;
+}
+
+void edit()
+{
+	fstream file_obj;
+	int rollno,found=0;
+	char name1[20];
+	float nmark;
+	// Opening file in input mode,output and binary mode
+	file_obj.open("stud.dat", ios::in | ios::out | ios::binary);
+
+	student obj;
+	cout<<"\n Enter roll number which you want to edit : ";
+	cin>>rollno;
+	// Reading from file into object "obj"
+	while(file_obj.read((char*)&obj, sizeof(obj)))
+	{
+		int pos=file_obj.tellg();
+		if(obj.roll==rollno)
+		{
+			cout<<"Student Found for given Roll Number!!!"<<endl;
+			cout<<obj.roll<<" "<<obj.name<<" "<<obj.marks<<endl;
+			found=1;
+			cout<<"Enter new name : ";
+			cin>>name1;
+			strcpy(obj.name,name1);
+			cout<<"Enter new marks : ";
+			cin>>nmark;
+			obj.marks=nmark;
+			file_obj.seekp(pos-(sizeof(student)));
+			file_obj.write((const char*)&obj, sizeof(obj));
+			cout<<obj.roll<<" "<<obj.name<<" "<<obj.marks<<endl;
+			cout<<"Information Edited Successfully";
+			break;
+		}
+	}
+	if(found==0)
+		cout<<"Student Not Found for given Roll Number!!!"<<endl;
+}
+
+int main()
+{
+	int ch;
+	student s;
+
+	while((ch=menu())!=0)
+	{
+		switch(ch)
+		{
+		case 1:
+			add(s);
+			break;
+		case 2:
+			display();
+			break;
+		case 3:
+			search();
+			break;
+		case 4:
+			edit();
+			break;
+		}
+	}
+	return 0;
+}

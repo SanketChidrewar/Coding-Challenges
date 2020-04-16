@@ -1,0 +1,27 @@
+/*
+ * Student.cpp
+ *
+ *  Created on: 16-Apr-2020
+ *      Author: sunbeam
+ */
+
+#include "Student.h"
+
+Student::Student() {
+	// TODO Auto-generated constructor stub
+	this->rollNumber=0;
+	this->name = " ";
+	this->marks =0;
+
+}
+
+void display_student()
+{
+
+}
+
+
+Student::~Student() {
+	// TODO Auto-generated destructor stub
+}
+

@@ -3327,3 +3327,1328 @@ Invoking: GCC C++ Linker
 g++  -o "STL_ASS1_QUE8"  ./src/main.o   
 Finished building target: STL_ASS1_QUE8
  
+16:09:28 **** Incremental Build of configuration Debug for project STL_ASS1_QUE7 ****
+make all 
+make: Nothing to be done for 'all'.
+16:09:29 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:28:5: error: expected primary-expression before ‘<<’ token
+     << endl;
+     ^~
+src/subdir.mk:18: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+16:09:50 **** Incremental Build of configuration Debug for project STL_ASS1_QUE7 ****
+make all 
+make: Nothing to be done for 'all'.
+16:09:50 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: STL_ASS1_QUE8
+Invoking: GCC C++ Linker
+g++  -o "STL_ASS1_QUE8"  ./src/main.o   
+Finished building target: STL_ASS1_QUE8
+ 
+16:10:07 **** Incremental Build of configuration Debug for project STL_ASS1_QUE7 ****
+make all 
+make: Nothing to be done for 'all'.
+16:10:07 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: STL_ASS1_QUE8
+Invoking: GCC C++ Linker
+g++  -o "STL_ASS1_QUE8"  ./src/main.o   
+Finished building target: STL_ASS1_QUE8
+ 
+16:10:22 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+make: Nothing to be done for 'all'.
+16:12:13 **** Incremental Build of configuration Debug for project STL_ASS1_QUE7 ****
+make all 
+make: Nothing to be done for 'all'.
+16:12:14 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: STL_ASS1_QUE8
+Invoking: GCC C++ Linker
+g++  -o "STL_ASS1_QUE8"  ./src/main.o   
+Finished building target: STL_ASS1_QUE8
+ 
+16:12:18 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+make: Nothing to be done for 'all'.
+16:13:53 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: STL_ASS1_QUE8
+Invoking: GCC C++ Linker
+g++  -o "STL_ASS1_QUE8"  ./src/main.o   
+Finished building target: STL_ASS1_QUE8
+ 
+16:13:56 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+make: Nothing to be done for 'all'.
+16:13:59 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+make: Nothing to be done for 'all'.
+16:14:09 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: STL_ASS1_QUE8
+Invoking: GCC C++ Linker
+g++  -o "STL_ASS1_QUE8"  ./src/main.o   
+Finished building target: STL_ASS1_QUE8
+ 
+16:14:12 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+make: Nothing to be done for 'all'.
+16:15:24 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: STL_ASS1_QUE8
+Invoking: GCC C++ Linker
+g++  -o "STL_ASS1_QUE8"  ./src/main.o   
+Finished building target: STL_ASS1_QUE8
+ 
+16:15:28 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+make: Nothing to be done for 'all'.
+16:15:52 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: STL_ASS1_QUE8
+Invoking: GCC C++ Linker
+g++  -o "STL_ASS1_QUE8"  ./src/main.o   
+Finished building target: STL_ASS1_QUE8
+ 
+16:15:55 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+make: Nothing to be done for 'all'.
+16:16:33 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp:53:1: error: expected unqualified-id before numeric constant
+ 1 sanket 98 85 89 45 74
+ ^
+src/subdir.mk:18: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+16:16:52 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: STL_ASS1_QUE8
+Invoking: GCC C++ Linker
+g++  -o "STL_ASS1_QUE8"  ./src/main.o   
+Finished building target: STL_ASS1_QUE8
+ 
+16:18:52 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+make: Nothing to be done for 'all'.
+16:19:49 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+make: Nothing to be done for 'all'.
+16:21:18 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: STL_ASS1_QUE8
+Invoking: GCC C++ Linker
+g++  -o "STL_ASS1_QUE8"  ./src/main.o   
+Finished building target: STL_ASS1_QUE8
+ 
+16:21:23 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+make: Nothing to be done for 'all'.
+11:07:24 **** Incremental Build of configuration Debug for project STL_ASS1_QUE5 ****
+make all 
+make: Nothing to be done for 'all'.
+11:07:25 **** Incremental Build of configuration Debug for project STL_ASS1_QUE6 ****
+make all 
+make: Nothing to be done for 'all'.
+11:07:25 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: STL_ASS1_QUE8
+Invoking: GCC C++ Linker
+g++  -o "STL_ASS1_QUE8"  ./src/main.o   
+Finished building target: STL_ASS1_QUE8
+ 
+11:14:04 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/Student.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Student.d" -MT"src/Student.o" -o "src/Student.o" "../src/Student.cpp"
+In file included from ../src/Student.cpp:8:0:
+../src/Student.h:23:18: error: ISO C++ forbids declaration of ‘display_student’ with no type [-fpermissive]
+  display_student();
+                  ^
+../src/Student.cpp: In constructor ‘Student::Student()’:
+../src/Student.cpp:14:15: error: incompatible types in assignment of ‘const char [2]’ to ‘char [50]’
+  this->name = " ";
+               ^~~
+../src/Student.cpp: At global scope:
+../src/Student.cpp:25:6: error: prototype for ‘void Student::display_student()’ does not match any in class ‘Student’
+ void Student::display_student()
+      ^~~~~~~
+In file included from ../src/Student.cpp:8:0:
+../src/Student.h:23:2: error: candidate is: int Student::display_student()
+  display_student();
+  ^~~~~~~~~~~~~~~
+make: *** [src/Student.o] Error 1
+src/subdir.mk:21: recipe for target 'src/Student.o' failed
+11:14:17 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/Student.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Student.d" -MT"src/Student.o" -o "src/Student.o" "../src/Student.cpp"
+In file included from ../src/Student.cpp:8:0:
+../src/Student.h:23:18: error: ISO C++ forbids declaration of ‘display_student’ with no type [-fpermissive]
+src/subdir.mk:21: recipe for target 'src/Student.o' failed
+  display_student();
+                  ^
+../src/Student.cpp: In constructor ‘Student::Student()’:
+../src/Student.cpp:14:15: error: incompatible types in assignment of ‘const char [1]’ to ‘char [50]’
+  this->name = "";
+               ^~
+../src/Student.cpp: At global scope:
+../src/Student.cpp:25:6: error: prototype for ‘void Student::display_student()’ does not match any in class ‘Student’
+ void Student::display_student()
+      ^~~~~~~
+In file included from ../src/Student.cpp:8:0:
+../src/Student.h:23:2: error: candidate is: int Student::display_student()
+  display_student();
+  ^~~~~~~~~~~~~~~
+make: *** [src/Student.o] Error 1
+11:14:34 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/Student.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Student.d" -MT"src/Student.o" -o "src/Student.o" "../src/Student.cpp"
+../src/Student.cpp: In constructor ‘Student::Student()’:
+../src/Student.cpp:14:15: error: incompatible types in assignment of ‘const char [1]’ to ‘char [50]’
+  this->name = "";
+               ^~
+../src/Student.cpp: In member function ‘void Student::display_student()’:
+../src/Student.cpp:28:2: error: ‘cout’ was not declared in this scope
+  cout<<this->rollNumber<< " "<<this->name<<" "<<this->marks<<endl;
+  ^~~~
+../src/Student.cpp:28:62: error: ‘endl’ was not declared in this scope
+  cout<<this->rollNumber<< " "<<this->name<<" "<<this->marks<<endl;
+                                                              ^~~~
+../src/Student.cpp:28:62: note: suggested alternative: ‘enum’
+  cout<<this->rollNumber<< " "<<this->name<<" "<<this->marks<<endl;
+                                                              ^~~~
+                                                              enum
+src/subdir.mk:21: recipe for target 'src/Student.o' failed
+make: *** [src/Student.o] Error 1
+11:15:02 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/Student.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Student.d" -MT"src/Student.o" -o "src/Student.o" "../src/Student.cpp"
+../src/Student.cpp: In constructor ‘Student::Student()’:
+../src/Student.cpp:18:15: error: incompatible types in assignment of ‘const char [1]’ to ‘char [50]’
+  this->name = "";
+               ^~
+src/subdir.mk:21: recipe for target 'src/Student.o' failed
+make: *** [src/Student.o] Error 1
+11:15:21 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/Student.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Student.d" -MT"src/Student.o" -o "src/Student.o" "../src/Student.cpp"
+Finished building: ../src/Student.cpp
+ 
+Building target: STL_ASS1_QUE8
+Invoking: GCC C++ Linker
+g++  -o "STL_ASS1_QUE8"  ./src/Student.o ./src/main.o   
+Finished building target: STL_ASS1_QUE8
+ 
+11:31:33 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/Student.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Student.d" -MT"src/Student.o" -o "src/Student.o" "../src/Student.cpp"
+Finished building: ../src/Student.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: STL_ASS1_QUE8
+Invoking: GCC C++ Linker
+g++  -o "STL_ASS1_QUE8"  ./src/Student.o ./src/main.o   
+Finished building target: STL_ASS1_QUE8
+ 
+11:31:37 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+make: Nothing to be done for 'all'.
+11:31:44 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+make: Nothing to be done for 'all'.
+11:34:49 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: STL_ASS1_QUE8
+Invoking: GCC C++ Linker
+g++  -o "STL_ASS1_QUE8"  ./src/Student.o ./src/main.o   
+Finished building target: STL_ASS1_QUE8
+ 
+11:38:50 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp:30:18: error: variable or field ‘add_student’ declared void
+ void add_student(vector st)
+                  ^~~~~~
+../src/main.cpp:30:25: error: missing template arguments before ‘st’
+ void add_student(vector st)
+                         ^~
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:59:4: error: ‘add_student’ was not declared in this scope
+    add_student(st);
+    ^~~~~~~~~~~
+../src/main.cpp:59:4: note: suggested alternative: ‘Student’
+    add_student(st);
+    ^~~~~~~~~~~
+    Student
+make: *** [src/main.o] Error 1
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+11:39:05 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: STL_ASS1_QUE8
+Invoking: GCC C++ Linker
+g++  -o "STL_ASS1_QUE8"  ./src/Student.o ./src/main.o   
+Finished building target: STL_ASS1_QUE8
+ 
+11:41:19 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘void display_student(std::vector<Student>)’:
+../src/main.cpp:50:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<st.size();i++)
+              ~^~~~~~~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: STL_ASS1_QUE8
+Invoking: GCC C++ Linker
+g++  -o "STL_ASS1_QUE8"  ./src/Student.o ./src/main.o   
+Finished building target: STL_ASS1_QUE8
+ 
+11:41:23 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+make: Nothing to be done for 'all'.
+11:44:03 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘void display_student(std::vector<Student>)’:
+../src/main.cpp:50:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<st.size();i++)
+              ~^~~~~~~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: STL_ASS1_QUE8
+Invoking: GCC C++ Linker
+g++  -o "STL_ASS1_QUE8"  ./src/Student.o ./src/main.o   
+Finished building target: STL_ASS1_QUE8
+ 
+11:44:07 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+make: Nothing to be done for 'all'.
+11:44:24 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘void display_all_student(std::vector<Student>)’:
+../src/main.cpp:50:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<st.size();i++)
+              ~^~~~~~~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: STL_ASS1_QUE8
+Invoking: GCC C++ Linker
+g++  -o "STL_ASS1_QUE8"  ./src/Student.o ./src/main.o   
+Finished building target: STL_ASS1_QUE8
+ 
+11:44:42 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘void display_all_student(std::vector<Student>)’:
+../src/main.cpp:50:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<st.size();i++)
+              ~^~~~~~~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: STL_ASS1_QUE8
+Invoking: GCC C++ Linker
+g++  -o "STL_ASS1_QUE8"  ./src/Student.o ./src/main.o   
+Finished building target: STL_ASS1_QUE8
+ 
+11:44:46 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+make: Nothing to be done for 'all'.
+11:54:44 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘void add_student(std::vector<Student>)’:
+../src/main.cpp:44:10: error: no match for call to ‘(Student) ()’
+  ~st_obj();
+          ^
+../src/main.cpp: In function ‘void display_all_student(std::vector<Student>)’:
+../src/main.cpp:49:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<st.size();i++)
+              ~^~~~~~~~~~
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+11:55:15 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘void add_student(std::vector<Student>)’:
+../src/main.cpp:44:2: error: no match for ‘operator~’ (operand type is ‘Student’)
+  ~Student();
+  ^~~~~~~~~~
+In file included from /usr/include/c++/7/ios:42:0,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../src/main.cpp:12:
+/usr/include/c++/7/bits/ios_base.h:95:3: note: candidate: constexpr std::_Ios_Fmtflags std::operator~(std::_Ios_Fmtflags)
+   operator~(_Ios_Fmtflags __a)
+   ^~~~~~~~
+/usr/include/c++/7/bits/ios_base.h:95:3: note:   no known conversion for argument 1 from ‘Student’ to ‘std::_Ios_Fmtflags’
+/usr/include/c++/7/bits/ios_base.h:137:3: note: candidate: constexpr std::_Ios_Openmode std::operator~(std::_Ios_Openmode)
+   operator~(_Ios_Openmode __a)
+   ^~~~~~~~
+/usr/include/c++/7/bits/ios_base.h:137:3: note:   no known conversion for argument 1 from ‘Student’ to ‘std::_Ios_Openmode’
+/usr/include/c++/7/bits/ios_base.h:177:3: note: candidate: constexpr std::_Ios_Iostate std::operator~(std::_Ios_Iostate)
+   operator~(_Ios_Iostate __a)
+   ^~~~~~~~
+/usr/include/c++/7/bits/ios_base.h:177:3: note:   no known conversion for argument 1 from ‘Student’ to ‘std::_Ios_Iostate’
+../src/main.cpp: In function ‘void display_all_student(std::vector<Student>)’:
+../src/main.cpp:49:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<st.size();i++)
+              ~^~~~~~~~~~
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+11:55:52 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘void display_all_student(std::vector<Student>)’:
+../src/main.cpp:49:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<st.size();i++)
+              ~^~~~~~~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: STL_ASS1_QUE8
+Invoking: GCC C++ Linker
+g++  -o "STL_ASS1_QUE8"  ./src/Student.o ./src/main.o   
+Finished building target: STL_ASS1_QUE8
+ 
+11:55:56 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+make: Nothing to be done for 'all'.
+11:56:29 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘void display_all_student(std::vector<Student>)’:
+../src/main.cpp:51:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<st.size();i++)
+              ~^~~~~~~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: STL_ASS1_QUE8
+Invoking: GCC C++ Linker
+g++  -o "STL_ASS1_QUE8"  ./src/Student.o ./src/main.o   
+Finished building target: STL_ASS1_QUE8
+ 
+11:56:32 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+make: Nothing to be done for 'all'.
+12:20:26 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘void add_student(std::vector<Student>)’:
+../src/main.cpp:44:21: error: no match for call to ‘(__gnu_cxx::__alloc_traits<std::allocator<Student> >::value_type {aka Student}) (int&, char [50], int&)’
+  st[0](rn,name,marks);
+                     ^
+../src/main.cpp: In function ‘void display_all_student(std::vector<Student>)’:
+../src/main.cpp:52:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<st.size();i++)
+              ~^~~~~~~~~~
+make: *** [src/main.o] Error 1
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+12:21:03 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘void add_student(std::vector<Student>)’:
+../src/main.cpp:44:8: error: invalid use of ‘Student::Student’
+  st[0].Student(rn,name,marks);
+        ^~~~~~~
+../src/main.cpp: In function ‘void display_all_student(std::vector<Student>)’:
+../src/main.cpp:52:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<st.size();i++)
+              ~^~~~~~~~~~
+make: *** [src/main.o] Error 1
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+12:51:42 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘void display_all_student(std::vector<Student>)’:
+../src/main.cpp:51:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<st.size();i++)
+              ~^~~~~~~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: STL_ASS1_QUE8
+Invoking: GCC C++ Linker
+g++  -o "STL_ASS1_QUE8"  ./src/Student.o ./src/main.o   
+Finished building target: STL_ASS1_QUE8
+ 
+12:51:48 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+make: Nothing to be done for 'all'.
+12:52:05 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘void display_all_student(std::vector<Student>)’:
+../src/main.cpp:51:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<st.size();i++)
+              ~^~~~~~~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: STL_ASS1_QUE8
+Invoking: GCC C++ Linker
+g++  -o "STL_ASS1_QUE8"  ./src/Student.o ./src/main.o   
+Finished building target: STL_ASS1_QUE8
+ 
+12:52:08 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+make: Nothing to be done for 'all'.
+12:53:13 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘void display_all_student(std::vector<Student>)’:
+../src/main.cpp:51:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<st.size();i++)
+              ~^~~~~~~~~~
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:69:22: error: could not convert ‘st.std::vector<Student>::end()’ from ‘std::vector<Student>::iterator {aka __gnu_cxx::__normal_iterator<Student*, std::vector<Student> >}’ to ‘std::vector<Student>’
+    add_student(st.end());
+                ~~~~~~^~
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+12:53:38 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘void display_all_student(std::vector<Student>)’:
+../src/main.cpp:51:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<st.size();i++)
+              ~^~~~~~~~~~
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:69:23: error: could not convert ‘st.std::vector<Student>::back()’ from ‘__gnu_cxx::__alloc_traits<std::allocator<Student> >::value_type {aka Student}’ to ‘std::vector<Student>’
+    add_student(st.back()));
+                ~~~~~~~^~
+make: *** [src/main.o] Error 1
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+12:53:51 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘void display_all_student(std::vector<Student>)’:
+../src/main.cpp:51:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<st.size();i++)
+              ~^~~~~~~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: STL_ASS1_QUE8
+Invoking: GCC C++ Linker
+g++  -o "STL_ASS1_QUE8"  ./src/Student.o ./src/main.o   
+Finished building target: STL_ASS1_QUE8
+ 
+12:54:09 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+make: Nothing to be done for 'all'.
+12:54:43 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘void display_all_student(std::vector<Student>)’:
+../src/main.cpp:55:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<st.size();i++)
+              ~^~~~~~~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: STL_ASS1_QUE8
+Invoking: GCC C++ Linker
+g++  -o "STL_ASS1_QUE8"  ./src/Student.o ./src/main.o   
+Finished building target: STL_ASS1_QUE8
+ 
+12:54:47 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+make: Nothing to be done for 'all'.
+12:55:27 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘void display_all_student(std::vector<Student>)’:
+../src/main.cpp:57:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<st.size();i++)
+              ~^~~~~~~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: STL_ASS1_QUE8
+Invoking: GCC C++ Linker
+g++  -o "STL_ASS1_QUE8"  ./src/Student.o ./src/main.o   
+Finished building target: STL_ASS1_QUE8
+ 
+12:55:30 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+make: Nothing to be done for 'all'.
+12:56:03 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘void display_all_student(std::vector<Student>)’:
+../src/main.cpp:58:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<st.size();i++)
+              ~^~~~~~~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: STL_ASS1_QUE8
+Invoking: GCC C++ Linker
+g++  -o "STL_ASS1_QUE8"  ./src/Student.o ./src/main.o   
+Finished building target: STL_ASS1_QUE8
+ 
+12:56:14 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘void display_all_student(std::vector<Student>)’:
+../src/main.cpp:58:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<st.size();i++)
+              ~^~~~~~~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: STL_ASS1_QUE8
+Invoking: GCC C++ Linker
+g++  -o "STL_ASS1_QUE8"  ./src/Student.o ./src/main.o   
+Finished building target: STL_ASS1_QUE8
+ 
+12:56:18 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+make: Nothing to be done for 'all'.
+12:56:52 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘void display_all_student(std::vector<Student>)’:
+../src/main.cpp:58:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<st.size();i++)
+              ~^~~~~~~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: STL_ASS1_QUE8
+Invoking: GCC C++ Linker
+g++  -o "STL_ASS1_QUE8"  ./src/Student.o ./src/main.o   
+Finished building target: STL_ASS1_QUE8
+ 
+12:56:55 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+make: Nothing to be done for 'all'.
+12:57:26 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘void display_all_student(std::vector<Student>&)’:
+../src/main.cpp:55:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<st.size();i++)
+              ~^~~~~~~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: STL_ASS1_QUE8
+Invoking: GCC C++ Linker
+g++  -o "STL_ASS1_QUE8"  ./src/Student.o ./src/main.o   
+Finished building target: STL_ASS1_QUE8
+ 
+12:57:49 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘void display_all_student(std::vector<Student>&)’:
+../src/main.cpp:50:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<st.size();i++)
+              ~^~~~~~~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: STL_ASS1_QUE8
+Invoking: GCC C++ Linker
+g++  -o "STL_ASS1_QUE8"  ./src/Student.o ./src/main.o   
+Finished building target: STL_ASS1_QUE8
+ 
+12:57:51 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+make: Nothing to be done for 'all'.
+12:58:28 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘void display_all_student(std::vector<Student>&)’:
+../src/main.cpp:50:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<st.size();i++)
+              ~^~~~~~~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: STL_ASS1_QUE8
+Invoking: GCC C++ Linker
+g++  -o "STL_ASS1_QUE8"  ./src/Student.o ./src/main.o   
+Finished building target: STL_ASS1_QUE8
+ 
+12:58:39 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: STL_ASS1_QUE8
+Invoking: GCC C++ Linker
+g++  -o "STL_ASS1_QUE8"  ./src/Student.o ./src/main.o   
+Finished building target: STL_ASS1_QUE8
+ 
+13:01:51 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: STL_ASS1_QUE8
+Invoking: GCC C++ Linker
+g++  -o "STL_ASS1_QUE8"  ./src/Student.o ./src/main.o   
+Finished building target: STL_ASS1_QUE8
+ 
+13:01:54 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+make: Nothing to be done for 'all'.
+13:03:05 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: STL_ASS1_QUE8
+Invoking: GCC C++ Linker
+g++  -o "STL_ASS1_QUE8"  ./src/Student.o ./src/main.o   
+Finished building target: STL_ASS1_QUE8
+ 
+13:03:11 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+make: Nothing to be done for 'all'.
+13:05:16 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/Student.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Student.d" -MT"src/Student.o" -o "src/Student.o" "../src/Student.cpp"
+Finished building: ../src/Student.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: STL_ASS1_QUE8
+Invoking: GCC C++ Linker
+g++  -o "STL_ASS1_QUE8"  ./src/Student.o ./src/main.o   
+Finished building target: STL_ASS1_QUE8
+ 
+13:05:30 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: STL_ASS1_QUE8
+Invoking: GCC C++ Linker
+g++  -o "STL_ASS1_QUE8"  ./src/Student.o ./src/main.o   
+Finished building target: STL_ASS1_QUE8
+ 
+13:50:09 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/Student.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Student.d" -MT"src/Student.o" -o "src/Student.o" "../src/Student.cpp"
+Finished building: ../src/Student.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: STL_ASS1_QUE8
+Invoking: GCC C++ Linker
+g++  -o "STL_ASS1_QUE8"  ./src/Student.o ./src/main.o   
+Finished building target: STL_ASS1_QUE8
+ 
+13:52:45 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: STL_ASS1_QUE8
+Invoking: GCC C++ Linker
+g++  -o "STL_ASS1_QUE8"  ./src/Student.o ./src/main.o   
+Finished building target: STL_ASS1_QUE8
+ 
+13:52:49 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: STL_ASS1_QUE8
+Invoking: GCC C++ Linker
+g++  -o "STL_ASS1_QUE8"  ./src/Student.o ./src/main.o   
+Finished building target: STL_ASS1_QUE8
+ 
+13:52:52 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+make: Nothing to be done for 'all'.
+13:53:51 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: STL_ASS1_QUE8
+Invoking: GCC C++ Linker
+g++  -o "STL_ASS1_QUE8"  ./src/Student.o ./src/main.o   
+Finished building target: STL_ASS1_QUE8
+ 
+13:53:54 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+make: Nothing to be done for 'all'.
+14:03:53 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: STL_ASS1_QUE8
+Invoking: GCC C++ Linker
+g++  -o "STL_ASS1_QUE8"  ./src/Student.o ./src/main.o   
+Finished building target: STL_ASS1_QUE8
+ 
+14:03:58 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+make: Nothing to be done for 'all'.
+14:04:54 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+make: Nothing to be done for 'all'.
+14:04:59 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+make: Nothing to be done for 'all'.
+14:06:43 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘void upload_student_data(std::vector<Student>&)’:
+../src/main.cpp:146:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i=0;i<st.size();i++)
+               ~^~~~~~~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: STL_ASS1_QUE8
+Invoking: GCC C++ Linker
+g++  -o "STL_ASS1_QUE8"  ./src/Student.o ./src/main.o   
+Finished building target: STL_ASS1_QUE8
+ 
+14:06:50 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: STL_ASS1_QUE8
+Invoking: GCC C++ Linker
+g++  -o "STL_ASS1_QUE8"  ./src/Student.o ./src/main.o   
+Finished building target: STL_ASS1_QUE8
+ 
+14:06:53 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+make: Nothing to be done for 'all'.
+14:06:56 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+make: Nothing to be done for 'all'.
+14:07:44 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+make: Nothing to be done for 'all'.
+14:09:34 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: STL_ASS1_QUE8
+Invoking: GCC C++ Linker
+g++  -o "STL_ASS1_QUE8"  ./src/Student.o ./src/main.o   
+Finished building target: STL_ASS1_QUE8
+ 
+14:09:37 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+make: Nothing to be done for 'all'.
+14:09:53 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+make: Nothing to be done for 'all'.
+14:12:46 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: STL_ASS1_QUE8
+Invoking: GCC C++ Linker
+g++  -o "STL_ASS1_QUE8"  ./src/Student.o ./src/main.o   
+Finished building target: STL_ASS1_QUE8
+ 
+14:13:05 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: STL_ASS1_QUE8
+Invoking: GCC C++ Linker
+g++  -o "STL_ASS1_QUE8"  ./src/Student.o ./src/main.o   
+Finished building target: STL_ASS1_QUE8
+ 
+14:13:08 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+make: Nothing to be done for 'all'.
+14:13:22 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+make: Nothing to be done for 'all'.
+14:30:09 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: STL_ASS1_QUE8
+Invoking: GCC C++ Linker
+g++  -o "STL_ASS1_QUE8"  ./src/Student.o ./src/main.o   
+Finished building target: STL_ASS1_QUE8
+ 
+14:30:12 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+make: Nothing to be done for 'all'.
+14:35:40 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: STL_ASS1_QUE8
+Invoking: GCC C++ Linker
+g++  -o "STL_ASS1_QUE8"  ./src/Student.o ./src/main.o   
+Finished building target: STL_ASS1_QUE8
+ 
+14:35:44 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+make: Nothing to be done for 'all'.
+14:36:17 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+make: Nothing to be done for 'all'.
+14:36:20 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+make: Nothing to be done for 'all'.
+14:37:22 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: STL_ASS1_QUE8
+Invoking: GCC C++ Linker
+g++  -o "STL_ASS1_QUE8"  ./src/Student.o ./src/main.o   
+Finished building target: STL_ASS1_QUE8
+ 
+14:37:27 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+make: Nothing to be done for 'all'.
+14:37:41 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+make: Nothing to be done for 'all'.
+14:38:05 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+make: Nothing to be done for 'all'.
+14:38:08 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+make: Nothing to be done for 'all'.
+14:39:51 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: STL_ASS1_QUE8
+Invoking: GCC C++ Linker
+g++  -o "STL_ASS1_QUE8"  ./src/Student.o ./src/main.o   
+Finished building target: STL_ASS1_QUE8
+ 
+14:39:54 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+make: Nothing to be done for 'all'.
+14:40:52 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+make: Nothing to be done for 'all'.
+14:41:16 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: STL_ASS1_QUE8
+Invoking: GCC C++ Linker
+g++  -o "STL_ASS1_QUE8"  ./src/Student.o ./src/main.o   
+Finished building target: STL_ASS1_QUE8
+ 
+14:41:20 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+make: Nothing to be done for 'all'.
+14:42:22 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+make: Nothing to be done for 'all'.
+14:42:24 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+make: Nothing to be done for 'all'.
+14:42:55 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+make: Nothing to be done for 'all'.
+14:43:24 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: STL_ASS1_QUE8
+Invoking: GCC C++ Linker
+g++  -o "STL_ASS1_QUE8"  ./src/Student.o ./src/main.o   
+Finished building target: STL_ASS1_QUE8
+ 
+14:43:27 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+make: Nothing to be done for 'all'.
+14:44:00 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+make: Nothing to be done for 'all'.
+14:46:59 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: STL_ASS1_QUE8
+Invoking: GCC C++ Linker
+g++  -o "STL_ASS1_QUE8"  ./src/Student.o ./src/main.o   
+Finished building target: STL_ASS1_QUE8
+ 
+14:47:02 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+make: Nothing to be done for 'all'.
+14:47:20 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+make: Nothing to be done for 'all'.
+14:47:28 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: STL_ASS1_QUE8
+Invoking: GCC C++ Linker
+g++  -o "STL_ASS1_QUE8"  ./src/Student.o ./src/main.o   
+Finished building target: STL_ASS1_QUE8
+ 
+14:47:30 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+make: Nothing to be done for 'all'.
+14:48:17 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+make: Nothing to be done for 'all'.
+14:48:49 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+make: Nothing to be done for 'all'.
+14:50:18 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: STL_ASS1_QUE8
+Invoking: GCC C++ Linker
+g++  -o "STL_ASS1_QUE8"  ./src/Student.o ./src/main.o   
+Finished building target: STL_ASS1_QUE8
+ 
+14:50:21 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+make: Nothing to be done for 'all'.
+14:50:54 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+make: Nothing to be done for 'all'.
+14:50:57 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+make: Nothing to be done for 'all'.
+14:52:12 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+make: Nothing to be done for 'all'.
+14:52:16 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: STL_ASS1_QUE8
+Invoking: GCC C++ Linker
+g++  -o "STL_ASS1_QUE8"  ./src/Student.o ./src/main.o   
+Finished building target: STL_ASS1_QUE8
+ 
+14:52:19 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+make: Nothing to be done for 'all'.
+14:54:16 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: STL_ASS1_QUE8
+Invoking: GCC C++ Linker
+g++  -o "STL_ASS1_QUE8"  ./src/Student.o ./src/main.o   
+Finished building target: STL_ASS1_QUE8
+ 
+14:56:07 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘void load_student_data(std::vector<Student>&)’:
+../src/main.cpp:43:22: error: no matching function for call to ‘std::vector<Student>::erase(std::vector<Student>::size_type)’
+  st.erase(st.size()-1);
+                      ^
+In file included from /usr/include/c++/7/vector:64:0,
+                 from ../src/main.cpp:15:
+/usr/include/c++/7/bits/stl_vector.h:1179:7: note: candidate: std::vector<_Tp, _Alloc>::iterator std::vector<_Tp, _Alloc>::erase(std::vector<_Tp, _Alloc>::const_iterator) [with _Tp = Student; _Alloc = std::allocator<Student>; std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<Student*, std::vector<Student> >; typename std::_Vector_base<_Tp, _Alloc>::pointer = Student*; std::vector<_Tp, _Alloc>::const_iterator = __gnu_cxx::__normal_iterator<const Student*, std::vector<Student> >; typename __gnu_cxx::__alloc_traits<typename std::_Vector_base<_Tp, _Alloc>::_Tp_alloc_type>::const_pointer = const Student*]
+       erase(const_iterator __position)
+       ^~~~~
+/usr/include/c++/7/bits/stl_vector.h:1179:7: note:   no known conversion for argument 1 from ‘std::vector<Student>::size_type {aka long unsigned int}’ to ‘std::vector<Student>::const_iterator {aka __gnu_cxx::__normal_iterator<const Student*, std::vector<Student> >}’
+/usr/include/c++/7/bits/stl_vector.h:1206:7: note: candidate: std::vector<_Tp, _Alloc>::iterator std::vector<_Tp, _Alloc>::erase(std::vector<_Tp, _Alloc>::const_iterator, std::vector<_Tp, _Alloc>::const_iterator) [with _Tp = Student; _Alloc = std::allocator<Student>; std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<Student*, std::vector<Student> >; typename std::_Vector_base<_Tp, _Alloc>::pointer = Student*; std::vector<_Tp, _Alloc>::const_iterator = __gnu_cxx::__normal_iterator<const Student*, std::vector<Student> >; typename __gnu_cxx::__alloc_traits<typename std::_Vector_base<_Tp, _Alloc>::_Tp_alloc_type>::const_pointer = const Student*]
+       erase(const_iterator __first, const_iterator __last)
+       ^~~~~
+/usr/include/c++/7/bits/stl_vector.h:1206:7: note:   candidate expects 2 arguments, 1 provided
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+14:57:40 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘void load_student_data(std::vector<Student>&)’:
+../src/main.cpp:43:27: error: no matching function for call to ‘std::vector<Student>::erase(__gnu_cxx::__alloc_traits<std::allocator<Student> >::value_type*)’
+  st.erase(&st[st.size()-1]);
+                           ^
+In file included from /usr/include/c++/7/vector:64:0,
+                 from ../src/main.cpp:15:
+/usr/include/c++/7/bits/stl_vector.h:1179:7: note: candidate: std::vector<_Tp, _Alloc>::iterator std::vector<_Tp, _Alloc>::erase(std::vector<_Tp, _Alloc>::const_iterator) [with _Tp = Student; _Alloc = std::allocator<Student>; std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<Student*, std::vector<Student> >; typename std::_Vector_base<_Tp, _Alloc>::pointer = Student*; std::vector<_Tp, _Alloc>::const_iterator = __gnu_cxx::__normal_iterator<const Student*, std::vector<Student> >; typename __gnu_cxx::__alloc_traits<typename std::_Vector_base<_Tp, _Alloc>::_Tp_alloc_type>::const_pointer = const Student*]
+       erase(const_iterator __position)
+       ^~~~~
+/usr/include/c++/7/bits/stl_vector.h:1179:7: note:   no known conversion for argument 1 from ‘__gnu_cxx::__alloc_traits<std::allocator<Student> >::value_type* {aka Student*}’ to ‘std::vector<Student>::const_iterator {aka __gnu_cxx::__normal_iterator<const Student*, std::vector<Student> >}’
+/usr/include/c++/7/bits/stl_vector.h:1206:7: note: candidate: std::vector<_Tp, _Alloc>::iterator std::vector<_Tp, _Alloc>::erase(std::vector<_Tp, _Alloc>::const_iterator, std::vector<_Tp, _Alloc>::const_iterator) [with _Tp = Student; _Alloc = std::allocator<Student>; std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<Student*, std::vector<Student> >; typename std::_Vector_base<_Tp, _Alloc>::pointer = Student*; std::vector<_Tp, _Alloc>::const_iterator = __gnu_cxx::__normal_iterator<const Student*, std::vector<Student> >; typename __gnu_cxx::__alloc_traits<typename std::_Vector_base<_Tp, _Alloc>::_Tp_alloc_type>::const_pointer = const Student*]
+       erase(const_iterator __first, const_iterator __last)
+       ^~~~~
+/usr/include/c++/7/bits/stl_vector.h:1206:7: note:   candidate expects 2 arguments, 1 provided
+make: *** [src/main.o] Error 1
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+14:59:38 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: STL_ASS1_QUE8
+Invoking: GCC C++ Linker
+g++  -o "STL_ASS1_QUE8"  ./src/Student.o ./src/main.o   
+Finished building target: STL_ASS1_QUE8
+ 
+14:59:48 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: STL_ASS1_QUE8
+Invoking: GCC C++ Linker
+g++  -o "STL_ASS1_QUE8"  ./src/Student.o ./src/main.o   
+Finished building target: STL_ASS1_QUE8
+ 
+14:59:51 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+make: Nothing to be done for 'all'.
+15:00:33 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: STL_ASS1_QUE8
+Invoking: GCC C++ Linker
+g++  -o "STL_ASS1_QUE8"  ./src/Student.o ./src/main.o   
+Finished building target: STL_ASS1_QUE8
+ 
+15:00:35 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+make: Nothing to be done for 'all'.
+15:01:06 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+make: Nothing to be done for 'all'.
+15:01:20 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: STL_ASS1_QUE8
+Invoking: GCC C++ Linker
+g++  -o "STL_ASS1_QUE8"  ./src/Student.o ./src/main.o   
+Finished building target: STL_ASS1_QUE8
+ 
+15:01:32 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+make: Nothing to be done for 'all'.
+15:02:30 **** Incremental Build of configuration Debug for project STL_ASS1_QUE8 ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: STL_ASS1_QUE8
+Invoking: GCC C++ Linker
+g++  -o "STL_ASS1_QUE8"  ./src/Student.o ./src/main.o   
+Finished building target: STL_ASS1_QUE8
+ 

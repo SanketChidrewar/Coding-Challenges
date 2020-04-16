@@ -1,0 +1,127 @@
+/*
+ * main.cpp
+ *
+ *  Created on: 15-Apr-2020
+ *      Author: sunbeam
+ */
+
+//8. Create a student class storing roll number, name (use char[] not string) and marks. Write a menu
+//driven File IO program using C++ library classes to add student, display all students, find student
+//by roll number and edit student.
+
+
+#include<iostream>
+#include "Student.h"
+#include<cstring>
+#include<vector>
+
+using namespace std;
+
+typedef enum{EXIT,ADD_STUDENT,FIND_STUDENT,DISPLAY_ALL_STUDENT,EDIT_STUDENT}menuop;
+
+int menuChoice()
+{
+	int ch;
+	cout<<"ENTER \n0. EXIT \n1. ADD_STUDENT \n2. FIND_STUDENT \n3. DISPLAY_ALL_STUDENT \n4. EDIT_STUDENT\nENTER OPTION :";
+	cin>>ch;
+	return ch;
+}
+
+void add_student()
+{
+	int rn;
+	char name[50];
+	int marks;
+
+	cout<<" ENTER roll no :";
+	cin>>rn;
+	cout<<" ENTER name :";
+	cin>>rn;
+	cout<<" ENTER marks :";
+	cin>>rn;
+
+}
+
+
+int main()
+{
+	int choice;
+	vector<Student> st;
+
+	while((choice = menuChoice())!=EXIT)
+	{
+		switch(choice)
+		{
+		case ADD_STUDENT:
+			add_student();
+			break;
+		case FIND_STUDENT:
+			break;
+		case DISPLAY_ALL_STUDENT:
+			break;
+		case EDIT_STUDENT:
+			break;
+		}
+	}
+
+	return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+#include<iostream>
+#include<fstream>
+
+using namespace std;
+
+int main()
+{
+
+    fstream fout;
+
+    // opens an existing csv file or creates a new file.
+    fout.open("src/reportcard.csv", ios::out | ios::app);
+
+    cout << "Enter the details of 5 students:"
+         << " roll name maths phy chem bio"<< endl;
+
+    int i, roll, phy, chem, math, bio;
+    string name;
+
+    // Read the input
+    for (i = 0; i < 1; i++) {
+
+        cin >> roll
+            >> name
+            >> math
+            >> phy
+            >> chem
+            >> bio;
+
+        // Insert the data to file
+        fout << roll << ", "
+             << name << ", "
+             << math << ", "
+             << phy << ", "
+             << chem << ", "
+             << bio
+             << "\n";
+    }
+	return 0;
+}
+//1 sanket 98 85 89 45 74
+//2 vaibhav 54 66 45 65 58
+*/
+
+
