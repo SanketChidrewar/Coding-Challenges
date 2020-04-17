@@ -28,7 +28,6 @@ private:
 	double payment;
 	int reported;
 	char prn[50];
-
 	vector<preference> preferences;
 
 public:
@@ -74,6 +73,9 @@ public:
 
 	const vector<preference>& getPreferences() const;
 	void setPreferences(const vector<preference>& preferences);
+
+	void add_preferences(preference p);
+
 
 	void display_stud();
 

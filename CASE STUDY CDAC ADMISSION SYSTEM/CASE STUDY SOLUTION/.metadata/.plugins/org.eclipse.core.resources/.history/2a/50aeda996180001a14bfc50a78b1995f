@@ -1,0 +1,24 @@
+/*
+ * main.cpp
+ *
+ *  Created on: 16-Apr-2020
+ *      Author: sunbeam
+ */
+
+#include<iostream>
+#include "Student.h"
+#include "preference.h"
+
+
+using namespace std;
+
+int main()
+{
+	Student s;
+	s.setPreferences(preference());
+	s.display_stud();
+
+	return 0;
+}
+
+

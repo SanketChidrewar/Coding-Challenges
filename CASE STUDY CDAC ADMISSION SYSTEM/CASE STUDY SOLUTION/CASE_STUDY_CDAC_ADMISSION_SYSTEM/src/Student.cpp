@@ -27,7 +27,7 @@ Student::Student() {
 	this->payment=0;
 	this->reported=0;
 	strcpy(this->prn," ");
-	this->preferences.push_back(preference());
+	this->preferences = {};
 }
 
 Student::Student(int id, char* name, int rank_a, int rank_b, int rank_c, char* degree, double degree_marks, char* course_name, char* center_id, double payment, int reported, char* prn, vector<preference> preferences)
@@ -139,9 +139,14 @@ void Student::setPreferences(const vector<preference>& preferences) {
 	this->preferences = preferences;
 }
 
+void Student::add_preferences(preference p)
+{
+	this->preferences.push_back(p);
+}
+
 void Student::display_stud()
 {
-	cout<<endl<<endl<<this->id<<" "<<this->name<<" "<<this->rank_a<<this->rank_b<<" "<<this->rank_c<<this->degree;
+	cout<<endl<<this->id<<" "<<this->name<<" "<<this->rank_a<<" "<<this->rank_b<<" "<<this->rank_c<<" "<<this->degree;
 	cout<<" "<<this->degree_marks<<" "<<this->course_name<<" "<<this->center_id<<" "<<this->payment;
 	cout<<" "<<this->reported<<" "<<this->prn<<endl;
 

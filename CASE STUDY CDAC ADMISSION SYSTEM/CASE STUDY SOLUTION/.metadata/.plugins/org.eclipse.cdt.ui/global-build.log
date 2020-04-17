@@ -467,3 +467,556 @@ Invoking: GCC C++ Linker
 g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/Student.o ./src/main.o ./src/preference.o   
 Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
  
+09:19:55 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Student.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Student.d" -MT"src/Student.o" -o "src/Student.o" "../src/Student.cpp"
+Finished building: ../src/Student.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/Student.o ./src/main.o ./src/preference.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+09:20:33 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/Student.o ./src/main.o ./src/preference.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+09:20:47 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+09:23:08 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+09:38:49 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Student.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Student.d" -MT"src/Student.o" -o "src/Student.o" "../src/Student.cpp"
+Finished building: ../src/Student.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/Student.o ./src/main.o ./src/preference.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+09:38:55 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+09:39:48 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:16:4: error: ‘std::vector<preference> Student::preferences’ is private within this context
+  s.preferences.push_back(preference());
+    ^~~~~~~~~~~
+In file included from ../src/main.cpp:9:0:
+../src/Student.h:32:21: note: declared private here
+  vector<preference> preferences;
+                     ^~~~~~~~~~~
+make: *** [src/main.o] Error 1
+src/subdir.mk:24: recipe for target 'src/main.o' failed
+09:40:07 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:18:4: error: ‘std::vector<preference> Student::preferences’ is private within this context
+  s.preferences.push_back(preference());
+    ^~~~~~~~~~~
+In file included from ../src/main.cpp:9:0:
+../src/Student.h:32:21: note: declared private here
+  vector<preference> preferences;
+                     ^~~~~~~~~~~
+src/subdir.mk:24: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+09:40:54 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:18:31: error: no matching function for call to ‘Student::setPreferences(preference)’
+  s.setPreferences(preference());
+                               ^
+In file included from ../src/main.cpp:9:0:
+../src/Student.h:76:7: note: candidate: void Student::setPreferences(const std::vector<preference>&)
+  void setPreferences(const vector<preference>& preferences);
+       ^~~~~~~~~~~~~~
+../src/Student.h:76:7: note:   no known conversion for argument 1 from ‘preference’ to ‘const std::vector<preference>&’
+make: *** [src/main.o] Error 1
+src/subdir.mk:24: recipe for target 'src/main.o' failed
+09:42:07 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:18:4: error: ‘std::vector<preference> Student::preferences’ is private within this context
+  s.preferences[0].preference();
+    ^~~~~~~~~~~
+In file included from ../src/main.cpp:9:0:
+../src/Student.h:32:21: note: declared private here
+  vector<preference> preferences;
+                     ^~~~~~~~~~~
+../src/main.cpp:18:19: error: invalid use of ‘preference::preference’
+  s.preferences[0].preference();
+                   ^~~~~~~~~~
+make: *** [src/main.o] Error 1
+src/subdir.mk:24: recipe for target 'src/main.o' failed
+09:42:27 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:18:4: error: ‘std::vector<preference> Student::preferences’ is private within this context
+  s.preferences[0].preference();
+    ^~~~~~~~~~~
+In file included from ../src/main.cpp:9:0:
+../src/Student.h:32:21: note: declared private here
+  vector<preference> preferences;
+                     ^~~~~~~~~~~
+../src/main.cpp:18:19: error: invalid use of ‘preference::preference’
+  s.preferences[0].preference();
+                   ^~~~~~~~~~
+make: *** [src/main.o] Error 1
+src/subdir.mk:24: recipe for target 'src/main.o' failed
+09:43:32 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:18:4: error: ‘std::vector<preference> Student::preferences’ is private within this context
+  s.preferences[0] = preference();
+    ^~~~~~~~~~~
+In file included from ../src/main.cpp:9:0:
+../src/Student.h:32:21: note: declared private here
+  vector<preference> preferences;
+                     ^~~~~~~~~~~
+src/subdir.mk:24: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+09:44:04 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:18:4: error: ‘std::vector<preference> Student::preferences’ is private within this context
+  s.preferences.push_back(preference());
+    ^~~~~~~~~~~
+In file included from ../src/main.cpp:9:0:
+../src/Student.h:32:21: note: declared private here
+  vector<preference> preferences;
+                     ^~~~~~~~~~~
+src/subdir.mk:24: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+09:45:16 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Student.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Student.d" -MT"src/Student.o" -o "src/Student.o" "../src/Student.cpp"
+Finished building: ../src/Student.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/Student.o ./src/main.o ./src/preference.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+09:45:24 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+09:45:29 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+10:25:55 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Student.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Student.d" -MT"src/Student.o" -o "src/Student.o" "../src/Student.cpp"
+Finished building: ../src/Student.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:18:4: error: ‘std::vector<preference> Student::preferences’ is private within this context
+  s.preferences.push_back(preference());
+    ^~~~~~~~~~~
+In file included from ../src/main.cpp:9:0:
+../src/Student.h:31:21: note: declared private here
+  vector<preference> preferences;
+                     ^~~~~~~~~~~
+src/subdir.mk:24: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+10:27:53 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Student.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Student.d" -MT"src/Student.o" -o "src/Student.o" "../src/Student.cpp"
+../src/Student.cpp: In member function ‘void Student::add_preferences(preference)’:
+../src/Student.cpp:144:22: error: no match for ‘operator=’ (operand types are ‘std::vector<preference>’ and ‘preference’)
+  this->preferences = p;
+                      ^
+In file included from /usr/include/c++/7/vector:69:0,
+                 from ../src/Student.h:14,
+                 from ../src/Student.cpp:8:
+/usr/include/c++/7/bits/vector.tcc:179:5: note: candidate: std::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(const std::vector<_Tp, _Alloc>&) [with _Tp = preference; _Alloc = std::allocator<preference>]
+     vector<_Tp, _Alloc>::
+     ^~~~~~~~~~~~~~~~~~~
+/usr/include/c++/7/bits/vector.tcc:179:5: note:   no known conversion for argument 1 from ‘preference’ to ‘const std::vector<preference>&’
+In file included from /usr/include/c++/7/vector:64:0,
+                 from ../src/Student.h:14,
+                 from ../src/Student.cpp:8:
+/usr/include/c++/7/bits/stl_vector.h:461:7: note: candidate: std::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(std::vector<_Tp, _Alloc>&&) [with _Tp = preference; _Alloc = std::allocator<preference>]
+       operator=(vector&& __x) noexcept(_Alloc_traits::_S_nothrow_move())
+       ^~~~~~~~
+/usr/include/c++/7/bits/stl_vector.h:461:7: note:   no known conversion for argument 1 from ‘preference’ to ‘std::vector<preference>&&’
+/usr/include/c++/7/bits/stl_vector.h:482:7: note: candidate: std::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(std::initializer_list<_Tp>) [with _Tp = preference; _Alloc = std::allocator<preference>]
+       operator=(initializer_list<value_type> __l)
+       ^~~~~~~~
+/usr/include/c++/7/bits/stl_vector.h:482:7: note:   no known conversion for argument 1 from ‘preference’ to ‘std::initializer_list<preference>’
+make: *** [src/Student.o] Error 1
+src/subdir.mk:24: recipe for target 'src/Student.o' failed
+10:28:33 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Student.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Student.d" -MT"src/Student.o" -o "src/Student.o" "../src/Student.cpp"
+Finished building: ../src/Student.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/Student.o ./src/main.o ./src/preference.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+10:29:50 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:18:10: error: ‘std::vector<preference> Student::preferences’ is private within this context
+  cout<<s.preferences.size();
+          ^~~~~~~~~~~
+In file included from ../src/main.cpp:9:0:
+../src/Student.h:31:21: note: declared private here
+  vector<preference> preferences;
+                     ^~~~~~~~~~~
+make: *** [src/main.o] Error 1
+src/subdir.mk:24: recipe for target 'src/main.o' failed
+10:30:48 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Student.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Student.d" -MT"src/Student.o" -o "src/Student.o" "../src/Student.cpp"
+Finished building: ../src/Student.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:18:10: error: ‘std::vector<preference> Student::preferences’ is private within this context
+  cout<<s.preferences.size();
+          ^~~~~~~~~~~
+In file included from ../src/main.cpp:9:0:
+../src/Student.h:31:21: note: declared private here
+  vector<preference> preferences;
+                     ^~~~~~~~~~~
+src/subdir.mk:24: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+10:31:04 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/Student.o ./src/main.o ./src/preference.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+10:31:08 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+10:31:12 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+10:31:30 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/Student.o ./src/main.o ./src/preference.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+10:31:33 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+10:31:40 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/Student.o ./src/main.o ./src/preference.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+10:37:00 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Student.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Student.d" -MT"src/Student.o" -o "src/Student.o" "../src/Student.cpp"
+Finished building: ../src/Student.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/Student.o ./src/main.o ./src/preference.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+10:40:54 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:18:42: error: expected unqualified-id before ‘,’ token
+  Student s(12,"sanket",100,102,104,"B.E".,81.25,"DAC","SIP",0,0,"PRN",preference());
+                                          ^
+src/subdir.mk:24: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+10:41:21 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:18:83: error: no matching function for call to ‘Student::Student(int, const char [7], int, int, int, const char [5], double, const char [4], const char [4], int, int, const char [4], preference)’
+  Student s(12,"sanket",100,102,104,"B.E.",81.25,"DAC","SIP",0,0,"PRN",preference());
+                                                                                   ^
+In file included from ../src/main.cpp:9:0:
+../src/Student.h:36:2: note: candidate: Student::Student(int, char*, int, int, int, char*, double, char*, char*, double, int, char*, std::vector<preference>)
+  Student(int id, char* name, int rank_a, int rank_b, int rank_c, char* degree, double degree_marks, char* course_name, char* center_id, double payment, int reported, char* prn, vector<preference> preferences);
+  ^~~~~~~
+../src/Student.h:36:2: note:   no known conversion for argument 13 from ‘preference’ to ‘std::vector<preference>’
+../src/Student.h:35:2: note: candidate: Student::Student()
+  Student();
+  ^~~~~~~
+../src/Student.h:35:2: note:   candidate expects 0 arguments, 13 provided
+../src/Student.h:17:7: note: candidate: Student::Student(const Student&)
+ class Student {
+       ^~~~~~~
+../src/Student.h:17:7: note:   candidate expects 1 argument, 13 provided
+make: *** [src/main.o] Error 1
+src/subdir.mk:24: recipe for target 'src/main.o' failed
+10:42:00 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:18:78: error: ‘preferences’ was not declared in this scope
+  Student s(12,"sanket",100,102,104,"B.E.",81.25,"DAC","SIP",0,0,"PRN",vector<preferences> pref);
+                                                                              ^~~~~~~~~~~
+../src/main.cpp:18:78: note: suggested alternative: ‘preference’
+  Student s(12,"sanket",100,102,104,"B.E.",81.25,"DAC","SIP",0,0,"PRN",vector<preferences> pref);
+                                                                              ^~~~~~~~~~~
+                                                                              preference
+../src/main.cpp:18:89: error: template argument 1 is invalid
+  Student s(12,"sanket",100,102,104,"B.E.",81.25,"DAC","SIP",0,0,"PRN",vector<preferences> pref);
+                                                                                         ^
+../src/main.cpp:18:89: error: template argument 2 is invalid
+src/subdir.mk:24: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+10:42:12 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:18:90: error: expected primary-expression before ‘pref’
+  Student s(12,"sanket",100,102,104,"B.E.",81.25,"DAC","SIP",0,0,"PRN",vector<preference> pref);
+                                                                                          ^~~~
+make: *** [src/main.o] Error 1
+src/subdir.mk:24: recipe for target 'src/main.o' failed
+10:42:30 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:18:90: error: expected primary-expression before ‘pref’
+  Student s(12,"sanket",100,102,104,"B.E.",81.25,"DAC","SIP",0,0,"PRN",vector<preference> pref);
+                                                                                          ^~~~
+make: *** [src/main.o] Error 1
+src/subdir.mk:24: recipe for target 'src/main.o' failed
+10:42:40 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:18:90: error: expected primary-expression before ‘pref’
+  Student s(12,"sanket",100,102,104,"B.E.",81.25,"DAC","SIP",0,0,"PRN",vector<preference> pref={});
+                                                                                          ^~~~
+src/subdir.mk:24: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+10:43:02 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:19:75: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  Student s(12,"sanket",100,102,104,"B.E.",81.25,"DAC","SIP",0,0,"PRN",pref);
+                                                                           ^
+../src/main.cpp:19:75: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/main.cpp:19:75: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/main.cpp:19:75: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/main.cpp:19:75: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/Student.o ./src/main.o ./src/preference.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+10:43:21 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+10:44:06 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:18:43: error: could not convert ‘{10, 1, "DAC", "SIP"}’ from ‘<brace-enclosed initializer list>’ to ‘std::vector<preference>’
+  vector<preference> pref={10,1,"DAC","SIP"};
+                                           ^
+../src/main.cpp:19:75: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  Student s(12,"sanket",100,102,104,"B.E.",81.25,"DAC","SIP",0,0,"PRN",pref);
+                                                                           ^
+../src/main.cpp:19:75: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/main.cpp:19:75: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/main.cpp:19:75: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/main.cpp:19:75: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+make: *** [src/main.o] Error 1
+src/subdir.mk:24: recipe for target 'src/main.o' failed
+10:45:06 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:19:29: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  preference(10,1,"DAC","SIP");
+                             ^
+../src/main.cpp:19:29: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/main.cpp:20:75: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  Student s(12,"sanket",100,102,104,"B.E.",81.25,"DAC","SIP",0,0,"PRN",pref);
+                                                                           ^
+../src/main.cpp:20:75: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/main.cpp:20:75: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/main.cpp:20:75: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/main.cpp:20:75: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/Student.o ./src/main.o ./src/preference.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+10:45:25 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:19:44: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  pref.push_back(preference(10,1,"DAC","SIP"));
+                                            ^
+../src/main.cpp:19:44: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/main.cpp:20:75: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  Student s(12,"sanket",100,102,104,"B.E.",81.25,"DAC","SIP",0,0,"PRN",pref);
+                                                                           ^
+../src/main.cpp:20:75: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/main.cpp:20:75: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/main.cpp:20:75: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../src/main.cpp:20:75: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/Student.o ./src/main.o ./src/preference.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+10:45:37 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+10:45:40 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+10:45:45 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+10:46:42 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Student.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Student.d" -MT"src/Student.o" -o "src/Student.o" "../src/Student.cpp"
+Finished building: ../src/Student.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/Student.o ./src/main.o ./src/preference.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+10:46:45 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+10:47:06 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Student.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Student.d" -MT"src/Student.o" -o "src/Student.o" "../src/Student.cpp"
+Finished building: ../src/Student.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/Student.o ./src/main.o ./src/preference.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+10:47:09 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
