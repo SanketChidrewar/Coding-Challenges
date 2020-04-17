@@ -1,0 +1,15 @@
+07:45:57 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Student.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Student.d" -MT"src/Student.o" -o "src/Student.o" "../src/Student.cpp"
+Finished building: ../src/Student.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/Student.o ./src/main.o ./src/preference.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+
+07:45:58 Build Finished. 0 errors, 0 warnings. (took 1s.288ms)
+

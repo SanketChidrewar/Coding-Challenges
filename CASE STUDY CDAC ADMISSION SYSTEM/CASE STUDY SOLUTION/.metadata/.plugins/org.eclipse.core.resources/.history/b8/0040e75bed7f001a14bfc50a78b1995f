@@ -1,0 +1,39 @@
+/*
+ * Student.h
+ *
+ *  Created on: 16-Apr-2020
+ *      Author: sunbeam
+ */
+
+
+#ifndef STUDENT_H_
+#define STUDENT_H_
+
+#include "preference.h"
+#include<iostream>
+#include<vector>
+using namespace std;
+
+class Student {
+private:
+	int id;
+	char name[50];
+	int rank_a;
+	int rank_b;
+	int rank_c;
+	char degree[50];
+	double degree_marks;
+	char course_name[50];
+	char center_id[10];
+	double payment;
+	int reported;
+	char prn[50];
+
+	vector<preference> preferences;
+
+public:
+	Student();
+	virtual ~Student();
+};
+
+#endif /* STUDENT_H_ */

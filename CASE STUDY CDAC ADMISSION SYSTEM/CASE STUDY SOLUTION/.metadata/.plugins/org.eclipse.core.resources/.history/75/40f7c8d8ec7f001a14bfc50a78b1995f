@@ -1,0 +1,17 @@
+/*
+ * preference.h
+ *
+ *  Created on: 16-Apr-2020
+ *      Author: sunbeam
+ */
+
+#ifndef PREFERENCE_H_
+#define PREFERENCE_H_
+
+class preference {
+public:
+	preference();
+	virtual ~preference();
+};
+
+#endif /* PREFERENCE_H_ */

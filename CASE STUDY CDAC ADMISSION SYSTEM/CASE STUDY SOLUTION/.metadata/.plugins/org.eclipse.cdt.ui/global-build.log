@@ -1,0 +1,469 @@
+16:13:04 **** Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/main.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+19:45:02 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Student.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Student.d" -MT"src/Student.o" -o "src/Student.o" "../src/Student.cpp"
+In file included from ../src/Student.cpp:8:0:
+../src/Student.h:8:9: fatal error: preference.h: No such file or directory
+src/subdir.mk:24: recipe for target 'src/Student.o' failed
+ #include<preference.h>
+         ^~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/Student.o] Error 1
+19:45:19 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Student.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Student.d" -MT"src/Student.o" -o "src/Student.o" "../src/Student.cpp"
+In file included from ../src/Student.cpp:8:0:
+../src/Student.h:8:9: fatal error: preference.h: No such file or directory
+ #include<preference.h>
+         ^~~~~~~~~~~~~~
+compilation terminated.
+src/subdir.mk:24: recipe for target 'src/Student.o' failed
+make: *** [src/Student.o] Error 1
+19:47:20 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Student.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Student.d" -MT"src/Student.o" -o "src/Student.o" "../src/Student.cpp"
+In file included from ../src/Student.cpp:8:0:
+../src/Student.h:8:9: fatal error: preference.h: No such file or directory
+ #include<preference.h>
+         ^~~~~~~~~~~~~~
+compilation terminated.
+src/subdir.mk:24: recipe for target 'src/Student.o' failed
+make: *** [src/Student.o] Error 1
+19:47:39 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Student.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Student.d" -MT"src/Student.o" -o "src/Student.o" "../src/Student.cpp"
+In file included from ../src/Student.cpp:8:0:
+../src/Student.h:12:9: fatal error: preference.h: No such file or directory
+ #include<preference.h>
+         ^~~~~~~~~~~~~~
+compilation terminated.
+src/subdir.mk:24: recipe for target 'src/Student.o' failed
+make: *** [src/Student.o] Error 1
+19:47:49 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Student.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Student.d" -MT"src/Student.o" -o "src/Student.o" "../src/Student.cpp"
+In file included from ../src/Student.cpp:8:0:
+../src/Student.h:12:9: fatal error: src/preference.h: No such file or directory
+ #include<src/preference.h>
+src/subdir.mk:24: recipe for target 'src/Student.o' failed
+         ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/Student.o] Error 1
+19:48:04 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Student.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Student.d" -MT"src/Student.o" -o "src/Student.o" "../src/Student.cpp"
+In file included from ../src/Student.cpp:8:0:
+../src/Student.h:12:9: fatal error: src/preference.h: No such file or directory
+ #include"src/preference.h"
+         ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/Student.o] Error 1
+src/subdir.mk:24: recipe for target 'src/Student.o' failed
+19:48:09 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Student.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Student.d" -MT"src/Student.o" -o "src/Student.o" "../src/Student.cpp"
+In file included from ../src/Student.cpp:8:0:
+../src/Student.h:30:2: error: ‘vector’ does not name a type
+  vector<preference> preferences;
+  ^~~~~~
+src/subdir.mk:24: recipe for target 'src/Student.o' failed
+make: *** [src/Student.o] Error 1
+19:48:15 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Student.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Student.d" -MT"src/Student.o" -o "src/Student.o" "../src/Student.cpp"
+In file included from ../src/Student.cpp:8:0:
+../src/Student.h:30:2: error: ‘vector’ does not name a type
+  vector<preference> preferences;
+  ^~~~~~
+src/subdir.mk:24: recipe for target 'src/Student.o' failed
+make: *** [src/Student.o] Error 1
+19:48:59 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Student.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Student.d" -MT"src/Student.o" -o "src/Student.o" "../src/Student.cpp"
+In file included from ../src/Student.cpp:8:0:
+../src/Student.h:30:2: error: ‘vector’ does not name a type
+  vector<preference> preferences;
+  ^~~~~~
+src/subdir.mk:24: recipe for target 'src/Student.o' failed
+make: *** [src/Student.o] Error 1
+19:49:19 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Student.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Student.d" -MT"src/Student.o" -o "src/Student.o" "../src/Student.cpp"
+In file included from ../src/Student.cpp:8:0:
+../src/Student.h:30:2: error: ‘vector’ does not name a type
+  vector<preference> preferences;
+  ^~~~~~
+src/subdir.mk:24: recipe for target 'src/Student.o' failed
+make: *** [src/Student.o] Error 1
+19:49:44 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Student.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Student.d" -MT"src/Student.o" -o "src/Student.o" "../src/Student.cpp"
+Finished building: ../src/Student.cpp
+ 
+Building file: ../src/preference.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/preference.d" -MT"src/preference.o" -o "src/preference.o" "../src/preference.cpp"
+Finished building: ../src/preference.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/Student.o ./src/main.o ./src/preference.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+19:49:51 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Student.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Student.d" -MT"src/Student.o" -o "src/Student.o" "../src/Student.cpp"
+In file included from ../src/Student.cpp:8:0:
+../src/Student.h:32:2: error: ‘vector’ does not name a type; did you mean ‘perror’?
+  vector<preference> preferences;
+  ^~~~~~
+  perror
+src/subdir.mk:24: recipe for target 'src/Student.o' failed
+make: *** [src/Student.o] Error 1
+19:49:57 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Student.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Student.d" -MT"src/Student.o" -o "src/Student.o" "../src/Student.cpp"
+Finished building: ../src/Student.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/Student.o ./src/main.o ./src/preference.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+19:50:01 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Student.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Student.d" -MT"src/Student.o" -o "src/Student.o" "../src/Student.cpp"
+Finished building: ../src/Student.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/Student.o ./src/main.o ./src/preference.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+19:50:07 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+19:50:10 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Student.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Student.d" -MT"src/Student.o" -o "src/Student.o" "../src/Student.cpp"
+In file included from ../src/Student.cpp:8:0:
+../src/Student.h:32:2: error: ‘vector’ does not name a type
+  vector<preference> preferences;
+  ^~~~~~
+make: *** [src/Student.o] Error 1
+src/subdir.mk:24: recipe for target 'src/Student.o' failed
+19:50:16 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Student.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Student.d" -MT"src/Student.o" -o "src/Student.o" "../src/Student.cpp"
+Finished building: ../src/Student.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/Student.o ./src/main.o ./src/preference.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+19:50:31 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Student.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Student.d" -MT"src/Student.o" -o "src/Student.o" "../src/Student.cpp"
+Finished building: ../src/Student.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/Student.o ./src/main.o ./src/preference.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+19:54:58 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Student.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Student.d" -MT"src/Student.o" -o "src/Student.o" "../src/Student.cpp"
+Finished building: ../src/Student.cpp
+ 
+Building file: ../src/preference.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/preference.d" -MT"src/preference.o" -o "src/preference.o" "../src/preference.cpp"
+Finished building: ../src/preference.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/Student.o ./src/main.o ./src/preference.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+19:56:13 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/preference.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/preference.d" -MT"src/preference.o" -o "src/preference.o" "../src/preference.cpp"
+Finished building: ../src/preference.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/Student.o ./src/main.o ./src/preference.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+20:04:26 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Student.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Student.d" -MT"src/Student.o" -o "src/Student.o" "../src/Student.cpp"
+Finished building: ../src/Student.cpp
+ 
+Building file: ../src/preference.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/preference.d" -MT"src/preference.o" -o "src/preference.o" "../src/preference.cpp"
+Finished building: ../src/preference.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/Student.o ./src/main.o ./src/preference.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+20:05:26 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Student.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Student.d" -MT"src/Student.o" -o "src/Student.o" "../src/Student.cpp"
+Finished building: ../src/Student.cpp
+ 
+Building file: ../src/preference.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/preference.d" -MT"src/preference.o" -o "src/preference.o" "../src/preference.cpp"
+Finished building: ../src/preference.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/Student.o ./src/main.o ./src/preference.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+20:16:06 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Student.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Student.d" -MT"src/Student.o" -o "src/Student.o" "../src/Student.cpp"
+Finished building: ../src/Student.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/Student.o ./src/main.o ./src/preference.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+20:21:06 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Student.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Student.d" -MT"src/Student.o" -o "src/Student.o" "../src/Student.cpp"
+../src/Student.cpp:30:9: error: expected unqualified-id before ‘int’
+ Student(int id, char* name, int rank_a, int rank_b, int rank_c, char* degree, double degree_marks, char* course_name, char* center_id, double payment, int reported, char* prn)
+         ^~~
+../src/Student.cpp:30:9: error: expected ‘)’ before ‘int’
+make: *** [src/Student.o] Error 1
+src/subdir.mk:24: recipe for target 'src/Student.o' failed
+20:21:58 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Student.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Student.d" -MT"src/Student.o" -o "src/Student.o" "../src/Student.cpp"
+Finished building: ../src/Student.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/Student.o ./src/main.o ./src/preference.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+20:23:27 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Student.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Student.d" -MT"src/Student.o" -o "src/Student.o" "../src/Student.cpp"
+Finished building: ../src/Student.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/Student.o ./src/main.o ./src/preference.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+20:25:17 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Student.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Student.d" -MT"src/Student.o" -o "src/Student.o" "../src/Student.cpp"
+Finished building: ../src/Student.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/Student.o ./src/main.o ./src/preference.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+20:33:04 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Student.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Student.d" -MT"src/Student.o" -o "src/Student.o" "../src/Student.cpp"
+Finished building: ../src/Student.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/Student.o ./src/main.o ./src/preference.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+07:34:33 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Student.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Student.d" -MT"src/Student.o" -o "src/Student.o" "../src/Student.cpp"
+Finished building: ../src/Student.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/Student.o ./src/main.o ./src/preference.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+07:36:09 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Student.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Student.d" -MT"src/Student.o" -o "src/Student.o" "../src/Student.cpp"
+../src/Student.cpp:32:1: error: prototype for ‘Student::Student(int, char*, int, int, int, char*, double, char*, char*, double, int, char*, std::vector<preference>)’ does not match any in class ‘Student’
+ Student::Student(int id, char* name, int rank_a, int rank_b, int rank_c, char* degree, double degree_marks, char* course_name, char* center_id, double payment, int reported, char* prn, vector<preference> preferences)
+ ^~~~~~~
+In file included from ../src/Student.cpp:8:0:
+../src/Student.h:17:7: error: candidates are: Student::Student(const Student&)
+ class Student {
+       ^~~~~~~
+../src/Student.h:37:2: error:                 Student::Student(int, char*, int, int, int, char*, double, char*, char*, double, int, char*)
+  Student(int id, char* name, int rank_a, int rank_b, int rank_c, char* degree, double degree_marks, char* course_name, char* center_id, double payment, int reported, char* prn);
+  ^~~~~~~
+../src/Student.cpp:14:1: error:                 Student::Student()
+ Student::Student() {
+ ^~~~~~~
+src/subdir.mk:24: recipe for target 'src/Student.o' failed
+make: *** [src/Student.o] Error 1
+07:36:58 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Student.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Student.d" -MT"src/Student.o" -o "src/Student.o" "../src/Student.cpp"
+../src/Student.cpp:34:1: error: prototype for ‘Student::Student(int, char*, int, int, int, char*, double, char*, char*, double, int, char*, std::vector<preference>)’ does not match any in class ‘Student’
+ Student::Student(int id, char* name, int rank_a, int rank_b, int rank_c, char* degree, double degree_marks, char* course_name, char* center_id, double payment, int reported, char* prn, vector<preference> preferences)
+ ^~~~~~~
+In file included from ../src/Student.cpp:8:0:
+../src/Student.h:17:7: error: candidates are: Student::Student(const Student&)
+ class Student {
+       ^~~~~~~
+../src/Student.h:37:2: error:                 Student::Student(int, char*, int, int, int, char*, double, char*, char*, double, int, char*)
+  Student(int id, char* name, int rank_a, int rank_b, int rank_c, char* degree, double degree_marks, char* course_name, char* center_id, double payment, int reported, char* prn);
+  ^~~~~~~
+../src/Student.cpp:16:1: error:                 Student::Student()
+ Student::Student() {
+ ^~~~~~~
+src/subdir.mk:24: recipe for target 'src/Student.o' failed
+make: *** [src/Student.o] Error 1
+07:38:11 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Student.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Student.d" -MT"src/Student.o" -o "src/Student.o" "../src/Student.cpp"
+Finished building: ../src/Student.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/Student.o ./src/main.o ./src/preference.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+07:38:26 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Student.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Student.d" -MT"src/Student.o" -o "src/Student.o" "../src/Student.cpp"
+Finished building: ../src/Student.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/Student.o ./src/main.o ./src/preference.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+07:38:44 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Student.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Student.d" -MT"src/Student.o" -o "src/Student.o" "../src/Student.cpp"
+Finished building: ../src/Student.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/Student.o ./src/main.o ./src/preference.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+07:45:43 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Student.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Student.d" -MT"src/Student.o" -o "src/Student.o" "../src/Student.cpp"
+../src/Student.cpp: In member function ‘void Student::display_stud()’:
+../src/Student.cpp:148:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<preferences.size();i++)
+              ~^~~~~~~~~~~~~~~~~~~
+Finished building: ../src/Student.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/Student.o ./src/main.o ./src/preference.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+07:45:57 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Student.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Student.d" -MT"src/Student.o" -o "src/Student.o" "../src/Student.cpp"
+Finished building: ../src/Student.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/Student.o ./src/main.o ./src/preference.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
