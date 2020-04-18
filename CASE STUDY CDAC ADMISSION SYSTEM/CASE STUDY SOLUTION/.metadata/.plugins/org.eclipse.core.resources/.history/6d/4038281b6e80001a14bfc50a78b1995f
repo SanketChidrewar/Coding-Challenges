@@ -1,0 +1,17 @@
+/*
+ * Course.h
+ *
+ *  Created on: 17-Apr-2020
+ *      Author: sunbeam
+ */
+
+#ifndef COURSE_H_
+#define COURSE_H_
+
+class Course {
+public:
+	Course();
+	virtual ~Course();
+};
+
+#endif /* COURSE_H_ */

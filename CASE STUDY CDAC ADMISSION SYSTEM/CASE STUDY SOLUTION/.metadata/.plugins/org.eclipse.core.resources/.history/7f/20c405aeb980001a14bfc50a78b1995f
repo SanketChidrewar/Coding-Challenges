@@ -1,0 +1,112 @@
+/*
+ * AdmissionSystem.cpp
+ *
+ *  Created on: 17-Apr-2020
+ *      Author: sunbeam
+ */
+
+#include "AdmissionSystem.h"
+
+AdmissionSystem::AdmissionSystem() {
+	// TODO Auto-generated constructor stub
+	this->degree = {};
+	this->capacitie = {};
+	this->center = {};
+	this->course = {};
+	this->student = {};
+	this->eligibilitie = {};
+	this->preferences = {};
+
+}
+AdmissionSystem::AdmissionSystem(vector<degrees> degree,vector<courses> course,vector<eligibilities> eligibilitie,vector<centers> center,vector<capacities> capacitie,vector<students> student,vector<preference> preferences )
+{
+	this->degree = degree;
+	this->capacitie = capacitie;
+	this->center = center;
+	this->course = course;
+	this->student = student;
+	this->eligibilitie = eligibilitie;
+	this->preferences = preferences;
+}
+
+const vector<capacities>& AdmissionSystem::getCapacitie() const {
+	return capacitie;
+}
+
+void AdmissionSystem::setCapacitie(const vector<capacities>& capacitie) {
+	this->capacitie = capacitie;
+}
+
+const vector<centers>& AdmissionSystem::getCenter() const {
+	return center;
+}
+
+void AdmissionSystem::setCenter(const vector<centers>& center) {
+	this->center = center;
+}
+
+const vector<courses>& AdmissionSystem::getCourse() const {
+	return course;
+}
+
+void AdmissionSystem::setCourse(const vector<courses>& course) {
+	this->course = course;
+}
+
+const vector<degrees>& AdmissionSystem::getDegree() const {
+	return degree;
+}
+
+void AdmissionSystem::setDegree(const vector<degrees>& degree) {
+	this->degree = degree;
+}
+
+const vector<eligibilities>& AdmissionSystem::getEligibilitie() const {
+	return eligibilitie;
+}
+
+void AdmissionSystem::setEligibilitie(
+		const vector<eligibilities>& eligibilitie) {
+	this->eligibilitie = eligibilitie;
+}
+
+const vector<preference>& AdmissionSystem::getPreferences() const {
+	return preferences;
+}
+
+void AdmissionSystem::setPreferences(const vector<preference>& preferences) {
+	this->preferences = preferences;
+}
+
+const vector<students>& AdmissionSystem::getStudent() const {
+	return student;
+}
+
+void AdmissionSystem::setStudent(const vector<students>& student) {
+	this->student = student;
+}
+
+void AdmissionSystem::display_degrees()
+{
+	for(int i=0;i<this->degree.size();i++)
+	{
+		this->degree[i].display_degrees();
+	}
+}
+void AdmissionSystem::display_courses()
+{
+	for(int i=0;i<this->course.size();i++)
+	{
+		this->course[i].display_degrees();
+	}
+}
+void AdmissionSystem::display_eligibilities();
+void AdmissionSystem::display_centers();
+void AdmissionSystem::display_capacities();
+void AdmissionSystem::display_students();
+void AdmissionSystem::display_preference();
+
+AdmissionSystem::~AdmissionSystem() {
+	// TODO Auto-generated destructor stub
+}
+

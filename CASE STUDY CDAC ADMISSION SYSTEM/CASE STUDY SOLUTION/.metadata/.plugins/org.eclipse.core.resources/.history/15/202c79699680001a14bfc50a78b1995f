@@ -1,0 +1,18 @@
+/*
+ * centers.cpp
+ *
+ *  Created on: 17-Apr-2020
+ *      Author: sunbeam
+ */
+
+#include "centers.h"
+
+centers::centers() {
+	// TODO Auto-generated constructor stub
+
+}
+
+centers::~centers() {
+	// TODO Auto-generated destructor stub
+}
+

@@ -1,0 +1,34 @@
+/*
+ * courses.h
+ *
+ *  Created on: 17-Apr-2020
+ *      Author: sunbeam
+ */
+
+#ifndef COURSES_H_
+#define COURSES_H_
+
+class courses {
+private:
+	int id;
+	char name[50];
+	double fees;
+	char section;
+public:
+	Courses();
+	Courses(int id, char* name, double fees, char section);
+	double getFees() const;
+	void setFees(double fees);
+	int getId() const;
+	void setId(int id);
+	const char* getName() const;
+	void setName(char* name);
+	char getSection() const;
+	void setSection(char section);
+
+	void display_courses();
+
+	virtual ~Courses();
+};
+
+#endif /* COURSES_H_ */

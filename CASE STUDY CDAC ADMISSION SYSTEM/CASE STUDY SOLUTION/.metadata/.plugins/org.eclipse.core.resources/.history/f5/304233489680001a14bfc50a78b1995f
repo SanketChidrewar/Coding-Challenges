@@ -1,0 +1,17 @@
+/*
+ * centers.h
+ *
+ *  Created on: 17-Apr-2020
+ *      Author: sunbeam
+ */
+
+#ifndef CENTERS_H_
+#define CENTERS_H_
+
+class centers {
+public:
+	centers();
+	virtual ~centers();
+};
+
+#endif /* CENTERS_H_ */

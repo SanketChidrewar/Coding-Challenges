@@ -1,0 +1,18 @@
+/*
+ * students.cpp
+ *
+ *  Created on: 17-Apr-2020
+ *      Author: sunbeam
+ */
+
+#include "students.h"
+
+students::students() {
+	// TODO Auto-generated constructor stub
+
+}
+
+students::~students() {
+	// TODO Auto-generated destructor stub
+}
+

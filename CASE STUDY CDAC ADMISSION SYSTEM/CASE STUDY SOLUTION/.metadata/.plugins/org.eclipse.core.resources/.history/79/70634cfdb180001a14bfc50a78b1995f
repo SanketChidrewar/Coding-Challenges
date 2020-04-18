@@ -1,0 +1,37 @@
+/*
+ * AdmissionSystem.cpp
+ *
+ *  Created on: 17-Apr-2020
+ *      Author: sunbeam
+ */
+
+#include "AdmissionSystem.h"
+
+AdmissionSystem::AdmissionSystem() {
+	// TODO Auto-generated constructor stub
+	this->degree = {};
+	this->course = {};
+	this->eligibilitie ={};
+	this->center = {};
+	this->capacitie = {};
+	this->student = {};
+	this->preferences = {};
+}
+
+AdmissionSystem::AdmissionSystem(vector<degrees> degree,vector<courses> course,vector<eligibilities> eligibilitie,vector<centers> center,vector<capacities> capacitie,vector<students> student,vector<preference> preferences )
+{
+	this->degree = degree;
+	this->course = course;
+	this->eligibilitie =eligibilitie;
+	this->center = center;
+	this->capacitie = capacitie;
+	this->student = student;
+	this->preferences = preferences;
+
+}
+
+
+AdmissionSystem::~AdmissionSystem() {
+	// TODO Auto-generated destructor stub
+}
+

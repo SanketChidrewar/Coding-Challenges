@@ -1,0 +1,17 @@
+/*
+ * capacities.h
+ *
+ *  Created on: 17-Apr-2020
+ *      Author: sunbeam
+ */
+
+#ifndef CAPACITIES_H_
+#define CAPACITIES_H_
+
+class capacities {
+public:
+	capacities();
+	virtual ~capacities();
+};
+
+#endif /* CAPACITIES_H_ */

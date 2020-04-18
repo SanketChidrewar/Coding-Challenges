@@ -8,22 +8,19 @@
 #ifndef PREFERENCE_H_
 #define PREFERENCE_H_
 
+#include<iostream>
+using namespace std;
+
 class preference {
 private :
 	int id;
 	int pref_no;
-	char course_name[50];
-	char center_id[50];
+	string course_name;
+	string center_id;
 
 public:
 	preference();
-	preference(int id, int pref_no, char* course_name, char* center_id);
-
-	const char* getCenterId() const;
-	void setCenterId(char* center_id);
-
-	const char* getCourseName() const;
-	void setCourseName(char* course_name);
+	preference(int id, int pref_no, string course_name, string center_id);
 
 	int getId() const;
 	void setId(int id);
@@ -34,7 +31,10 @@ public:
 	void display_pref();
 
 	virtual ~preference();
-
+	const string& getCenterId() const;
+	void setCenterId(const string& centerId);
+	const string& getCourseName() const;
+	void setCourseName(const string& courseName);
 };
 
 #endif /* PREFERENCE_H_ */

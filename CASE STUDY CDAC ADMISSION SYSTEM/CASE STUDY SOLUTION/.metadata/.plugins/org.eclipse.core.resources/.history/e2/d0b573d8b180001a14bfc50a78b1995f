@@ -1,0 +1,18 @@
+/*
+ * SingletonAdmissionSystem.cpp
+ *
+ *  Created on: 17-Apr-2020
+ *      Author: sunbeam
+ */
+
+#include "SingletonAdmissionSystem.h"
+
+SingletonAdmissionSystem::SingletonAdmissionSystem() {
+	// TODO Auto-generated constructor stub
+
+}
+
+SingletonAdmissionSystem::~SingletonAdmissionSystem() {
+	// TODO Auto-generated destructor stub
+}
+

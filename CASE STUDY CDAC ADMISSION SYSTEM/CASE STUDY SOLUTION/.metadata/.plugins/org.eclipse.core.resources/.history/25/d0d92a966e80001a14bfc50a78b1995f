@@ -1,0 +1,59 @@
+/*
+ * Course.cpp
+ *
+ *  Created on: 17-Apr-2020
+ *      Author: sunbeam
+ */
+
+#include "Course.h"
+#include<cstring>
+#include<iostream>
+using namespace std;
+
+Course::Course() {
+	// TODO Auto-generated constructor stub
+	this->id=0;
+	this->fees=0;
+	strcpy(this->name," ");
+	this->section = " ";
+
+
+}
+
+double Course::getFees() const {
+	return fees;
+}
+
+void Course::setFees(double fees) {
+	this->fees = fees;
+}
+
+int Course::getId() const {
+	return id;
+}
+
+void Course::setId(int id) {
+	this->id = id;
+}
+
+const char* Course::getName() const {
+	return name;
+}
+void Course::setName(char* name)
+{
+	strcpy(this->name,name);
+}
+
+
+char Course::getSection() const {
+	return section;
+}
+
+void Course::setSection(char section) {
+	this->section = section;
+}
+
+Course::~Course() {
+	// TODO Auto-generated destructor stub
+}
+

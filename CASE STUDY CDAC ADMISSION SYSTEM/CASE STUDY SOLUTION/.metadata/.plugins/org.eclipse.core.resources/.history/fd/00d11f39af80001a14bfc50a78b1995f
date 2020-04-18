@@ -1,0 +1,31 @@
+/*
+ * AdmissionSystem.h
+ *
+ *  Created on: 17-Apr-2020
+ *      Author: sunbeam
+ */
+
+#ifndef ADMISSIONSYSTEM_H_
+#define ADMISSIONSYSTEM_H_
+
+#include "degrees.h"
+#include "courses.h"
+#include "eligibilities.h"
+#include "centers.h"
+#include "capacities.h"
+#include "students.h"
+#include "preference.h"
+
+#include<vector>
+
+class AdmissionSystem {
+private:
+	vector<degrees> degree;
+
+
+public:
+	AdmissionSystem();
+	virtual ~AdmissionSystem();
+};
+
+#endif /* ADMISSIONSYSTEM_H_ */

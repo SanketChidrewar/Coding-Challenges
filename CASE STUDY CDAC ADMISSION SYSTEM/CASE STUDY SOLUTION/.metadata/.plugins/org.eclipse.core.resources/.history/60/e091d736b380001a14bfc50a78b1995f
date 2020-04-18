@@ -1,0 +1,56 @@
+/*
+ * SingletonAdmissionSystem.h
+ *
+ *  Created on: 17-Apr-2020
+ *      Author: sunbeam
+ */
+
+#ifndef SINGLETONADMISSIONSYSTEM_H_
+#define SINGLETONADMISSIONSYSTEM_H_
+
+#include "degrees.h"
+#include "courses.h"
+#include "eligibilities.h"
+#include "centers.h"
+#include "capacities.h"
+#include "students.h"
+#include "preference.h"
+
+#include<vector>
+#include<iostream>
+using namespace std;
+
+class SingletonAdmissionSystem {
+private:
+	vector<degrees> degree;
+	vector<courses> course;
+	vector<eligibilities> eligibilitie;
+	vector<centers> center;
+	vector<capacities> capacitie;
+	vector<students> student;
+	vector<preference> preferences;
+	private static SingletonAdmissionSystem obj;
+
+	private SingletonAdmissionSystem() {
+		// TODO Auto-generated constructor stub
+		this->degree = {};
+		this->course = {};
+		this->eligibilitie ={};
+		this->center = {};
+		this->capacitie = {};
+		this->student = {};
+		this->preferences = {};
+	}
+
+public:
+
+	static SingletonAdmissionSystem getInstance()
+	{
+		if(obj == NULL)
+			obj = new SingletonAdmissionSystem();
+		return obj;
+	}
+	virtual ~SingletonAdmissionSystem();
+};
+
+#endif /* SINGLETONADMISSIONSYSTEM_H_ */

@@ -1,0 +1,232 @@
+/*
+ * main.cpp
+ *
+ *  Created on: 16-Apr-2020
+ *      Author: sunbeam
+ */
+
+#include<iostream>
+#include<fstream>
+#include<sstream>
+
+#include "Student.h"
+#include "Center.h"
+#include "Course.h"
+
+#include "AdmissionSystem.h"
+#include "capacities.h"
+#include "courses.h"
+
+
+using namespace std;
+
+void load_Files(AdmissionSystem & a)
+{
+	// Loading Degree data from file
+	ifstream if_degree("file/degrees.txt");
+	if(!if_degree)
+	{
+		cout<<"Failed to open file"<<endl;
+		return ;
+	}
+	string line1;
+	while(getline(if_degree,line1))
+	{
+		//string token[4];
+		//stringstream str(line);
+
+		//for(int i=0;i<4;i++)
+		//{
+		//	getline(str,token[i],',');
+		//}
+		degrees obj(line1);
+		a.degree.push_back(obj);
+	}
+	if_degree.close();
+
+
+
+	// Loading Course data from file
+	ifstream if_courses("file/courses.csv");
+	if(!if_courses)
+	{
+		cout<<"Failed to open file"<<endl;
+		return ;
+	}
+	string line2;
+	while(getline(if_courses,line2))
+	{
+		string token[4];
+		stringstream str(line2);
+
+		for(int i=0;i<4;i++)
+		{
+			getline(str,token[i],',');
+		}
+		courses obj(stoi(token[0]),token[1],stod(token[2]),token[3]);
+		a.course.push_back(obj);
+	}
+	if_courses.close();
+
+
+
+	// Loading eligibilities data from file
+	ifstream if_eligibilities("file/eligibilities.csv");
+	if(!if_eligibilities)
+	{
+		cout<<"Failed to open file"<<endl;
+		return ;
+	}
+	string line3;
+	while(getline(if_eligibilities,line3))
+	{
+		string token[3];
+		stringstream str(line3);
+
+		for(int i=0;i<3;i++)
+		{
+			getline(str,token[i],',');
+		}
+		eligibilities obj(token[0],token[1],stod(token[2]));
+		a.eligibilitie.push_back(obj);
+	}
+	if_eligibilities.close();
+
+
+
+	// Loading centers data from file
+	ifstream if_centers("file/centers.csv");
+	if(!if_centers)
+	{
+		cout<<"Failed to open file"<<endl;
+		return ;
+	}
+	string line4;
+	while(getline(if_centers,line4))
+	{
+		string token[5];
+		stringstream str(line4);
+
+		for(int i=0;i<5;i++)
+		{
+			getline(str,token[i],',');
+		}
+		centers obj(token[0],token[1],token[2],token[3],token[4]);
+		a.center.push_back(obj);
+	}
+	if_centers.close();
+
+
+
+	// Loading Capacity data from file
+	ifstream if_capacities("file/capacities.csv");
+
+	if(!if_capacities)
+	{
+		cout<<"Failed to open file"<<endl;
+		return ;
+	}
+
+	string line5;
+	while(getline(if_capacities,line5))
+	{
+		string token[4];
+		stringstream str(line5);
+
+		for(int i=0;i<4;i++)
+		{
+			getline(str,token[i],',');
+		}
+		capacities obj(token[0],token[1],stod(token[2]),stoi(token[3]));
+		a.capacitie.push_back(obj);
+	}
+	if_capacities.close();
+
+
+	// Loading students data from file
+	ifstream if_students("file/students.csv");
+
+	if(!if_students)
+	{
+		cout<<"Failed to open file"<<endl;
+		return ;
+	}
+
+	string line6;
+	while(getline(if_students,line6))
+	{
+		string token[13];
+		stringstream str(line6);
+
+		for(int i=0;i<13;i++)
+		{
+			getline(str,token[i],',');
+		}
+		students
+		students obj(stoi(token[0]),token[1],token[2],token[3],token[4],token[5],token[6],token[7],token[8],token[9],token[10],token[11],token[12],token[13]);
+		a.student.push_back(obj);
+	}
+	if_students.close();
+}
+
+
+int main()
+{
+	AdmissionSystem a;
+
+	load_Files(a);
+	//a.capacitie.push_back(capacities());
+	for(unsigned i=0;i<a.degree.size();i++)
+	{
+		a.degree[i].display_degrees();
+	}
+	cout<<endl<<endl;
+
+	for(unsigned i=0;i<a.course.size();i++)
+	{
+		a.course[i].display_courses();
+	}
+	cout<<endl<<endl<<a.eligibilitie.size()<<" "<<a.center.size()<<" "<<a.capacitie.size();
+
+	for(unsigned i=0;i<a.eligibilitie.size();i++)
+	{
+		a.eligibilitie[i].display_eligibilities();
+	}
+	cout<<endl<<endl;
+
+	for(unsigned i=0;i<a.center.size();i++)
+	{
+		a.center[i].display_centers();
+	}
+	cout<<endl<<endl;
+
+	for(unsigned i=0;i<a.capacitie.size();i++)
+	{
+		a.capacitie[i].display_capacities();
+	}
+	return 0;
+}
+
+
+//AdmissionSystem a;
+
+/*	Student s1;
+vector<preference> pref={};
+pref.push_back(preference(10,1,"DAC","SIP"));
+Student s(12,"sanket",100,102,104,"B.E.",81.25,0,"DAC","SIP",0,0,"PRN",pref);
+s.add_preferences(preference());
+s.display_stud();*/
+
+/*	courses c1;
+vector<courses> course;
+course.push_back(c1);
+Center c("SIP","SUNBEAM","SUNBEAM PUNE","NITIN KUDALE","sunbeam",course);
+c.add_courses_in_center(courses(10,"DAC",105000,"B"));
+c.display_Center_with_courses();*/
+
+/*	Course c;
+eligibilities e;
+c.add_eligibilities(e);
+centers c1;
+c.add_centers(c1);
+c.display_Course_with_eligibilities_and_centers();*/

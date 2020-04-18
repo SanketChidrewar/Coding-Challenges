@@ -1,0 +1,54 @@
+/*
+ * students.cpp
+ *
+ *  Created on: 17-Apr-2020
+ *      Author: sunbeam
+ */
+
+#include "students.h"
+#include<iostream>
+#include<vector>
+#include<cstring>
+using namespace std;
+
+Student::Student() {
+	// TODO Auto-generated constructor stub
+	this->id=0;
+	this->name = " ";
+	this->rank_a=0;
+	this->rank_b=0;
+	this->rank_c=0;
+	this->degree = " ";
+	this->degree_marks=0;
+	this->allocated_pref=0;
+	this->course_name = " ";
+	this->center_id = " ";
+	this->payment=0;
+	this->reported=0;
+	this->prn = " ";
+}
+
+Student::Student(int id, string name, int rank_a, int rank_b, int rank_c, string degree, double degree_marks, int allocated_pref, string course_name, string center_id, double payment, int reported, string prn, vector<preference> preferences)
+{
+	this->id=id;
+	this->name = name;
+	this->rank_a=rank_a;
+	this->rank_b=rank_b;
+	this->rank_c=rank_c;
+	this->degree = degree;
+	this->degree_marks=degree_marks;
+	this->allocated_pref= allocated_pref;
+	this->course_name = course_name;
+	this->center_id = center_id;
+	this->payment=0;
+	this->reported=0;
+	this->prn = prn;
+
+	this->preferences = preferences;
+}
+
+
+students::~students() {
+	// TODO Auto-generated destructor stub
+}
+

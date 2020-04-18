@@ -1,0 +1,18 @@
+/*
+ * courses.cpp
+ *
+ *  Created on: 17-Apr-2020
+ *      Author: sunbeam
+ */
+
+#include "courses.h"
+
+courses::courses() {
+	// TODO Auto-generated constructor stub
+
+}
+
+courses::~courses() {
+	// TODO Auto-generated destructor stub
+}
+

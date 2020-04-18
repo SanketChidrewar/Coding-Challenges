@@ -1,0 +1,31 @@
+/*
+ * students.h
+ *
+ *  Created on: 17-Apr-2020
+ *      Author: sunbeam
+ */
+
+#ifndef STUDENTS_H_
+#define STUDENTS_H_
+
+class students {
+private:
+	int id;
+	string name;
+	int rank_a;
+	int rank_b;
+	int rank_c;
+	string degree;
+	double degree_marks;
+	int allocated_pref;
+	string course_name;
+	string center_id;
+	double payment;
+	int reported;
+	string prn;
+public:
+	students();
+	virtual ~students();
+};
+
+#endif /* STUDENTS_H_ */

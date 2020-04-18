@@ -1,0 +1,18 @@
+/*
+ * capacities.cpp
+ *
+ *  Created on: 17-Apr-2020
+ *      Author: sunbeam
+ */
+
+#include "capacities.h"
+
+capacities::capacities() {
+	// TODO Auto-generated constructor stub
+
+}
+
+capacities::~capacities() {
+	// TODO Auto-generated destructor stub
+}
+

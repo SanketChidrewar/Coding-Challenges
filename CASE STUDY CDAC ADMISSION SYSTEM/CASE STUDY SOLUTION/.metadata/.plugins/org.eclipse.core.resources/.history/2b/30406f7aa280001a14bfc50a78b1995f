@@ -1,0 +1,62 @@
+/*
+ * Center.cpp
+ *
+ *  Created on: 17-Apr-2020
+ *      Author: sunbeam
+ */
+
+#include "Center.h"
+#include<cstring>
+#include<iostream>
+using namespace std;
+
+Center::Center() {
+	// TODO Auto-generated constructor stub
+
+	strcpy(this->id," ");
+	strcpy(this->name," ");
+	strcpy(this->address," ");
+	strcpy(this->coordinator," ");
+	strcpy(this->password," ");
+
+	this->course = {};
+
+}
+Center::Center(char* id, char* name, char* address, char* coordinator, char* password, vector<courses> course)
+{
+	strcpy(this->id,id);
+	strcpy(this->name,name);
+	strcpy(this->address,address);
+	strcpy(this->coordinator,coordinator);
+	strcpy(this->password,password);
+
+	this->course = course;
+}
+
+const vector<courses>& Center::getCourses() const {
+	return course;
+}
+void Center::setCourses(const vector<courses>& course) {
+	this->course = course;
+}
+
+void Center::display_Center_with_courses()
+{
+	cout<<endl<<this->id<<" "<<this->name<<" "<<this->address<<" "<<this->coordinator<<" "<<this->password<<endl;
+	cout<<"COURSES UNDER THIS CENTER ARE :"<<endl;
+	for(unsigned int i=0;i<this->course.size();i++)
+	{
+		this->course[i].display_courses();
+	}
+}
+
+void Center::add_courses_in_center(courses c)
+{
+	this->course.push_back(c);
+}
+
+
+Center::~Center() {
+	// TODO Auto-generated destructor stub
+}
+

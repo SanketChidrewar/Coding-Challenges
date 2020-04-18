@@ -1,0 +1,137 @@
+/*
+ * main.cpp
+ *
+ *  Created on: 16-Apr-2020
+ *      Author: sunbeam
+ */
+
+#include<iostream>
+#include<fstream>
+#include<sstream>
+
+#include "Student.h"
+#include "Center.h"
+#include "Course.h"
+
+#include "AdmissionSystem.h"
+#include "capacities.h"
+#include "courses.h"
+
+using namespace std;
+
+void load_all_students_with_there_preference(AdmissionSystem& a,vector<Student>& stud)
+{
+	for(unsigned i=0;i<a.student.size();i++)
+	{
+		stud[i].setId(a.student[i].getId());
+		stud[i].setName(a.student[i].getName());
+		stud[i].setRankA(a.student[i].getRankA());
+		stud[i].setRankB(a.student[i].getRankB());
+		stud[i].setRankC(a.student[i].getRankC());
+		stud[i].degree = a.student[i].degree;
+		stud[i].degree_marks = a.student[i].degree_marks;
+		stud[i].allocated_pref = a.student[i].allocated_pref;
+		stud[i].course_name = a.student[i].course_name;
+		stud[i].center_id = a.student[i].center_id;
+		stud[i].payment = a.student[i].payment;
+		stud[i].reported = a.student[i].reported;
+		stud[i].prn = a.student[i].prn;
+
+		for(int j=0;j<a.preferences.size();j++)
+		{
+			if(a.student[i].id == a.preferences[j].id)
+			{
+				stud[i].add_preferences(a.preferences[j]);
+			}
+		}
+
+		Student s;
+
+
+	}
+
+}
+
+
+int main()
+{
+	AdmissionSystem a;
+	a.load_Files(a);
+
+	vector<Student> stud;
+	load_all_students_with_there_preference(a,stud);
+
+
+
+
+
+	return 0;
+}
+
+
+//AdmissionSystem a;
+
+/*	Student s1;
+vector<preference> pref={};
+pref.push_back(preference(10,1,"DAC","SIP"));
+Student s(12,"sanket",100,102,104,"B.E.",81.25,0,"DAC","SIP",0,0,"PRN",pref);
+s.add_preferences(preference());
+s.display_stud();*/
+
+/*	courses c1;
+vector<courses> course;
+course.push_back(c1);
+Center c("SIP","SUNBEAM","SUNBEAM PUNE","NITIN KUDALE","sunbeam",course);
+c.add_courses_in_center(courses(10,"DAC",105000,"B"));
+c.display_Center_with_courses();*/
+
+/*	Course c;
+eligibilities e;
+c.add_eligibilities(e);
+centers c1;
+c.add_centers(c1);
+c.display_Course_with_eligibilities_and_centers();*/
+
+/*
+	for(unsigned i=0;i<a.degree.size();i++)
+	{
+		a.degree[i].display_degrees();
+	}
+	cout<<endl<<endl;
+
+	for(unsigned i=0;i<a.course.size();i++)
+	{
+		a.course[i].display_courses();
+	}
+	cout<<endl<<endl<<a.eligibilitie.size()<<" "<<a.center.size()<<" "<<a.capacitie.size();
+
+	for(unsigned i=0;i<a.eligibilitie.size();i++)
+	{
+		a.eligibilitie[i].display_eligibilities();
+	}
+	cout<<endl<<endl;
+
+	for(unsigned i=0;i<a.center.size();i++)
+	{
+		a.center[i].display_centers();
+	}
+	cout<<endl<<endl;
+
+	for(unsigned i=0;i<a.capacitie.size();i++)
+	{
+		a.capacitie[i].display_capacities();
+	}
+	cout<<endl<<endl;
+
+	for(unsigned i=0;i<a.student.size();i++)
+	{
+		a.student[i].display_students();
+	}
+	cout<<endl<<endl;
+
+	for(unsigned i=0;i<a.preferences.size();i++)
+	{
+		a.preferences[i].display_pref();
+	}
+	cout<<endl<<endl;
+*/

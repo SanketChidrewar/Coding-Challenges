@@ -1,0 +1,26 @@
+/*
+ * centers.h
+ *
+ *  Created on: 17-Apr-2020
+ *      Author: sunbeam
+ */
+
+#ifndef CENTERS_H_
+#define CENTERS_H_
+#include<iostream>
+using namespace std;
+
+class centers {
+private:
+	string center_id;
+	string center_name;
+	string address;
+	string coordinator;
+	string password;
+
+public:
+	centers();
+	virtual ~centers();
+};
+
+#endif /* CENTERS_H_ */

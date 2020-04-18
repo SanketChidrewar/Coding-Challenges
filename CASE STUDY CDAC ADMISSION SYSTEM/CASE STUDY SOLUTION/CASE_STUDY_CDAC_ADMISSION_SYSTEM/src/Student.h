@@ -17,29 +17,27 @@ using namespace std;
 class Student {
 private:
 	int id;
-	char name[50];
+	string name;
 	int rank_a;
 	int rank_b;
 	int rank_c;
-	char degree[50];
+	string degree;
 	double degree_marks;
-	char course_name[50];
-	char center_id[10];
+	int allocated_pref;
+	string course_name;
+	string center_id;
 	double payment;
 	int reported;
-	char prn[50];
+	string prn;
 	vector<preference> preferences;
 
 public:
 
 	Student();
-	Student(int id, char* name, int rank_a, int rank_b, int rank_c, char* degree, double degree_marks, char* course_name, char* center_id, double payment, int reported, char* prn, vector<preference> preferences);
+	Student(int id, string name, int rank_a, int rank_b, int rank_c, string degree, double degree_marks, int allocated_pref, string course_name, string center_id, double payment, int reported, string prn, vector<preference> preferences);
 
 	int getId() const;
 	void setId(int id);
-
-	const char* getName() const;
-	void setName(char* name);
 
 	int getRankA() const;
 	void setRankA(int rankA);
@@ -50,26 +48,14 @@ public:
 	int getRankC() const;
 	void setRankC(int rankC);
 
-	const char* getDegree() const;
-	void setDegree(char* degree);
-
 	double getDegreeMarks() const;
 	void setDegreeMarks(double degreeMarks);
-
-	const char* getCourseName() const;
-	void setCourseName(char* course_name);
-
-	const char* getCenterId() const;
-	void setCenterId(char* center_id);
 
 	double getPayment() const;
 	void setPayment(double payment);
 
 	int getReported() const;
 	void setReported(int reported);
-
-	const char* getPrn() const;
-	void setPrn(char* prn);
 
 	const vector<preference>& getPreferences() const;
 	void setPreferences(const vector<preference>& preferences);
@@ -81,6 +67,18 @@ public:
 
 	virtual ~Student();
 
+	int getAllocatedPref() const;
+	void setAllocatedPref(int allocatedPref);
+	const string& getCenterId() const;
+	void setCenterId(const string& centerId);
+	const string& getCourseName() const;
+	void setCourseName(const string& courseName);
+	const string& getDegree() const;
+	void setDegree(const string& degree);
+	const string& getName() const;
+	void setName(const string& name);
+	const string& getPrn() const;
+	void setPrn(const string& prn);
 };
 
 #endif /* STUDENT_H_ */

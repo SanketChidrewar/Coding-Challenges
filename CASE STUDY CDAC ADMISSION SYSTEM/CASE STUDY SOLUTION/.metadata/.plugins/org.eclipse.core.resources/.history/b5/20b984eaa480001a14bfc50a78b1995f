@@ -1,0 +1,49 @@
+/*
+ * main.cpp
+ *
+ *  Created on: 16-Apr-2020
+ *      Author: sunbeam
+ */
+
+#include<iostream>
+#include "Student.h"
+#include "preference.h"
+
+#include "Center.h"
+#include "courses.h"
+
+#include "Course.h"
+#include "eligibilities.h"
+#include "centers.h"
+
+
+using namespace std;
+
+int main()
+{
+
+	Student s1;
+	vector<preference> pref={};
+	pref.push_back(preference(10,1,"DAC","SIP"));
+	Student s(12,"sanket",100,102,104,"B.E.",81.25,"DAC","SIP",0,0,"PRN",pref);
+	s.add_preferences(preference());
+	s.display_stud();
+
+/*	courses c1;
+	vector<courses> course;
+	course.push_back(c1);
+	Center c("SIP","SUNBEAM","SUNBEAM PUNE","NITIN KUDALE","sunbeam",course);
+	c.add_courses_in_center(courses(10,"DAC",105000,"B"));
+	c.display_Center_with_courses();*/
+
+/*	Course c;
+	eligibilities e;
+	c.add_eligibilities(e);
+	centers c1;
+	c.add_centers(c1);
+	c.display_Course_with_eligibilities_and_centers();*/
+
+	return 0;
+}
+
+
