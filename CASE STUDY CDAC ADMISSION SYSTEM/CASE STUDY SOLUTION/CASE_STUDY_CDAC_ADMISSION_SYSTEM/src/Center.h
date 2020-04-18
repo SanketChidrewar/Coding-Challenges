@@ -9,7 +9,11 @@
 #define CENTER_H_
 
 #include "courses.h"
+#include "AdmissionSystem.h"
+
 #include<vector>
+#include<map>
+#include<iostream>
 
 using namespace std;
 
@@ -21,19 +25,14 @@ private:
 	string coordinator;
 	string password;
 
-	vector<courses> course;
-
+	map<string,int> center_id_courses;
 public:
 	Center();
-	Center(string id, string name, string address, string coordinator, string password, vector<courses> course);
+	Center(string id, string name, string address, string coordinator, string password, map<string,int> center_id_courses);
 
+	void display_Center_with_courses(AdmissionSystem& a);
 
-	const vector<courses>& getCourses() const;
-	void setCourses(const vector<courses>& course);
-
-	void display_Center_with_courses();
-
-	void add_courses_in_center(courses c);
+	void add_courses_to_respective_centers(string s, int k);
 
 	virtual ~Center();
 	const string& getAddress() const;
@@ -48,6 +47,8 @@ public:
 	void setName(const string& name);
 	const string& getPassword() const;
 	void setPassword(const string& password);
+	const map<string, int>& getCenterIdCourses() const;
+	void setCenterIdCourses(const map<string, int>& centerIdCourses);
 };
 
 #endif /* CENTER_H_ */

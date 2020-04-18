@@ -66,7 +66,8 @@ void load_all_center_with_there_courses(AdmissionSystem& a,vector<Center>& cent1
 				{
 					if(a.capacitie[j].getCourseName() == a.course[k].getName())
 					{
-						cent.add_courses_in_center(a.course[k]);
+						//cent.add_courses_in_center(a.course[k]);
+						cent.add_courses_to_respective_centers(a.center[i].getCenterId(),k);
 					}
 				}
 			}
@@ -115,6 +116,7 @@ void load_all_courses_with_resp_available_centers(AdmissionSystem& a,vector<Cour
 int main()
 {
 	AdmissionSystem a;
+
 	a.load_Files(a);
 
 	vector<Student> stud;
@@ -128,10 +130,10 @@ int main()
 	vector<Center> cent;
 	load_all_center_with_there_courses(a,cent);
 
-/*	for(unsigned j=0;j<cent.size();j++)
+	for(unsigned j=0;j<cent.size();j++)
 	{
-		cent[j].display_Center_with_courses();
-	}*/
+		cent[j].display_Center_with_courses(a);
+	}
 
 	vector<Course> cour;
 	load_all_courses_with_resp_available_centers(a,cour);

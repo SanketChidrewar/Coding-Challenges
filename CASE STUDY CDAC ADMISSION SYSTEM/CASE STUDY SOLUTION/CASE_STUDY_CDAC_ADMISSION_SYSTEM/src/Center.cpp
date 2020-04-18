@@ -6,7 +6,10 @@
  */
 
 #include "Center.h"
+#include "AdmissionSystem.h"
+
 #include<cstring>
+#include<map>
 #include<iostream>
 using namespace std;
 
@@ -19,10 +22,10 @@ Center::Center() {
 	this->coordinator = " ";
 	this->password = " ";
 
-	this->course = {};
+	this->center_id_courses = {};
 
 }
-Center::Center(string id, string name, string address, string coordinator, string password, vector<courses> course)
+Center::Center(string id, string name, string address, string coordinator, string password, map<string,int> center_id_courses)
 {
 	this->id = id;
 	this->name = name;
@@ -30,31 +33,34 @@ Center::Center(string id, string name, string address, string coordinator, strin
 	this->coordinator = coordinator;
 	this->password = password;
 
-	this->course = course;
+	this->center_id_courses = center_id_courses;
 }
 
-const vector<courses>& Center::getCourses() const {
-	return course;
-}
-void Center::setCourses(const vector<courses>& course) {
-	this->course = course;
-}
+//const vector<courses>& Center::getCourses() const {
+//	return course;
+//}
+//void Center::setCourses(const vector<courses>& course) {
+//	this->course = course;
+//}
 
-void Center::display_Center_with_courses()
+void Center::display_Center_with_courses(AdmissionSystem& a)
 {
 	cout<<endl<<this->id<<","<<this->name<<","<<this->address<<","<<this->coordinator<<","<<this->password<<endl;
 	cout<<"\n - COURSES UNDER THIS CENTER ARE :"<<endl;
-	for(unsigned int i=0;i<this->course.size();i++)
+	map<string,int>::iterator it = this->center_id_courses.begin();
+	while(it!=this->center_id_courses.end())
 	{
 		cout<<"\t";
-		this->course[i].display_courses();
+		a.course[it->second].display_courses();
+		it++;
 	}
 }
 
-void Center::add_courses_in_center(courses c)
+void Center::add_courses_to_respective_centers(string s, int k)
 {
-	this->course.push_back(c);
+	this->center_id_courses[s] = k;
 }
+
 
 const string& Center::getAddress() const {
 	return address;
@@ -70,14 +76,6 @@ const string& Center::getCoordinator() const {
 
 void Center::setCoordinator(const string& coordinator) {
 	this->coordinator = coordinator;
-}
-
-const vector<courses>& Center::getCourse() const {
-	return course;
-}
-
-void Center::setCourse(const vector<courses>& course) {
-	this->course = course;
 }
 
 const string& Center::getId() const {
@@ -98,6 +96,14 @@ void Center::setName(const string& name) {
 
 const string& Center::getPassword() const {
 	return password;
+}
+
+const map<string, int>& Center::getCenterIdCourses() const {
+	return center_id_courses;
+}
+
+void Center::setCenterIdCourses(const map<string, int>& centerIdCourses) {
+	center_id_courses = centerIdCourses;
 }
 
 void Center::setPassword(const string& password) {
