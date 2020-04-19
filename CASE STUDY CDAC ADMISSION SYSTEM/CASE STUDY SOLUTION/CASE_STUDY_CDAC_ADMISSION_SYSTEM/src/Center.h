@@ -25,10 +25,11 @@ private:
 	string coordinator;
 	string password;
 
-	map<string,int> center_id_courses;
+	multimap<string,int> center_id_courses;
+
 public:
 	Center();
-	Center(string id, string name, string address, string coordinator, string password, map<string,int> center_id_courses);
+	Center(string id, string name, string address, string coordinator, string password, multimap<string,int> center_id_courses);
 
 	void display_Center_with_courses(AdmissionSystem& a);
 
@@ -47,8 +48,8 @@ public:
 	void setName(const string& name);
 	const string& getPassword() const;
 	void setPassword(const string& password);
-	const map<string, int>& getCenterIdCourses() const;
-	void setCenterIdCourses(const map<string, int>& centerIdCourses);
+	const multimap<string, int>& getCenterIdCourses() const;
+	void setCenterIdCourses(const multimap<string, int>& centerIdCourses);
 };
 
 #endif /* CENTER_H_ */

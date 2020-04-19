@@ -31,6 +31,7 @@ public:
 	void setCourseName(const string& courseName);
 	int getFilledCapacity() const;
 	void setFilledCapacity(int filledCapacity);
+
 };
 
 #endif /* CAPACITIES_H_ */

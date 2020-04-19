@@ -14,17 +14,17 @@ Course::Course() {
 	this->fees = 0.0;
 	this->ccat_section = " ";
 	this->eligible = {};
-	this->center = {};
+	this->centers_of_respective_courses = {};
 
 }
-Course::Course(int& id, string& name, double& fees, string& ccat_section, vector<eligibilities> eligible,vector<centers> center)
+Course::Course(int& id, string& name, double& fees, string& ccat_section, vector<eligibilities> eligible,multimap<int,int> centers_of_respective_courses)
 {
 	this->id = id;
 	this->name =name;
 	this->fees = fees;
 	this->ccat_section = ccat_section;
 	this->eligible = eligible;
-	this->center = center;
+	this->centers_of_respective_courses = centers_of_respective_courses;
 }
 
 
@@ -34,14 +34,6 @@ const string& Course::getCcatSection() const {
 
 void Course::setCcatSection(const string& ccatSection) {
 	ccat_section = ccatSection;
-}
-
-const vector<centers>& Course::getCenter() const {
-	return center;
-}
-
-void Course::setCenter(const vector<centers>& center) {
-	this->center = center;
 }
 
 const vector<eligibilities>& Course::getEligible() const {
@@ -76,7 +68,7 @@ void Course::setName(const string& name) {
 	this->name = name;
 }
 
-void Course::display_Course_with_eligibilities_and_centers()
+void Course::display_Course_with_eligibilities_and_centers(AdmissionSystem& a)
 {
 	cout<<this->id<<","<<this->name<<","<<this->fees<<","<<this->ccat_section<<endl;
 
@@ -88,10 +80,13 @@ void Course::display_Course_with_eligibilities_and_centers()
 	}
 
 	cout<<"  - CENTERS AVAILABLE FOR THIS COURSE :"<<endl;
-	for(unsigned j=0;j<this->center.size();j++)
+	multimap<int,int>::iterator it = this->centers_of_respective_courses.begin();
+	while(it != this->centers_of_respective_courses.end())
 	{
 		cout<<"\t";
-		this->center[j].display_centers();
+		a.center[it->second].display_centers();
+
+		it++;
 	}
 	cout<<endl<<endl;
 }
@@ -100,9 +95,18 @@ void Course::add_eligibilities(eligibilities& e)
 {
 	this->eligible.push_back(e);
 }
-void Course::add_centers(centers& c)
+void Course::add_centers(int id, int pos)
 {
-	this->center.push_back(c);
+	this->centers_of_respective_courses.insert(pair<int,int> (id,pos));
+}
+
+const multimap<int, int>& Course::getCentersOfRespectiveCourses() const {
+	return centers_of_respective_courses;
+}
+
+void Course::setCentersOfRespectiveCourses(
+		const multimap<int, int>& centersOfRespectiveCourses) {
+	centers_of_respective_courses = centersOfRespectiveCourses;
 }
 
 Course::~Course() {

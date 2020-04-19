@@ -34,6 +34,35 @@ AdmissionSystem::AdmissionSystem(vector<degrees> degree,vector<courses> course,v
 	this->preferences = preferences;
 }
 
+int AdmissionSystem::is_seats_are_full(string id,string course)
+{
+	for(unsigned i=0;i<this->capacitie.size();i++)
+	{
+		if(this->capacitie[i].getCenterId() == id && this->capacitie[i].getCourseName() == course)
+		{
+			if(this->capacitie[i].getCapacity() == this->capacitie[i].getFilledCapacity())
+			{
+				return 1;
+			}
+		}
+	}
+	return 0;
+}
+
+void AdmissionSystem::increment_capacity_size_by_one(string id,string course)
+{
+	for(unsigned i=0;i<this->capacitie.size();i++)
+	{
+		if(this->capacitie[i].getCenterId() == id && this->capacitie[i].getCourseName() == course)
+		{
+			int filled_capacity = this->capacitie[i].getFilledCapacity();
+			filled_capacity += 1;
+			this->capacitie[i].setFilledCapacity(filled_capacity);
+		}
+	}
+}
+
+
 const vector<capacities>& AdmissionSystem::getCapacitie() const {
 	return capacitie;
 }
@@ -185,6 +214,7 @@ void AdmissionSystem::load_Files(AdmissionSystem & a)
 			getline(str,token[i],',');
 		}
 		courses obj(stoi(token[0]),token[1],stod(token[2]),token[3]);
+		//a.course.push_back(obj);
 		a.course.push_back(obj);
 	}
 	if_courses.close();

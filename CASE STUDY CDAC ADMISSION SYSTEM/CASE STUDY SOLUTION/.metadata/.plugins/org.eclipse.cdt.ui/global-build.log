@@ -14257,3 +14257,3162 @@ make: Nothing to be done for 'all'.
 13:19:13 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
 make all 
 make: Nothing to be done for 'all'.
+13:36:57 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Center.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Center.d" -MT"src/Center.o" -o "src/Center.o" "../src/Center.cpp"
+../src/Center.cpp: In member function ‘void Center::display_Center_with_courses()’:
+../src/Center.cpp:47:31: error: ‘class Center’ has no member named ‘course’; did you mean ‘getCourse’?
+  for(unsigned int i=0;i<this->course.size();i++)
+                               ^~~~~~
+                               getCourse
+../src/Center.cpp:50:9: error: ‘class Center’ has no member named ‘course’; did you mean ‘getCourse’?
+   this->course[i].display_courses();
+         ^~~~~~
+         getCourse
+../src/Center.cpp: In member function ‘void Center::add_courses_in_center(courses)’:
+../src/Center.cpp:56:8: error: ‘class Center’ has no member named ‘course’; did you mean ‘getCourse’?
+  this->course.push_back(c);
+        ^~~~~~
+        getCourse
+../src/Center.cpp: In member function ‘const std::vector<courses>& Center::getCourse() const’:
+../src/Center.cpp:76:9: error: ‘course’ was not declared in this scope
+  return course;
+         ^~~~~~
+../src/Center.cpp:76:9: note: suggested alternative: ‘courses’
+  return course;
+         ^~~~~~
+         courses
+../src/Center.cpp: In member function ‘void Center::setCourse(const std::vector<courses>&)’:
+../src/Center.cpp:80:8: error: ‘class Center’ has no member named ‘course’; did you mean ‘getCourse’?
+  this->course = course;
+        ^~~~~~
+        getCourse
+src/subdir.mk:51: recipe for target 'src/Center.o' failed
+make: *** [src/Center.o] Error 1
+13:42:13 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Center.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Center.d" -MT"src/Center.o" -o "src/Center.o" "../src/Center.cpp"
+../src/Center.cpp: In member function ‘void Center::display_Center_with_courses()’:
+../src/Center.cpp:53:6: error: expected ‘,’ before ‘->’ token
+   [it->second];
+      ^~
+../src/Center.cpp:53:6: error: expected identifier before ‘->’ token
+../src/Center.cpp: In lambda function:
+../src/Center.cpp:53:15: error: expected ‘{’ before ‘;’ token
+   [it->second];
+               ^
+../src/Center.cpp: In member function ‘void Center::add_courses_in_center(courses)’:
+../src/Center.cpp:60:8: error: ‘class Center’ has no member named ‘course’; did you mean ‘getCourse’?
+  this->course.push_back(c);
+        ^~~~~~
+        getCourse
+../src/Center.cpp: In member function ‘const std::vector<courses>& Center::getCourse() const’:
+../src/Center.cpp:80:9: error: ‘course’ was not declared in this scope
+  return course;
+         ^~~~~~
+../src/Center.cpp:80:9: note: suggested alternative: ‘courses’
+  return course;
+         ^~~~~~
+         courses
+../src/Center.cpp: In member function ‘void Center::setCourse(const std::vector<courses>&)’:
+../src/Center.cpp:84:8: error: ‘class Center’ has no member named ‘course’; did you mean ‘getCourse’?
+  this->course = course;
+        ^~~~~~
+        getCourse
+make: *** [src/Center.o] Error 1
+src/subdir.mk:51: recipe for target 'src/Center.o' failed
+13:45:13 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Center.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Center.d" -MT"src/Center.o" -o "src/Center.o" "../src/Center.cpp"
+../src/Center.cpp:45:6: error: prototype for ‘void Center::display_Center_with_courses(AdmissionSystem&)’ does not match any in class ‘Center’
+ void Center::display_Center_with_courses(AdmissionSystem& a)
+      ^~~~~~
+In file included from ../src/Center.cpp:8:0:
+../src/Center.h:36:7: error: candidate is: void Center::display_Center_with_courses()
+  void display_Center_with_courses();
+       ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Center.cpp: In member function ‘void Center::add_courses_in_center(courses)’:
+../src/Center.cpp:60:8: error: ‘class Center’ has no member named ‘course’; did you mean ‘getCourse’?
+  this->course.push_back(c);
+        ^~~~~~
+        getCourse
+../src/Center.cpp: In member function ‘const std::vector<courses>& Center::getCourse() const’:
+../src/Center.cpp:80:9: error: ‘course’ was not declared in this scope
+  return course;
+         ^~~~~~
+../src/Center.cpp:80:9: note: suggested alternative: ‘courses’
+  return course;
+         ^~~~~~
+         courses
+../src/Center.cpp: In member function ‘void Center::setCourse(const std::vector<courses>&)’:
+../src/Center.cpp:84:8: error: ‘class Center’ has no member named ‘course’; did you mean ‘getCourse’?
+  this->course = course;
+        ^~~~~~
+        getCourse
+src/subdir.mk:51: recipe for target 'src/Center.o' failed
+make: *** [src/Center.o] Error 1
+13:45:42 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Center.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Center.d" -MT"src/Center.o" -o "src/Center.o" "../src/Center.cpp"
+In file included from ../src/Center.cpp:8:0:
+../src/Center.h:36:35: error: ‘AdmissionSystem’ has not been declared
+  void display_Center_with_courses(AdmissionSystem& a);
+                                   ^~~~~~~~~~~~~~~
+../src/Center.cpp:45:6: error: prototype for ‘void Center::display_Center_with_courses(AdmissionSystem&)’ does not match any in class ‘Center’
+ void Center::display_Center_with_courses(AdmissionSystem& a)
+      ^~~~~~
+In file included from ../src/Center.cpp:8:0:
+../src/Center.h:36:7: error: candidate is: void Center::display_Center_with_courses(int&)
+  void display_Center_with_courses(AdmissionSystem& a);
+       ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Center.cpp: In member function ‘void Center::add_courses_in_center(courses)’:
+../src/Center.cpp:60:8: error: ‘class Center’ has no member named ‘course’; did you mean ‘getCourse’?
+  this->course.push_back(c);
+        ^~~~~~
+        getCourse
+../src/Center.cpp: In member function ‘const std::vector<courses>& Center::getCourse() const’:
+../src/Center.cpp:80:9: error: ‘course’ was not declared in this scope
+  return course;
+         ^~~~~~
+../src/Center.cpp:80:9: note: suggested alternative: ‘courses’
+  return course;
+         ^~~~~~
+         courses
+../src/Center.cpp: In member function ‘void Center::setCourse(const std::vector<courses>&)’:
+../src/Center.cpp:84:8: error: ‘class Center’ has no member named ‘course’; did you mean ‘getCourse’?
+  this->course = course;
+        ^~~~~~
+        getCourse
+src/subdir.mk:51: recipe for target 'src/Center.o' failed
+make: *** [src/Center.o] Error 1
+13:46:14 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Center.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Center.d" -MT"src/Center.o" -o "src/Center.o" "../src/Center.cpp"
+In file included from ../src/Center.cpp:8:0:
+../src/Center.h:36:35: error: ‘AdmissionSystem’ has not been declared
+  void display_Center_with_courses(AdmissionSystem& a);
+                                   ^~~~~~~~~~~~~~~
+../src/Center.cpp:45:6: error: prototype for ‘void Center::display_Center_with_courses(AdmissionSystem&)’ does not match any in class ‘Center’
+ void Center::display_Center_with_courses(AdmissionSystem& a)
+      ^~~~~~
+In file included from ../src/Center.cpp:8:0:
+../src/Center.h:36:7: error: candidate is: void Center::display_Center_with_courses(int&)
+  void display_Center_with_courses(AdmissionSystem& a);
+       ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Center.cpp: In member function ‘void Center::add_courses_in_center(courses)’:
+../src/Center.cpp:60:8: error: ‘class Center’ has no member named ‘course’; did you mean ‘getCourse’?
+  this->course.push_back(c);
+        ^~~~~~
+        getCourse
+../src/Center.cpp: In member function ‘const std::vector<courses>& Center::getCourse() const’:
+../src/Center.cpp:80:9: error: ‘course’ was not declared in this scope
+  return course;
+         ^~~~~~
+../src/Center.cpp:80:9: note: suggested alternative: ‘courses’
+  return course;
+         ^~~~~~
+         courses
+../src/Center.cpp: In member function ‘void Center::setCourse(const std::vector<courses>&)’:
+../src/Center.cpp:84:8: error: ‘class Center’ has no member named ‘course’; did you mean ‘getCourse’?
+  this->course = course;
+        ^~~~~~
+        getCourse
+make: *** [src/Center.o] Error 1
+src/subdir.mk:51: recipe for target 'src/Center.o' failed
+13:46:28 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Center.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Center.d" -MT"src/Center.o" -o "src/Center.o" "../src/Center.cpp"
+In file included from ../src/Center.cpp:8:0:
+../src/Center.h:36:35: error: ‘AdmissionSystem’ has not been declared
+  void display_Center_with_courses(AdmissionSystem& a);
+                                   ^~~~~~~~~~~~~~~
+../src/Center.cpp:45:6: error: prototype for ‘void Center::display_Center_with_courses(AdmissionSystem&)’ does not match any in class ‘Center’
+ void Center::display_Center_with_courses(AdmissionSystem& a)
+      ^~~~~~
+In file included from ../src/Center.cpp:8:0:
+../src/Center.h:36:7: error: candidate is: void Center::display_Center_with_courses(int&)
+  void display_Center_with_courses(AdmissionSystem& a);
+       ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Center.cpp: In member function ‘void Center::add_courses_in_center(courses)’:
+../src/Center.cpp:60:8: error: ‘class Center’ has no member named ‘course’; did you mean ‘getCourse’?
+  this->course.push_back(c);
+        ^~~~~~
+        getCourse
+../src/Center.cpp: In member function ‘const std::vector<courses>& Center::getCourse() const’:
+../src/Center.cpp:80:9: error: ‘course’ was not declared in this scope
+  return course;
+         ^~~~~~
+../src/Center.cpp:80:9: note: suggested alternative: ‘courses’
+  return course;
+         ^~~~~~
+         courses
+../src/Center.cpp: In member function ‘void Center::setCourse(const std::vector<courses>&)’:
+../src/Center.cpp:84:8: error: ‘class Center’ has no member named ‘course’; did you mean ‘getCourse’?
+  this->course = course;
+        ^~~~~~
+        getCourse
+src/subdir.mk:51: recipe for target 'src/Center.o' failed
+make: *** [src/Center.o] Error 1
+13:46:49 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Center.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Center.d" -MT"src/Center.o" -o "src/Center.o" "../src/Center.cpp"
+../src/Center.cpp: In member function ‘void Center::add_courses_in_center(courses)’:
+../src/Center.cpp:60:8: error: ‘class Center’ has no member named ‘course’; did you mean ‘getCourse’?
+  this->course.push_back(c);
+        ^~~~~~
+        getCourse
+../src/Center.cpp: In member function ‘const std::vector<courses>& Center::getCourse() const’:
+../src/Center.cpp:80:9: error: ‘course’ was not declared in this scope
+  return course;
+         ^~~~~~
+../src/Center.cpp:80:9: note: suggested alternative: ‘courses’
+  return course;
+         ^~~~~~
+         courses
+../src/Center.cpp: In member function ‘void Center::setCourse(const std::vector<courses>&)’:
+../src/Center.cpp:84:8: error: ‘class Center’ has no member named ‘course’; did you mean ‘getCourse’?
+  this->course = course;
+        ^~~~~~
+        getCourse
+src/subdir.mk:51: recipe for target 'src/Center.o' failed
+make: *** [src/Center.o] Error 1
+13:50:03 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Center.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Center.d" -MT"src/Center.o" -o "src/Center.o" "../src/Center.cpp"
+../src/Center.cpp: In member function ‘const std::vector<courses>& Center::getCourse() const’:
+../src/Center.cpp:75:9: error: ‘course’ was not declared in this scope
+  return course;
+         ^~~~~~
+../src/Center.cpp:75:9: note: suggested alternative: ‘courses’
+  return course;
+         ^~~~~~
+         courses
+../src/Center.cpp: In member function ‘void Center::setCourse(const std::vector<courses>&)’:
+../src/Center.cpp:79:8: error: ‘class Center’ has no member named ‘course’; did you mean ‘getCourse’?
+  this->course = course;
+        ^~~~~~
+        getCourse
+make: *** [src/Center.o] Error 1
+src/subdir.mk:51: recipe for target 'src/Center.o' failed
+13:50:19 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Center.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Center.d" -MT"src/Center.o" -o "src/Center.o" "../src/Center.cpp"
+Finished building: ../src/Center.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+./src/main.o: In function `load_all_center_with_there_courses(AdmissionSystem&, std::vector<Center, std::allocator<Center> >&)':
+/home/sunbeam/classwoek_data/ZOOM CALL NOTES/CASE STUDY/CASE STUDY SOLUTION/CASE_STUDY_CDAC_ADMISSION_SYSTEM/Debug/../src/main.cpp:72: undefined reference to `Center::add_courses_in_center(courses)'
+makefile:45: recipe for target 'CASE_STUDY_CDAC_ADMISSION_SYSTEM' failed
+collect2: error: ld returned 1 exit status
+make: *** [CASE_STUDY_CDAC_ADMISSION_SYSTEM] Error 1
+13:51:01 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Center.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Center.d" -MT"src/Center.o" -o "src/Center.o" "../src/Center.cpp"
+Finished building: ../src/Center.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+./src/main.o: In function `load_all_center_with_there_courses(AdmissionSystem&, std::vector<Center, std::allocator<Center> >&)':
+/home/sunbeam/classwoek_data/ZOOM CALL NOTES/CASE STUDY/CASE STUDY SOLUTION/CASE_STUDY_CDAC_ADMISSION_SYSTEM/Debug/../src/main.cpp:72: undefined reference to `Center::add_courses_in_center(courses)'
+makefile:45: recipe for target 'CASE_STUDY_CDAC_ADMISSION_SYSTEM' failed
+collect2: error: ld returned 1 exit status
+make: *** [CASE_STUDY_CDAC_ADMISSION_SYSTEM] Error 1
+13:54:49 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Center.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Center.d" -MT"src/Center.o" -o "src/Center.o" "../src/Center.cpp"
+../src/Center.cpp: In member function ‘void Center::display_Center_with_courses(AdmissionSystem&)’:
+../src/Center.cpp:49:59: error: conversion from ‘std::map<std::__cxx11::basic_string<char>, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const std::__cxx11::basic_string<char>, int> >}’ to non-scalar type ‘std::map<int, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const int, int> >}’ requested
+  map<int,int>::iterator it = this->center_id_courses.begin();
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+../src/Center.cpp:50:10: error: no match for ‘operator!=’ (operand types are ‘std::map<int, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const int, int> >}’ and ‘std::map<std::__cxx11::basic_string<char>, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const std::__cxx11::basic_string<char>, int> >}’)
+  while(it!=this->center_id_courses.end())
+        ~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/c++/7/map:60:0,
+                 from ../src/Center.h:15,
+                 from ../src/Center.cpp:8:
+/usr/include/c++/7/bits/stl_tree.h:319:7: note: candidate: bool std::_Rb_tree_iterator<_Tp>::operator!=(const _Self&) const [with _Tp = std::pair<const int, int>; std::_Rb_tree_iterator<_Tp>::_Self = std::_Rb_tree_iterator<std::pair<const int, int> >]
+       operator!=(const _Self& __x) const _GLIBCXX_NOEXCEPT
+       ^~~~~~~~
+/usr/include/c++/7/bits/stl_tree.h:319:7: note:   no known conversion for argument 1 from ‘std::map<std::__cxx11::basic_string<char>, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const std::__cxx11::basic_string<char>, int> >}’ to ‘const _Self& {aka const std::_Rb_tree_iterator<std::pair<const int, int> >&}’
+In file included from /usr/include/c++/7/iosfwd:40:0,
+                 from /usr/include/c++/7/ios:38,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../src/courses.h:11,
+                 from ../src/Center.h:11,
+                 from ../src/Center.cpp:8:
+/usr/include/c++/7/bits/postypes.h:221:5: note: candidate: template<class _StateT> bool std::operator!=(const std::fpos<_StateT>&, const std::fpos<_StateT>&)
+     operator!=(const fpos<_StateT>& __lhs, const fpos<_StateT>& __rhs)
+     ^~~~~~~~
+/usr/include/c++/7/bits/postypes.h:221:5: note:   template argument deduction/substitution failed:
+../src/Center.cpp:50:40: note:   ‘std::map<int, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const int, int> >}’ is not derived from ‘const std::fpos<_StateT>’
+  while(it!=this->center_id_courses.end())
+                                        ^
+In file included from /usr/include/c++/7/bits/stl_algobase.h:64:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../src/courses.h:11,
+                 from ../src/Center.h:11,
+                 from ../src/Center.cpp:8:
+/usr/include/c++/7/bits/stl_pair.h:461:5: note: candidate: template<class _T1, class _T2> constexpr bool std::operator!=(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)
+     operator!=(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_pair.h:461:5: note:   template argument deduction/substitution failed:
+../src/Center.cpp:50:40: note:   ‘std::map<int, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const int, int> >}’ is not derived from ‘const std::pair<_T1, _T2>’
+  while(it!=this->center_id_courses.end())
+                                        ^
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../src/courses.h:11,
+                 from ../src/Center.h:11,
+                 from ../src/Center.cpp:8:
+/usr/include/c++/7/bits/stl_iterator.h:314:5: note: candidate: template<class _Iterator> bool std::operator!=(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)
+     operator!=(const reverse_iterator<_Iterator>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:314:5: note:   template argument deduction/substitution failed:
+../src/Center.cpp:50:40: note:   ‘std::map<int, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const int, int> >}’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+  while(it!=this->center_id_courses.end())
+                                        ^
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../src/courses.h:11,
+                 from ../src/Center.h:11,
+                 from ../src/Center.cpp:8:
+/usr/include/c++/7/bits/stl_iterator.h:352:5: note: candidate: template<class _IteratorL, class _IteratorR> bool std::operator!=(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)
+     operator!=(const reverse_iterator<_IteratorL>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:352:5: note:   template argument deduction/substitution failed:
+../src/Center.cpp:50:40: note:   ‘std::map<int, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const int, int> >}’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+  while(it!=this->center_id_courses.end())
+                                        ^
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../src/courses.h:11,
+                 from ../src/Center.h:11,
+                 from ../src/Center.cpp:8:
+/usr/include/c++/7/bits/stl_iterator.h:1133:5: note: candidate: template<class _IteratorL, class _IteratorR> bool std::operator!=(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)
+     operator!=(const move_iterator<_IteratorL>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:1133:5: note:   template argument deduction/substitution failed:
+../src/Center.cpp:50:40: note:   ‘std::map<int, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const int, int> >}’ is not derived from ‘const std::move_iterator<_IteratorL>’
+  while(it!=this->center_id_courses.end())
+                                        ^
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../src/courses.h:11,
+                 from ../src/Center.h:11,
+                 from ../src/Center.cpp:8:
+/usr/include/c++/7/bits/stl_iterator.h:1139:5: note: candidate: template<class _Iterator> bool std::operator!=(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorL>&)
+     operator!=(const move_iterator<_Iterator>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:1139:5: note:   template argument deduction/substitution failed:
+../src/Center.cpp:50:40: note:   ‘std::map<int, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const int, int> >}’ is not derived from ‘const std::move_iterator<_IteratorL>’
+  while(it!=this->center_id_courses.end())
+                                        ^
+In file included from /usr/include/c++/7/string:41:0,
+                 from /usr/include/c++/7/bits/locale_classes.h:40,
+                 from /usr/include/c++/7/bits/ios_base.h:41,
+                 from /usr/include/c++/7/ios:42,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../src/courses.h:11,
+                 from ../src/Center.h:11,
+                 from ../src/Center.cpp:8:
+/usr/include/c++/7/bits/allocator.h:158:5: note: candidate: template<class _T1, class _T2> bool std::operator!=(const std::allocator<_CharT>&, const std::allocator<_T2>&)
+     operator!=(const allocator<_T1>&, const allocator<_T2>&)
+     ^~~~~~~~
+/usr/include/c++/7/bits/allocator.h:158:5: note:   template argument deduction/substitution failed:
+../src/Center.cpp:50:40: note:   ‘std::map<int, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const int, int> >}’ is not derived from ‘const std::allocator<_CharT>’
+  while(it!=this->center_id_courses.end())
+                                        ^
+In file included from /usr/include/c++/7/string:41:0,
+                 from /usr/include/c++/7/bits/locale_classes.h:40,
+                 from /usr/include/c++/7/bits/ios_base.h:41,
+                 from /usr/include/c++/7/ios:42,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../src/courses.h:11,
+                 from ../src/Center.h:11,
+                 from ../src/Center.cpp:8:
+/usr/include/c++/7/bits/allocator.h:164:5: note: candidate: template<class _Tp> bool std::operator!=(const std::allocator<_CharT>&, const std::allocator<_CharT>&)
+     operator!=(const allocator<_Tp>&, const allocator<_Tp>&)
+     ^~~~~~~~
+/usr/include/c++/7/bits/allocator.h:164:5: note:   template argument deduction/substitution failed:
+../src/Center.cpp:50:40: note:   ‘std::map<int, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const int, int> >}’ is not derived from ‘const std::allocator<_CharT>’
+  while(it!=this->center_id_courses.end())
+                                        ^
+In file included from /usr/include/c++/7/string:52:0,
+                 from /usr/include/c++/7/bits/locale_classes.h:40,
+                 from /usr/include/c++/7/bits/ios_base.h:41,
+                 from /usr/include/c++/7/ios:42,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../src/courses.h:11,
+                 from ../src/Center.h:11,
+                 from ../src/Center.cpp:8:
+/usr/include/c++/7/bits/basic_string.h:6056:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> bool std::operator!=(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator!=(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/basic_string.h:6056:5: note:   template argument deduction/substitution failed:
+../src/Center.cpp:50:40: note:   ‘std::map<int, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const int, int> >}’ is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’
+  while(it!=this->center_id_courses.end())
+                                        ^
+In file included from /usr/include/c++/7/string:52:0,
+                 from /usr/include/c++/7/bits/locale_classes.h:40,
+                 from /usr/include/c++/7/bits/ios_base.h:41,
+                 from /usr/include/c++/7/ios:42,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../src/courses.h:11,
+                 from ../src/Center.h:11,
+                 from ../src/Center.cpp:8:
+/usr/include/c++/7/bits/basic_string.h:6069:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> bool std::operator!=(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator!=(const _CharT* __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/basic_string.h:6069:5: note:   template argument deduction/substitution failed:
+../src/Center.cpp:50:40: note:   mismatched types ‘const _CharT*’ and ‘std::_Rb_tree_iterator<std::pair<const int, int> >’
+  while(it!=this->center_id_courses.end())
+                                        ^
+In file included from /usr/include/c++/7/string:52:0,
+                 from /usr/include/c++/7/bits/locale_classes.h:40,
+                 from /usr/include/c++/7/bits/ios_base.h:41,
+                 from /usr/include/c++/7/ios:42,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../src/courses.h:11,
+                 from ../src/Center.h:11,
+                 from ../src/Center.cpp:8:
+/usr/include/c++/7/bits/basic_string.h:6081:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> bool std::operator!=(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)
+     operator!=(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/basic_string.h:6081:5: note:   template argument deduction/substitution failed:
+../src/Center.cpp:50:40: note:   ‘std::map<int, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const int, int> >}’ is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’
+  while(it!=this->center_id_courses.end())
+                                        ^
+In file included from /usr/include/c++/7/bits/ios_base.h:46:0,
+                 from /usr/include/c++/7/ios:42,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../src/courses.h:11,
+                 from ../src/Center.h:11,
+                 from ../src/Center.cpp:8:
+/usr/include/c++/7/system_error:319:3: note: candidate: bool std::operator!=(const std::error_code&, const std::error_code&)
+   operator!=(const error_code& __lhs, const error_code& __rhs) noexcept
+   ^~~~~~~~
+/usr/include/c++/7/system_error:319:3: note:   no known conversion for argument 1 from ‘std::map<int, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const int, int> >}’ to ‘const std::error_code&’
+/usr/include/c++/7/system_error:323:3: note: candidate: bool std::operator!=(const std::error_code&, const std::error_condition&)
+   operator!=(const error_code& __lhs, const error_condition& __rhs) noexcept
+   ^~~~~~~~
+/usr/include/c++/7/system_error:323:3: note:   no known conversion for argument 1 from ‘std::map<int, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const int, int> >}’ to ‘const std::error_code&’
+/usr/include/c++/7/system_error:327:3: note: candidate: bool std::operator!=(const std::error_condition&, const std::error_code&)
+   operator!=(const error_condition& __lhs, const error_code& __rhs) noexcept
+   ^~~~~~~~
+/usr/include/c++/7/system_error:327:3: note:   no known conversion for argument 1 from ‘std::map<int, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const int, int> >}’ to ‘const std::error_condition&’
+/usr/include/c++/7/system_error:331:3: note: candidate: bool std::operator!=(const std::error_condition&, const std::error_condition&)
+   operator!=(const error_condition& __lhs,
+   ^~~~~~~~
+/usr/include/c++/7/system_error:331:3: note:   no known conversion for argument 1 from ‘std::map<int, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const int, int> >}’ to ‘const std::error_condition&’
+In file included from /usr/include/c++/7/bits/locale_facets.h:48:0,
+                 from /usr/include/c++/7/bits/basic_ios.h:37,
+                 from /usr/include/c++/7/ios:44,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../src/courses.h:11,
+                 from ../src/Center.h:11,
+                 from ../src/Center.cpp:8:
+/usr/include/c++/7/bits/streambuf_iterator.h:210:5: note: candidate: template<class _CharT, class _Traits> bool std::operator!=(const std::istreambuf_iterator<_CharT, _Traits>&, const std::istreambuf_iterator<_CharT, _Traits>&)
+     operator!=(const istreambuf_iterator<_CharT, _Traits>& __a,
+     ^~~~~~~~
+/usr/include/c++/7/bits/streambuf_iterator.h:210:5: note:   template argument deduction/substitution failed:
+../src/Center.cpp:50:40: note:   ‘std::map<int, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const int, int> >}’ is not derived from ‘const std::istreambuf_iterator<_CharT, _Traits>’
+  while(it!=this->center_id_courses.end())
+                                        ^
+In file included from /usr/include/c++/7/vector:64:0,
+                 from ../src/AdmissionSystem.h:19,
+                 from ../src/Center.h:12,
+                 from ../src/Center.cpp:8:
+/usr/include/c++/7/bits/stl_vector.h:1625:5: note: candidate: template<class _Tp, class _Alloc> bool std::operator!=(const std::vector<_Tp, _Alloc>&, const std::vector<_Tp, _Alloc>&)
+     operator!=(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_vector.h:1625:5: note:   template argument deduction/substitution failed:
+../src/Center.cpp:50:40: note:   ‘std::map<int, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const int, int> >}’ is not derived from ‘const std::vector<_Tp, _Alloc>’
+  while(it!=this->center_id_courses.end())
+                                        ^
+In file included from /usr/include/c++/7/map:60:0,
+                 from ../src/Center.h:15,
+                 from ../src/Center.cpp:8:
+/usr/include/c++/7/bits/stl_tree.h:412:5: note: candidate: template<class _Val> bool std::operator!=(const std::_Rb_tree_iterator<_Tp>&, const std::_Rb_tree_const_iterator<_Val>&)
+     operator!=(const _Rb_tree_iterator<_Val>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_tree.h:412:5: note:   template argument deduction/substitution failed:
+../src/Center.cpp:50:40: note:   ‘std::map<std::__cxx11::basic_string<char>, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const std::__cxx11::basic_string<char>, int> >}’ is not derived from ‘const std::_Rb_tree_const_iterator<_Val>’
+  while(it!=this->center_id_courses.end())
+                                        ^
+In file included from /usr/include/c++/7/map:60:0,
+                 from ../src/Center.h:15,
+                 from ../src/Center.cpp:8:
+/usr/include/c++/7/bits/stl_tree.h:1553:5: note: candidate: template<class _Key, class _Val, class _KeyOfValue, class _Compare, class _Alloc> bool std::operator!=(const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>&, const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>&)
+     operator!=(const _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_tree.h:1553:5: note:   template argument deduction/substitution failed:
+../src/Center.cpp:50:40: note:   ‘std::map<int, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const int, int> >}’ is not derived from ‘const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>’
+  while(it!=this->center_id_courses.end())
+                                        ^
+In file included from /usr/include/c++/7/tuple:39:0,
+                 from /usr/include/c++/7/bits/stl_map.h:63,
+                 from /usr/include/c++/7/map:61,
+                 from ../src/Center.h:15,
+                 from ../src/Center.cpp:8:
+/usr/include/c++/7/array:257:5: note: candidate: template<class _Tp, long unsigned int _Nm> bool std::operator!=(const std::array<_Tp, _Nm>&, const std::array<_Tp, _Nm>&)
+     operator!=(const array<_Tp, _Nm>& __one, const array<_Tp, _Nm>& __two)
+     ^~~~~~~~
+/usr/include/c++/7/array:257:5: note:   template argument deduction/substitution failed:
+../src/Center.cpp:50:40: note:   ‘std::map<int, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const int, int> >}’ is not derived from ‘const std::array<_Tp, _Nm>’
+  while(it!=this->center_id_courses.end())
+                                        ^
+In file included from /usr/include/c++/7/bits/stl_map.h:63:0,
+                 from /usr/include/c++/7/map:61,
+                 from ../src/Center.h:15,
+                 from ../src/Center.cpp:8:
+/usr/include/c++/7/tuple:1423:5: note: candidate: template<class ... _TElements, class ... _UElements> constexpr bool std::operator!=(const std::tuple<_Tps ...>&, const std::tuple<_Args2 ...>&)
+     operator!=(const tuple<_TElements...>& __t,
+     ^~~~~~~~
+/usr/include/c++/7/tuple:1423:5: note:   template argument deduction/substitution failed:
+../src/Center.cpp:50:40: note:   ‘std::map<int, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const int, int> >}’ is not derived from ‘const std::tuple<_Tps ...>’
+  while(it!=this->center_id_courses.end())
+                                        ^
+In file included from /usr/include/c++/7/map:61:0,
+                 from ../src/Center.h:15,
+                 from ../src/Center.cpp:8:
+/usr/include/c++/7/bits/stl_map.h:1418:5: note: candidate: template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator!=(const std::map<_Key, _Tp, _Compare, _Alloc>&, const std::map<_Key, _Tp, _Compare, _Alloc>&)
+     operator!=(const map<_Key, _Tp, _Compare, _Alloc>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_map.h:1418:5: note:   template argument deduction/substitution failed:
+../src/Center.cpp:50:40: note:   ‘std::map<int, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const int, int> >}’ is not derived from ‘const std::map<_Key, _Tp, _Compare, _Alloc>’
+  while(it!=this->center_id_courses.end())
+                                        ^
+In file included from /usr/include/c++/7/map:62:0,
+                 from ../src/Center.h:15,
+                 from ../src/Center.cpp:8:
+/usr/include/c++/7/bits/stl_multimap.h:1083:5: note: candidate: template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator!=(const std::multimap<_Key, _Tp, _Compare, _Alloc>&, const std::multimap<_Key, _Tp, _Compare, _Alloc>&)
+     operator!=(const multimap<_Key, _Tp, _Compare, _Alloc>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_multimap.h:1083:5: note:   template argument deduction/substitution failed:
+../src/Center.cpp:50:40: note:   ‘std::map<int, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const int, int> >}’ is not derived from ‘const std::multimap<_Key, _Tp, _Compare, _Alloc>’
+  while(it!=this->center_id_courses.end())
+                                        ^
+In file included from /usr/include/x86_64-linux-gnu/c++/7/bits/c++allocator.h:33:0,
+                 from /usr/include/c++/7/bits/allocator.h:46,
+                 from /usr/include/c++/7/string:41,
+                 from /usr/include/c++/7/bits/locale_classes.h:40,
+                 from /usr/include/c++/7/bits/ios_base.h:41,
+                 from /usr/include/c++/7/ios:42,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../src/courses.h:11,
+                 from ../src/Center.h:11,
+                 from ../src/Center.cpp:8:
+/usr/include/c++/7/ext/new_allocator.h:160:5: note: candidate: template<class _Tp> bool __gnu_cxx::operator!=(const __gnu_cxx::new_allocator<_Tp>&, const __gnu_cxx::new_allocator<_Tp>&)
+     operator!=(const new_allocator<_Tp>&, const new_allocator<_Tp>&)
+     ^~~~~~~~
+/usr/include/c++/7/ext/new_allocator.h:160:5: note:   template argument deduction/substitution failed:
+../src/Center.cpp:50:40: note:   ‘std::map<int, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const int, int> >}’ is not derived from ‘const __gnu_cxx::new_allocator<_Tp>’
+  while(it!=this->center_id_courses.end())
+                                        ^
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../src/courses.h:11,
+                 from ../src/Center.h:11,
+                 from ../src/Center.cpp:8:
+/usr/include/c++/7/bits/stl_iterator.h:883:5: note: candidate: template<class _Iterator, class _Container> bool __gnu_cxx::operator!=(const __gnu_cxx::__normal_iterator<_Iterator, _Container>&, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)
+     operator!=(const __normal_iterator<_Iterator, _Container>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:883:5: note:   template argument deduction/substitution failed:
+../src/Center.cpp:50:40: note:   ‘std::map<int, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const int, int> >}’ is not derived from ‘const __gnu_cxx::__normal_iterator<_Iterator, _Container>’
+  while(it!=this->center_id_courses.end())
+                                        ^
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../src/courses.h:11,
+                 from ../src/Center.h:11,
+                 from ../src/Center.cpp:8:
+/usr/include/c++/7/bits/stl_iterator.h:876:5: note: candidate: template<class _IteratorL, class _IteratorR, class _Container> bool __gnu_cxx::operator!=(const __gnu_cxx::__normal_iterator<_IteratorL, _Container>&, const __gnu_cxx::__normal_iterator<_IteratorR, _Container>&)
+     operator!=(const __normal_iterator<_IteratorL, _Container>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:876:5: note:   template argument deduction/substitution failed:
+../src/Center.cpp:50:40: note:   ‘std::map<int, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const int, int> >}’ is not derived from ‘const __gnu_cxx::__normal_iterator<_IteratorL, _Container>’
+  while(it!=this->center_id_courses.end())
+                                        ^
+make: *** [src/Center.o] Error 1
+src/subdir.mk:51: recipe for target 'src/Center.o' failed
+13:55:18 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Center.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Center.d" -MT"src/Center.o" -o "src/Center.o" "../src/Center.cpp"
+Finished building: ../src/Center.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘void load_all_center_with_there_courses(AdmissionSystem&, std::vector<Center>&)’:
+../src/main.cpp:73:12: error: ‘std::map<std::__cxx11::basic_string<char>, int> Center::center_id_courses’ is private within this context
+       cent.center_id_courses[]
+            ^~~~~~~~~~~~~~~~~
+In file included from ../src/main.cpp:13:0:
+../src/Center.h:27:18: note: declared private here
+  map<string,int> center_id_courses;
+                  ^~~~~~~~~~~~~~~~~
+../src/main.cpp:73:30: error: expected primary-expression before ‘]’ token
+       cent.center_id_courses[]
+                              ^
+src/subdir.mk:51: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+14:02:26 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Center.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Center.d" -MT"src/Center.o" -o "src/Center.o" "../src/Center.cpp"
+Finished building: ../src/Center.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘void load_all_center_with_there_courses(AdmissionSystem&, std::vector<Center>&)’:
+../src/main.cpp:73:69: error: binding reference of type ‘std::__cxx11::string& {aka std::__cxx11::basic_string<char>&}’ to ‘const string {aka const std::__cxx11::basic_string<char>}’ discards qualifiers
+       cent.add_courses_to_respective_centers(a.center[i].getCenterId(),k);
+                                              ~~~~~~~~~~~~~~~~~~~~~~~^~
+In file included from ../src/main.cpp:13:0:
+../src/Center.h:34:7: note:   initializing argument 1 of ‘void Center::add_courses_to_respective_centers(std::__cxx11::string&, int&)’
+  void add_courses_to_respective_centers(string& s, int& k);
+       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [src/main.o] Error 1
+src/subdir.mk:51: recipe for target 'src/main.o' failed
+14:02:56 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Center.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Center.d" -MT"src/Center.o" -o "src/Center.o" "../src/Center.cpp"
+../src/Center.cpp:58:6: error: prototype for ‘void Center::add_courses_to_respective_centers(std::__cxx11::string, int)’ does not match any in class ‘Center’
+ void Center::add_courses_to_respective_centers(string s, int k)
+      ^~~~~~
+In file included from ../src/Center.cpp:8:0:
+../src/Center.h:34:7: error: candidate is: void Center::add_courses_to_respective_centers(std::__cxx11::string&, int&)
+  void add_courses_to_respective_centers(string& s, int& k);
+       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/subdir.mk:51: recipe for target 'src/Center.o' failed
+make: *** [src/Center.o] Error 1
+14:03:16 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Center.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Center.d" -MT"src/Center.o" -o "src/Center.o" "../src/Center.cpp"
+../src/Center.cpp:58:6: error: prototype for ‘void Center::add_courses_to_respective_centers(std::__cxx11::string, int)’ does not match any in class ‘Center’
+ void Center::add_courses_to_respective_centers(string s, int k)
+      ^~~~~~
+In file included from ../src/Center.cpp:8:0:
+../src/Center.h:34:7: error: candidate is: void Center::add_courses_to_respective_centers(std::__cxx11::string&, int&)
+  void add_courses_to_respective_centers(string& s, int& k);
+       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [src/Center.o] Error 1
+src/subdir.mk:51: recipe for target 'src/Center.o' failed
+14:05:21 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Center.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Center.d" -MT"src/Center.o" -o "src/Center.o" "../src/Center.cpp"
+../src/Center.cpp:59:6: error: prototype for ‘void Center::add_courses_to_respective_centers(std::__cxx11::string, int)’ does not match any in class ‘Center’
+ void Center::add_courses_to_respective_centers(string s, int k)
+      ^~~~~~
+In file included from ../src/Center.cpp:8:0:
+../src/Center.h:34:7: error: candidate is: void Center::add_courses_to_respective_centers(std::__cxx11::string&, int&)
+  void add_courses_to_respective_centers(string& s, int& k);
+       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [src/Center.o] Error 1
+src/subdir.mk:51: recipe for target 'src/Center.o' failed
+14:06:15 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Center.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Center.d" -MT"src/Center.o" -o "src/Center.o" "../src/Center.cpp"
+Finished building: ../src/Center.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+14:06:26 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+14:06:46 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:136:39: error: no matching function for call to ‘Center::display_Center_with_courses()’
+   cent[j].display_Center_with_courses();
+                                       ^
+In file included from ../src/main.cpp:13:0:
+../src/Center.h:33:7: note: candidate: void Center::display_Center_with_courses(AdmissionSystem&)
+  void display_Center_with_courses(AdmissionSystem& a);
+       ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Center.h:33:7: note:   candidate expects 1 argument, 0 provided
+src/subdir.mk:51: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+14:07:05 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+14:07:10 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+14:22:38 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Center.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Center.d" -MT"src/Center.o" -o "src/Center.o" "../src/Center.cpp"
+../src/Center.cpp: In member function ‘void Center::add_courses_to_respective_centers(std::__cxx11::string, int)’:
+../src/Center.cpp:61:25: error: no match for ‘operator[]’ (operand types are ‘std::multimap<std::__cxx11::basic_string<char>, int>’ and ‘std::__cxx11::string {aka std::__cxx11::basic_string<char>}’)
+  this->center_id_courses[s] = k;
+                         ^
+src/subdir.mk:51: recipe for target 'src/Center.o' failed
+make: *** [src/Center.o] Error 1
+14:24:30 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Center.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Center.d" -MT"src/Center.o" -o "src/Center.o" "../src/Center.cpp"
+../src/Center.cpp: In member function ‘void Center::add_courses_to_respective_centers(std::__cxx11::string, int)’:
+../src/Center.cpp:61:5: error: ‘gquiz1’ was not declared in this scope
+     gquiz1.insert(pair <int, int> (1, 40));
+     ^~~~~~
+../src/Center.cpp:62:41: error: type/value mismatch at argument 1 in template parameter list for ‘template<class _T1, class _T2> struct std::pair’
+  this->center_id_courses.insert(pair<s,k>);
+                                         ^
+../src/Center.cpp:62:41: note:   expected a type, got ‘s’
+../src/Center.cpp:62:41: error: type/value mismatch at argument 2 in template parameter list for ‘template<class _T1, class _T2> struct std::pair’
+../src/Center.cpp:62:41: note:   expected a type, got ‘k’
+src/subdir.mk:51: recipe for target 'src/Center.o' failed
+make: *** [src/Center.o] Error 1
+14:24:37 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Center.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Center.d" -MT"src/Center.o" -o "src/Center.o" "../src/Center.cpp"
+../src/Center.cpp: In member function ‘void Center::add_courses_to_respective_centers(std::__cxx11::string, int)’:
+../src/Center.cpp:62:41: error: type/value mismatch at argument 1 in template parameter list for ‘template<class _T1, class _T2> struct std::pair’
+  this->center_id_courses.insert(pair<s,k>);
+                                         ^
+../src/Center.cpp:62:41: note:   expected a type, got ‘s’
+../src/Center.cpp:62:41: error: type/value mismatch at argument 2 in template parameter list for ‘template<class _T1, class _T2> struct std::pair’
+../src/Center.cpp:62:41: note:   expected a type, got ‘k’
+src/subdir.mk:51: recipe for target 'src/Center.o' failed
+make: *** [src/Center.o] Error 1
+14:25:32 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Center.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Center.d" -MT"src/Center.o" -o "src/Center.o" "../src/Center.cpp"
+Finished building: ../src/Center.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+14:25:40 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+14:26:41 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+14:26:45 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+14:29:46 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+14:30:07 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+14:37:25 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Center.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Center.d" -MT"src/Center.o" -o "src/Center.o" "../src/Center.cpp"
+Finished building: ../src/Center.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+14:37:33 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+14:42:29 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Center.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Center.d" -MT"src/Center.o" -o "src/Center.o" "../src/Center.cpp"
+../src/Center.cpp: In member function ‘void Center::add_courses_to_respective_centers(std::__cxx11::string, int)’:
+../src/Center.cpp:61:25: error: no match for ‘operator[]’ (operand types are ‘std::multimap<std::__cxx11::basic_string<char>, int>’ and ‘std::__cxx11::string {aka std::__cxx11::basic_string<char>}’)
+  this->center_id_courses[s] = k;
+                         ^
+make: *** [src/Center.o] Error 1
+src/subdir.mk:51: recipe for target 'src/Center.o' failed
+14:43:03 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Center.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Center.d" -MT"src/Center.o" -o "src/Center.o" "../src/Center.cpp"
+Finished building: ../src/Center.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+14:43:10 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+14:43:14 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+14:45:55 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+14:46:02 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:141:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int k=0;k<cour.size();k++)
+              ~^~~~~~~~~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+14:46:06 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+14:53:27 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Course.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Course.d" -MT"src/Course.o" -o "src/Course.o" "../src/Course.cpp"
+../src/Course.cpp: In member function ‘void Course::display_Course_with_eligibilities_and_centers()’:
+../src/Course.cpp:83:27: error: ‘class Course’ has no member named ‘center’
+  for(unsigned j=0;j<this->center.size();j++)
+                           ^~~~~~
+../src/Course.cpp:86:9: error: ‘class Course’ has no member named ‘center’
+   this->center[j].display_centers();
+         ^~~~~~
+../src/Course.cpp: In member function ‘void Course::add_centers(centers&)’:
+../src/Course.cpp:97:8: error: ‘class Course’ has no member named ‘center’
+  this->center.push_back(c);
+        ^~~~~~
+../src/Course.cpp: At global scope:
+../src/Course.cpp:100:67: error: no ‘const std::multimap<int, int>& Course::getCentersOfRespectiveCourses() const’ member function declared in class ‘Course’
+ const multimap<int, int>& Course::getCentersOfRespectiveCourses() const {
+                                                                   ^~~~~
+../src/Course.cpp:105:55: error: no ‘void Course::setCentersOfRespectiveCourses(const std::multimap<int, int>&)’ member function declared in class ‘Course’
+   const multimap<int, int>& centersOfRespectiveCourses) {
+                                                       ^
+src/subdir.mk:51: recipe for target 'src/Course.o' failed
+make: *** [src/Course.o] Error 1
+14:59:01 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Course.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Course.d" -MT"src/Course.o" -o "src/Course.o" "../src/Course.cpp"
+../src/Course.cpp: In member function ‘void Course::add_centers(centers&)’:
+../src/Course.cpp:101:8: error: ‘class Course’ has no member named ‘center’
+  this->center.push_back(c);
+        ^~~~~~
+make: *** [src/Course.o] Error 1
+src/subdir.mk:51: recipe for target 'src/Course.o' failed
+15:00:43 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Course.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Course.d" -MT"src/Course.o" -o "src/Course.o" "../src/Course.cpp"
+Finished building: ../src/Course.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘void load_all_courses_with_resp_available_centers(AdmissionSystem&, std::vector<Course>&)’:
+../src/main.cpp:106:45: error: no matching function for call to ‘Course::add_centers(int, unsigned int&)’
+       cour.add_centers(a.course[i].getId(),l);
+                                             ^
+In file included from ../src/main.cpp:14:0:
+../src/Course.h:52:7: note: candidate: void Course::add_centers(centers&)
+  void add_centers(centers& c);
+       ^~~~~~~~~~~
+../src/Course.h:52:7: note:   candidate expects 1 argument, 2 provided
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:141:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int k=0;k<cour.size();k++)
+              ~^~~~~~~~~~~~
+src/subdir.mk:51: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+15:02:04 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Course.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Course.d" -MT"src/Course.o" -o "src/Course.o" "../src/Course.cpp"
+Finished building: ../src/Course.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:141:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int k=0;k<cour.size();k++)
+              ~^~~~~~~~~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+15:02:15 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+15:02:23 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+15:13:13 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+15:13:30 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+15:17:34 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+15:20:47 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+15:21:19 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:124:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<stud.size();i++)
+              ~^~~~~~~~~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+15:21:22 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+15:23:22 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+15:23:26 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+15:29:54 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+15:43:49 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp:114:112: error: expected ‘,’ or ‘...’ before ‘&’ token
+ void Allocate_centers_round_1(AdmissionSystem& a,vector<Student>& stud,vector<Center>& cent,vector<Course> cour& cour);
+                                                                                                                ^
+src/subdir.mk:51: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+15:43:55 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp:114:112: error: expected ‘,’ or ‘...’ before ‘&’ token
+ void Allocate_centers_round_1(AdmissionSystem& a,vector<Student>& stud,vector<Center>& cent,vector<Course> cour& cour)
+                                                                                                                ^
+src/subdir.mk:51: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+15:44:23 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+15:46:07 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:132:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<stud.size();i++)
+              ~^~~~~~~~~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+15:46:11 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+15:56:21 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/AdmissionSystem.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
+../src/AdmissionSystem.cpp: In member function ‘int AdmissionSystem::is_seats_are_full(std::__cxx11::string, std::__cxx11::string)’:
+../src/AdmissionSystem.cpp:40:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/AdmissionSystem.cpp
+ 
+Building file: ../src/Center.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Center.d" -MT"src/Center.o" -o "src/Center.o" "../src/Center.cpp"
+Finished building: ../src/Center.cpp
+ 
+Building file: ../src/Course.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Course.d" -MT"src/Course.o" -o "src/Course.o" "../src/Course.cpp"
+Finished building: ../src/Course.cpp
+ 
+Building file: ../src/capacities.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/capacities.d" -MT"src/capacities.o" -o "src/capacities.o" "../src/capacities.cpp"
+Finished building: ../src/capacities.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘void Allocate_centers_round_1(AdmissionSystem&, std::vector<Student>&, std::vector<Center>&, std::vector<Course>&)’:
+../src/main.cpp:133:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i=0;i<stud.size();i++)
+               ~^~~~~~~~~~~~
+../src/main.cpp:135:26: error: ‘std::vector<preference> Student::preferences’ is private within this context
+    for(int j=0;j<stud[i].preferences.size();j++)
+                          ^~~~~~~~~~~
+In file included from ../src/main.cpp:12:0:
+../src/Student.h:32:21: note: declared private here
+  vector<preference> preferences;
+                     ^~~~~~~~~~~
+../src/main.cpp:135:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int j=0;j<stud[i].preferences.size();j++)
+                ~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:155:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<stud.size();i++)
+              ~^~~~~~~~~~~~
+src/subdir.mk:51: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+15:59:33 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/AdmissionSystem.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
+../src/AdmissionSystem.cpp: In member function ‘int AdmissionSystem::is_seats_are_full(std::__cxx11::string, std::__cxx11::string)’:
+../src/AdmissionSystem.cpp:39:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<this->capacitie.size();i++)
+              ~^~~~~~~~~~~~~~~~~~~~~~~
+../src/AdmissionSystem.cpp:41:25: error: ‘std::__cxx11::string capacities::center_id’ is private within this context
+   if(this->capacitie[i].center_id == id && this->capacitie[i].course_name == course)
+                         ^~~~~~~~~
+In file included from ../src/AdmissionSystem.h:15:0,
+                 from ../src/AdmissionSystem.cpp:8:
+../src/capacities.h:16:9: note: declared private here
+  string center_id;
+         ^~~~~~~~~
+../src/AdmissionSystem.cpp:41:63: error: ‘std::__cxx11::string capacities::course_name’ is private within this context
+   if(this->capacitie[i].center_id == id && this->capacitie[i].course_name == course)
+                                                               ^~~~~~~~~~~
+In file included from ../src/AdmissionSystem.h:15:0,
+                 from ../src/AdmissionSystem.cpp:8:
+../src/capacities.h:17:9: note: declared private here
+  string course_name;
+         ^~~~~~~~~~~
+../src/AdmissionSystem.cpp:43:26: error: ‘int capacities::capacity’ is private within this context
+    if(this->capacitie[i].capacity == this->capacitie[i].filled_capacity)
+                          ^~~~~~~~
+In file included from ../src/AdmissionSystem.h:15:0,
+                 from ../src/AdmissionSystem.cpp:8:
+../src/capacities.h:18:6: note: declared private here
+  int capacity;
+      ^~~~~~~~
+../src/AdmissionSystem.cpp:43:57: error: ‘int capacities::filled_capacity’ is private within this context
+    if(this->capacitie[i].capacity == this->capacitie[i].filled_capacity)
+                                                         ^~~~~~~~~~~~~~~
+In file included from ../src/AdmissionSystem.h:15:0,
+                 from ../src/AdmissionSystem.cpp:8:
+../src/capacities.h:19:6: note: declared private here
+  int filled_capacity;
+      ^~~~~~~~~~~~~~~
+src/subdir.mk:51: recipe for target 'src/AdmissionSystem.o' failed
+make: *** [src/AdmissionSystem.o] Error 1
+15:59:47 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/AdmissionSystem.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
+../src/AdmissionSystem.cpp: In member function ‘int AdmissionSystem::is_seats_are_full(std::__cxx11::string, std::__cxx11::string)’:
+../src/AdmissionSystem.cpp:41:25: error: ‘std::__cxx11::string capacities::center_id’ is private within this context
+   if(this->capacitie[i].center_id == id && this->capacitie[i].course_name == course)
+                         ^~~~~~~~~
+In file included from ../src/AdmissionSystem.h:15:0,
+                 from ../src/AdmissionSystem.cpp:8:
+../src/capacities.h:16:9: note: declared private here
+  string center_id;
+         ^~~~~~~~~
+../src/AdmissionSystem.cpp:41:63: error: ‘std::__cxx11::string capacities::course_name’ is private within this context
+   if(this->capacitie[i].center_id == id && this->capacitie[i].course_name == course)
+                                                               ^~~~~~~~~~~
+In file included from ../src/AdmissionSystem.h:15:0,
+                 from ../src/AdmissionSystem.cpp:8:
+../src/capacities.h:17:9: note: declared private here
+  string course_name;
+         ^~~~~~~~~~~
+../src/AdmissionSystem.cpp:43:26: error: ‘int capacities::capacity’ is private within this context
+    if(this->capacitie[i].capacity == this->capacitie[i].filled_capacity)
+                          ^~~~~~~~
+In file included from ../src/AdmissionSystem.h:15:0,
+                 from ../src/AdmissionSystem.cpp:8:
+../src/capacities.h:18:6: note: declared private here
+  int capacity;
+      ^~~~~~~~
+../src/AdmissionSystem.cpp:43:57: error: ‘int capacities::filled_capacity’ is private within this context
+    if(this->capacitie[i].capacity == this->capacitie[i].filled_capacity)
+                                                         ^~~~~~~~~~~~~~~
+In file included from ../src/AdmissionSystem.h:15:0,
+                 from ../src/AdmissionSystem.cpp:8:
+../src/capacities.h:19:6: note: declared private here
+  int filled_capacity;
+      ^~~~~~~~~~~~~~~
+make: *** [src/AdmissionSystem.o] Error 1
+src/subdir.mk:51: recipe for target 'src/AdmissionSystem.o' failed
+16:00:10 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/AdmissionSystem.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
+../src/AdmissionSystem.cpp: In member function ‘int AdmissionSystem::is_seats_are_full(std::__cxx11::string, std::__cxx11::string)’:
+../src/AdmissionSystem.cpp:41:25: error: ‘std::__cxx11::string capacities::center_id’ is private within this context
+   if(this->capacitie[i].center_id == id && this->capacitie[i].course_name == course)
+                         ^~~~~~~~~
+In file included from ../src/AdmissionSystem.h:15:0,
+                 from ../src/AdmissionSystem.cpp:8:
+../src/capacities.h:16:9: note: declared private here
+  string center_id;
+         ^~~~~~~~~
+../src/AdmissionSystem.cpp:41:63: error: ‘std::__cxx11::string capacities::course_name’ is private within this context
+   if(this->capacitie[i].center_id == id && this->capacitie[i].course_name == course)
+                                                               ^~~~~~~~~~~
+In file included from ../src/AdmissionSystem.h:15:0,
+                 from ../src/AdmissionSystem.cpp:8:
+../src/capacities.h:17:9: note: declared private here
+  string course_name;
+         ^~~~~~~~~~~
+../src/AdmissionSystem.cpp:43:26: error: ‘int capacities::capacity’ is private within this context
+    if(this->capacitie[i].capacity == this->capacitie[i].filled_capacity)
+                          ^~~~~~~~
+In file included from ../src/AdmissionSystem.h:15:0,
+                 from ../src/AdmissionSystem.cpp:8:
+../src/capacities.h:18:6: note: declared private here
+  int capacity;
+      ^~~~~~~~
+../src/AdmissionSystem.cpp:43:57: error: ‘int capacities::filled_capacity’ is private within this context
+    if(this->capacitie[i].capacity == this->capacitie[i].filled_capacity)
+                                                         ^~~~~~~~~~~~~~~
+In file included from ../src/AdmissionSystem.h:15:0,
+                 from ../src/AdmissionSystem.cpp:8:
+../src/capacities.h:19:6: note: declared private here
+  int filled_capacity;
+      ^~~~~~~~~~~~~~~
+src/subdir.mk:51: recipe for target 'src/AdmissionSystem.o' failed
+make: *** [src/AdmissionSystem.o] Error 1
+16:00:13 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/AdmissionSystem.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
+../src/AdmissionSystem.cpp: In member function ‘int AdmissionSystem::is_seats_are_full(std::__cxx11::string, std::__cxx11::string)’:
+../src/AdmissionSystem.cpp:43:26: error: ‘int capacities::capacity’ is private within this context
+    if(this->capacitie[i].capacity == this->capacitie[i].filled_capacity)
+                          ^~~~~~~~
+In file included from ../src/AdmissionSystem.h:15:0,
+                 from ../src/AdmissionSystem.cpp:8:
+../src/capacities.h:18:6: note: declared private here
+  int capacity;
+      ^~~~~~~~
+../src/AdmissionSystem.cpp:43:57: error: ‘int capacities::filled_capacity’ is private within this context
+    if(this->capacitie[i].capacity == this->capacitie[i].filled_capacity)
+                                                         ^~~~~~~~~~~~~~~
+In file included from ../src/AdmissionSystem.h:15:0,
+                 from ../src/AdmissionSystem.cpp:8:
+../src/capacities.h:19:6: note: declared private here
+  int filled_capacity;
+      ^~~~~~~~~~~~~~~
+src/subdir.mk:51: recipe for target 'src/AdmissionSystem.o' failed
+make: *** [src/AdmissionSystem.o] Error 1
+16:00:28 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/AdmissionSystem.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
+Finished building: ../src/AdmissionSystem.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘void Allocate_centers_round_1(AdmissionSystem&, std::vector<Student>&, std::vector<Center>&, std::vector<Course>&)’:
+../src/main.cpp:133:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i=0;i<stud.size();i++)
+               ~^~~~~~~~~~~~
+../src/main.cpp:135:26: error: ‘std::vector<preference> Student::preferences’ is private within this context
+    for(int j=0;j<stud[i].preferences.size();j++)
+                          ^~~~~~~~~~~
+In file included from ../src/main.cpp:12:0:
+../src/Student.h:32:21: note: declared private here
+  vector<preference> preferences;
+                     ^~~~~~~~~~~
+../src/main.cpp:135:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int j=0;j<stud[i].preferences.size();j++)
+                ~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:155:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<stud.size();i++)
+              ~^~~~~~~~~~~~
+make: *** [src/main.o] Error 1
+src/subdir.mk:51: recipe for target 'src/main.o' failed
+16:00:39 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/AdmissionSystem.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
+Finished building: ../src/AdmissionSystem.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘void Allocate_centers_round_1(AdmissionSystem&, std::vector<Student>&, std::vector<Center>&, std::vector<Course>&)’:
+../src/main.cpp:133:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i=0;i<stud.size();i++)
+               ~^~~~~~~~~~~~
+../src/main.cpp:135:26: error: ‘std::vector<preference> Student::preferences’ is private within this context
+    for(int j=0;j<stud[i].preferences.size();j++)
+                          ^~~~~~~~~~~
+In file included from ../src/main.cpp:12:0:
+../src/Student.h:32:21: note: declared private here
+  vector<preference> preferences;
+                     ^~~~~~~~~~~
+../src/main.cpp:135:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int j=0;j<stud[i].preferences.size();j++)
+                ~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:155:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<stud.size();i++)
+              ~^~~~~~~~~~~~
+src/subdir.mk:51: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+16:00:53 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘void Allocate_centers_round_1(AdmissionSystem&, std::vector<Student>&, std::vector<Center>&, std::vector<Course>&)’:
+../src/main.cpp:133:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i=0;i<stud.size();i++)
+               ~^~~~~~~~~~~~
+../src/main.cpp:135:26: error: ‘std::vector<preference> Student::preferences’ is private within this context
+    for(int j=0;j<stud[i].preferences.size();j++)
+                          ^~~~~~~~~~~
+In file included from ../src/main.cpp:12:0:
+../src/Student.h:32:21: note: declared private here
+  vector<preference> preferences;
+                     ^~~~~~~~~~~
+../src/main.cpp:135:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int j=0;j<stud[i].preferences.size();j++)
+                ~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [src/main.o] Error 1
+src/subdir.mk:51: recipe for target 'src/main.o' failed
+16:01:09 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘void Allocate_centers_round_1(AdmissionSystem&, std::vector<Student>&, std::vector<Center>&, std::vector<Course>&)’:
+../src/main.cpp:133:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i=0;i<stud.size();i++)
+               ~^~~~~~~~~~~~
+../src/main.cpp:135:31: error: ‘std::vector<preference> Student::preferences’ is private within this context
+    for(unsigned j=0;j<stud[i].preferences.size();j++)
+                               ^~~~~~~~~~~
+In file included from ../src/main.cpp:12:0:
+../src/Student.h:32:21: note: declared private here
+  vector<preference> preferences;
+                     ^~~~~~~~~~~
+src/subdir.mk:51: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+16:01:25 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘void Allocate_centers_round_1(AdmissionSystem&, std::vector<Student>&, std::vector<Center>&, std::vector<Course>&)’:
+../src/main.cpp:135:31: error: ‘std::vector<preference> Student::preferences’ is private within this context
+    for(unsigned j=0;j<stud[i].preferences.size();j++)
+                               ^~~~~~~~~~~
+In file included from ../src/main.cpp:12:0:
+../src/Student.h:32:21: note: declared private here
+  vector<preference> preferences;
+                     ^~~~~~~~~~~
+make: *** [src/main.o] Error 1
+src/subdir.mk:51: recipe for target 'src/main.o' failed
+16:05:31 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘void Allocate_centers_round_1(AdmissionSystem&, std::vector<Student>&, std::vector<Center>&, std::vector<Course>&)’:
+../src/main.cpp:133:31: error: ‘sort_by_rank_a’ was not declared in this scope
+  sort(stud.begin(),stud.end(),sort_by_rank_a);
+                               ^~~~~~~~~~~~~~
+../src/main.cpp:138:31: error: ‘std::vector<preference> Student::preferences’ is private within this context
+    for(unsigned j=0;j<stud[i].preferences.size();j++)
+                               ^~~~~~~~~~~
+In file included from ../src/main.cpp:13:0:
+../src/Student.h:32:21: note: declared private here
+  vector<preference> preferences;
+                     ^~~~~~~~~~~
+src/subdir.mk:51: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+16:18:12 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘bool sort_by_rank_a(Student&, Student&)’:
+../src/main.cpp:132:11: error: ‘int Student::rank_a’ is private within this context
+  return a.rank_a<b.rank_a?true:false;
+           ^~~~~~
+In file included from ../src/main.cpp:13:0:
+../src/Student.h:21:6: note: declared private here
+  int rank_a;
+      ^~~~~~
+../src/main.cpp:132:20: error: ‘int Student::rank_a’ is private within this context
+  return a.rank_a<b.rank_a?true:false;
+                    ^~~~~~
+In file included from ../src/main.cpp:13:0:
+../src/Student.h:21:6: note: declared private here
+  int rank_a;
+      ^~~~~~
+make: *** [src/main.o] Error 1
+src/subdir.mk:51: recipe for target 'src/main.o' failed
+16:18:23 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘bool sort_by_rank_a(Student&, Student&)’:
+../src/main.cpp:132:12: error: ‘int Student::rank_a’ is private within this context
+  return (a.rank_a<b.rank_a)?true:false;
+            ^~~~~~
+In file included from ../src/main.cpp:13:0:
+../src/Student.h:21:6: note: declared private here
+  int rank_a;
+      ^~~~~~
+../src/main.cpp:132:21: error: ‘int Student::rank_a’ is private within this context
+  return (a.rank_a<b.rank_a)?true:false;
+                     ^~~~~~
+In file included from ../src/main.cpp:13:0:
+../src/Student.h:21:6: note: declared private here
+  int rank_a;
+      ^~~~~~
+make: *** [src/main.o] Error 1
+src/subdir.mk:51: recipe for target 'src/main.o' failed
+16:19:09 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+16:19:58 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘void Allocate_centers_round_1(AdmissionSystem&, std::vector<Student>&, std::vector<Center>&, std::vector<Course>&)’:
+../src/main.cpp:139:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<stud.size();i++)
+              ~^~~~~~~~~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+16:20:21 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘void Allocate_centers_round_1(AdmissionSystem&, std::vector<Student>&, std::vector<Center>&, std::vector<Course>&)’:
+../src/main.cpp:139:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<stud.size();i++)
+              ~^~~~~~~~~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+16:20:26 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+16:21:38 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘void Allocate_centers_round_1(AdmissionSystem&, std::vector<Student>&, std::vector<Center>&, std::vector<Course>&)’:
+../src/main.cpp:140:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<stud.size();i++)
+              ~^~~~~~~~~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+16:21:48 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+16:21:53 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+16:30:31 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+17:10:26 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘void Allocate_centers_round_1(AdmissionSystem&, std::vector<Student>&, std::vector<Center>&, std::vector<Course>&)’:
+../src/main.cpp:161:17: error: ‘std::vector<preference> Student::preferences’ is private within this context
+      if(stud[j].preferences[i].course_name == "ACN")
+                 ^~~~~~~~~~~
+In file included from ../src/main.cpp:13:0:
+../src/Student.h:32:21: note: declared private here
+  vector<preference> preferences;
+                     ^~~~~~~~~~~
+../src/main.cpp:161:32: error: ‘std::__cxx11::string preference::course_name’ is private within this context
+      if(stud[j].preferences[i].course_name == "ACN")
+                                ^~~~~~~~~~~
+In file included from ../src/Student.h:12:0,
+                 from ../src/main.cpp:13:
+../src/preference.h:18:9: note: declared private here
+  string course_name;
+         ^~~~~~~~~~~
+src/subdir.mk:51: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+17:10:36 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘void Allocate_centers_round_1(AdmissionSystem&, std::vector<Student>&, std::vector<Center>&, std::vector<Course>&)’:
+../src/main.cpp:161:17: error: ‘std::vector<preference> Student::preferences’ is private within this context
+      if(stud[j].preferences[i].getCourseName() == "ACN")
+                 ^~~~~~~~~~~
+In file included from ../src/main.cpp:13:0:
+../src/Student.h:32:21: note: declared private here
+  vector<preference> preferences;
+                     ^~~~~~~~~~~
+src/subdir.mk:51: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+17:11:30 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘void Allocate_centers_round_1(AdmissionSystem&, std::vector<Student>&, std::vector<Center>&, std::vector<Course>&)’:
+../src/main.cpp:161:34: error: ‘const class std::vector<preference>’ has no member named ‘getCourseName’
+      if(stud[j].getPreferences().getCourseName() == "ACN")
+                                  ^~~~~~~~~~~~~
+make: *** [src/main.o] Error 1
+src/subdir.mk:51: recipe for target 'src/main.o' failed
+17:12:27 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘void Allocate_centers_round_1(AdmissionSystem&, std::vector<Student>&, std::vector<Center>&, std::vector<Course>&)’:
+../src/main.cpp:161:33: error: invalid types ‘<unresolved overloaded function type>[int]’ for array subscript
+      if(stud[j].getPreferences[i]().getCourseName() == "ACN")
+                                 ^
+make: *** [src/main.o] Error 1
+src/subdir.mk:51: recipe for target 'src/main.o' failed
+17:13:12 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+17:16:04 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+17:16:36 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+17:26:46 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/AdmissionSystem.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
+../src/AdmissionSystem.cpp:37:74: error: no ‘int AdmissionSystem::is_seats_are_full_for_rank_A(std::__cxx11::string, std::__cxx11::string)’ member function declared in class ‘AdmissionSystem’
+ int AdmissionSystem::is_seats_are_full_for_rank_A(string id,string course)
+                                                                          ^
+src/subdir.mk:51: recipe for target 'src/AdmissionSystem.o' failed
+make: *** [src/AdmissionSystem.o] Error 1
+17:27:03 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/AdmissionSystem.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
+../src/AdmissionSystem.cpp:37:74: error: no ‘int AdmissionSystem::is_seats_are_full_for_rank_A(std::__cxx11::string, std::__cxx11::string)’ member function declared in class ‘AdmissionSystem’
+ int AdmissionSystem::is_seats_are_full_for_rank_A(string id,string course)
+                                                                          ^
+make: *** [src/AdmissionSystem.o] Error 1
+src/subdir.mk:51: recipe for target 'src/AdmissionSystem.o' failed
+17:29:51 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/AdmissionSystem.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
+../src/AdmissionSystem.cpp:37:74: error: no ‘int AdmissionSystem::is_seats_are_full_for_rank_A(std::__cxx11::string, std::__cxx11::string)’ member function declared in class ‘AdmissionSystem’
+ int AdmissionSystem::is_seats_are_full_for_rank_A(string id,string course)
+                                                                          ^
+make: *** [src/AdmissionSystem.o] Error 1
+src/subdir.mk:51: recipe for target 'src/AdmissionSystem.o' failed
+17:30:34 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/AdmissionSystem.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
+Finished building: ../src/AdmissionSystem.cpp
+ 
+Building file: ../src/Center.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Center.d" -MT"src/Center.o" -o "src/Center.o" "../src/Center.cpp"
+Finished building: ../src/Center.cpp
+ 
+Building file: ../src/Course.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Course.d" -MT"src/Course.o" -o "src/Course.o" "../src/Course.cpp"
+Finished building: ../src/Course.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘void Allocate_centers_round_1(AdmissionSystem&, std::vector<Student>&, std::vector<Center>&, std::vector<Course>&)’:
+../src/main.cpp:169:27: error: ‘std::__cxx11::string capacities::center_id’ is private within this context
+        if(a.capacitie[ii].center_id == "ACN" && a.capacitie[ii].course_name)
+                           ^~~~~~~~~
+In file included from ../src/AdmissionSystem.h:15:0,
+                 from ../src/Center.h:12,
+                 from ../src/main.cpp:14:
+../src/capacities.h:16:9: note: declared private here
+  string center_id;
+         ^~~~~~~~~
+../src/main.cpp:169:65: error: ‘std::__cxx11::string capacities::course_name’ is private within this context
+        if(a.capacitie[ii].center_id == "ACN" && a.capacitie[ii].course_name)
+                                                                 ^~~~~~~~~~~
+In file included from ../src/AdmissionSystem.h:15:0,
+                 from ../src/Center.h:12,
+                 from ../src/main.cpp:14:
+../src/capacities.h:17:9: note: declared private here
+  string course_name;
+         ^~~~~~~~~~~
+../src/main.cpp:169:46: error: no match for ‘operator&&’ (operand types are ‘bool’ and ‘std::__cxx11::string {aka std::__cxx11::basic_string<char>}’)
+        if(a.capacitie[ii].center_id == "ACN" && a.capacitie[ii].course_name)
+../src/main.cpp:169:46: note: candidate: operator&&(bool, bool) <built-in>
+../src/main.cpp:169:46: note:   no known conversion for argument 2 from ‘std::__cxx11::string {aka std::__cxx11::basic_string<char>}’ to ‘bool’
+../src/main.cpp:170:7: error: expected primary-expression before ‘}’ token
+       }
+       ^
+src/subdir.mk:51: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+17:35:38 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘void Allocate_centers_round_1(AdmissionSystem&, std::vector<Student>&, std::vector<Center>&, std::vector<Course>&)’:
+../src/main.cpp:157:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int j=0;j<cour.size();j++)
+               ~^~~~~~~~~~~~
+../src/main.cpp:160:15: error: ‘std::__cxx11::string Course::ccat_section’ is private within this context
+    if(cour[j].ccat_section = 'A')
+               ^~~~~~~~~~~~
+In file included from ../src/main.cpp:15:0:
+../src/Course.h:27:9: note: declared private here
+  string ccat_section;
+         ^~~~~~~~~~~~
+../src/main.cpp:160:28: error: could not convert ‘(& cour)->std::vector<Course>::operator[](((std::vector<Course>::size_type)j)).Course::ccat_section.std::__cxx11::basic_string<char>::operator=(65)’ from ‘std::__cxx11::basic_string<char>’ to ‘bool’
+    if(cour[j].ccat_section = 'A')
+make: *** [src/main.o] Error 1
+src/subdir.mk:51: recipe for target 'src/main.o' failed
+17:35:44 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘void Allocate_centers_round_1(AdmissionSystem&, std::vector<Student>&, std::vector<Center>&, std::vector<Course>&)’:
+../src/main.cpp:157:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int j=0;j<cour.size();j++)
+               ~^~~~~~~~~~~~
+../src/main.cpp:160:15: error: ‘std::__cxx11::string Course::ccat_section’ is private within this context
+    if(cour[j].ccat_section = "A")
+               ^~~~~~~~~~~~
+In file included from ../src/main.cpp:15:0:
+../src/Course.h:27:9: note: declared private here
+  string ccat_section;
+         ^~~~~~~~~~~~
+../src/main.cpp:160:28: error: could not convert ‘(& cour)->std::vector<Course>::operator[](((std::vector<Course>::size_type)j)).Course::ccat_section.std::__cxx11::basic_string<char>::operator=(((const char*)"A"))’ from ‘std::__cxx11::basic_string<char>’ to ‘bool’
+    if(cour[j].ccat_section = "A")
+src/subdir.mk:51: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+17:35:55 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘void Allocate_centers_round_1(AdmissionSystem&, std::vector<Student>&, std::vector<Center>&, std::vector<Course>&)’:
+../src/main.cpp:157:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int j=0;j<cour.size();j++)
+               ~^~~~~~~~~~~~
+../src/main.cpp:160:34: error: passing ‘const string {aka const std::__cxx11::basic_string<char>}’ as ‘this’ argument discards qualifiers [-fpermissive]
+    if(cour[j].getCcatSection() = "A")
+                                  ^~~
+In file included from /usr/include/c++/7/string:52:0,
+                 from /usr/include/c++/7/bits/locale_classes.h:40,
+                 from /usr/include/c++/7/bits/ios_base.h:41,
+                 from /usr/include/c++/7/ios:42,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from ../src/main.cpp:8:
+/usr/include/c++/7/bits/basic_string.h:693:7: note:   in call to ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator=(const _CharT*) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+       operator=(const _CharT* __s)
+       ^~~~~~~~
+../src/main.cpp:160:32: error: could not convert ‘(&(&(& cour)->std::vector<Course>::operator[](((std::vector<Course>::size_type)j)))->Course::getCcatSection())->std::__cxx11::basic_string<char>::operator=(((const char*)"A"))’ from ‘std::__cxx11::basic_string<char>’ to ‘bool’
+    if(cour[j].getCcatSection() = "A")
+       ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+src/subdir.mk:51: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+17:36:02 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘void Allocate_centers_round_1(AdmissionSystem&, std::vector<Student>&, std::vector<Center>&, std::vector<Course>&)’:
+../src/main.cpp:157:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int j=0;j<cour.size();j++)
+               ~^~~~~~~~~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+17:36:09 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+17:46:35 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/AdmissionSystem.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
+Finished building: ../src/AdmissionSystem.cpp
+ 
+Building file: ../src/Center.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Center.d" -MT"src/Center.o" -o "src/Center.o" "../src/Center.cpp"
+Finished building: ../src/Center.cpp
+ 
+Building file: ../src/Course.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Course.d" -MT"src/Course.o" -o "src/Course.o" "../src/Course.cpp"
+Finished building: ../src/Course.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘void Allocate_centers_round_1(AdmissionSystem&, std::vector<Student>&, std::vector<Center>&, std::vector<Course>&)’:
+../src/main.cpp:161:11: error: ‘class AdmissionSystem’ has no member named ‘is_seats_are_full_for_rank_A’; did you mean ‘is_seats_are_full’?
+     if(!a.is_seats_are_full_for_rank_A("ACN","PG-DGI"))
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+           is_seats_are_full
+../src/main.cpp:177:4: error: expected primary-expression before ‘}’ token
+    }
+    ^
+make: *** [src/main.o] Error 1
+src/subdir.mk:51: recipe for target 'src/main.o' failed
+17:46:50 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘void Allocate_centers_round_1(AdmissionSystem&, std::vector<Student>&, std::vector<Center>&, std::vector<Course>&)’:
+../src/main.cpp:177:4: error: expected primary-expression before ‘}’ token
+    }
+    ^
+src/subdir.mk:51: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+17:48:48 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘void Allocate_centers_round_1(AdmissionSystem&, std::vector<Student>&, std::vector<Center>&, std::vector<Course>&)’:
+../src/main.cpp:161:33: error: ‘std::multimap<int, int> Course::centers_of_respective_courses’ is private within this context
+     for(unsigned k =0;k<cour[j].centers_of_respective_courses.size();k++)
+                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/main.cpp:15:0:
+../src/Course.h:30:20: note: declared private here
+  multimap<int,int> centers_of_respective_courses;
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/subdir.mk:51: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+17:50:03 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+17:53:18 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘void Allocate_centers_round_1(AdmissionSystem&, std::vector<Student>&, std::vector<Center>&, std::vector<Course>&)’:
+../src/main.cpp:163:38: error: ‘std::multimap<int, int> Course::centers_of_respective_courses’ is private within this context
+      if(!a.is_seats_are_full(cour[j].centers_of_respective_courses[k],"PG-DGI"))
+                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/main.cpp:15:0:
+../src/Course.h:30:20: note: declared private here
+  multimap<int,int> centers_of_respective_courses;
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cpp:163:67: error: no match for ‘operator[]’ (operand types are ‘std::multimap<int, int>’ and ‘unsigned int’)
+      if(!a.is_seats_are_full(cour[j].centers_of_respective_courses[k],"PG-DGI"))
+                                                                   ^
+make: *** [src/main.o] Error 1
+src/subdir.mk:51: recipe for target 'src/main.o' failed
+17:53:37 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘void Allocate_centers_round_1(AdmissionSystem&, std::vector<Student>&, std::vector<Center>&, std::vector<Course>&)’:
+../src/main.cpp:163:38: error: ‘std::multimap<int, int> Course::centers_of_respective_courses’ is private within this context
+      if(!a.is_seats_are_full(cour[j].centers_of_respective_courses,"PG-DGI"))
+                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/main.cpp:15:0:
+../src/Course.h:30:20: note: declared private here
+  multimap<int,int> centers_of_respective_courses;
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cpp:163:76: error: no matching function for call to ‘AdmissionSystem::is_seats_are_full(std::multimap<int, int>&, const char [7])’
+      if(!a.is_seats_are_full(cour[j].centers_of_respective_courses,"PG-DGI"))
+                                                                            ^
+In file included from ../src/Center.h:12:0,
+                 from ../src/main.cpp:14:
+../src/AdmissionSystem.h:63:6: note: candidate: int AdmissionSystem::is_seats_are_full(std::__cxx11::string, std::__cxx11::string)
+  int is_seats_are_full(string id,string course);
+      ^~~~~~~~~~~~~~~~~
+../src/AdmissionSystem.h:63:6: note:   no known conversion for argument 1 from ‘std::multimap<int, int>’ to ‘std::__cxx11::string {aka std::__cxx11::basic_string<char>}’
+src/subdir.mk:51: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+18:08:11 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+18:08:18 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+18:08:54 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+18:08:57 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+18:09:02 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+18:24:11 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘void Allocate_centers_round_1(AdmissionSystem&, std::vector<Student>&, std::vector<Center>&, std::vector<Course>&)’:
+../src/main.cpp:162:83: error: conversion from ‘std::multimap<int, int>::const_iterator {aka std::_Rb_tree_const_iterator<std::pair<const int, int> >}’ to non-scalar type ‘std::multimap<int, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const int, int> >}’ requested
+     multimap<int,int>::iterator it = cour[j].getCentersOfRespectiveCourses().begin();
+                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+../src/main.cpp:165:80: error: no matching function for call to ‘AdmissionSystem::is_seats_are_full(const string&, int)’
+      if(!a.is_seats_are_full(a.center[it->second].getCenterId(),cour[j].getId()))
+                                                                                ^
+In file included from ../src/Center.h:12:0,
+                 from ../src/main.cpp:14:
+../src/AdmissionSystem.h:63:6: note: candidate: int AdmissionSystem::is_seats_are_full(std::__cxx11::string, std::__cxx11::string)
+  int is_seats_are_full(string id,string course);
+      ^~~~~~~~~~~~~~~~~
+../src/AdmissionSystem.h:63:6: note:   no known conversion for argument 2 from ‘int’ to ‘std::__cxx11::string {aka std::__cxx11::basic_string<char>}’
+make: *** [src/main.o] Error 1
+src/subdir.mk:51: recipe for target 'src/main.o' failed
+18:24:45 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘void Allocate_centers_round_1(AdmissionSystem&, std::vector<Student>&, std::vector<Center>&, std::vector<Course>&)’:
+../src/main.cpp:162:46: error: ‘std::multimap<int, int> Course::centers_of_respective_courses’ is private within this context
+     multimap<int,int>::iterator it = cour[j].centers_of_respective_courses.begin();
+                                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/main.cpp:15:0:
+../src/Course.h:30:20: note: declared private here
+  multimap<int,int> centers_of_respective_courses;
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cpp:165:80: error: no matching function for call to ‘AdmissionSystem::is_seats_are_full(const string&, int)’
+      if(!a.is_seats_are_full(a.center[it->second].getCenterId(),cour[j].getId()))
+                                                                                ^
+In file included from ../src/Center.h:12:0,
+                 from ../src/main.cpp:14:
+../src/AdmissionSystem.h:63:6: note: candidate: int AdmissionSystem::is_seats_are_full(std::__cxx11::string, std::__cxx11::string)
+  int is_seats_are_full(string id,string course);
+      ^~~~~~~~~~~~~~~~~
+../src/AdmissionSystem.h:63:6: note:   no known conversion for argument 2 from ‘int’ to ‘std::__cxx11::string {aka std::__cxx11::basic_string<char>}’
+src/subdir.mk:51: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+18:25:07 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘void Allocate_centers_round_1(AdmissionSystem&, std::vector<Student>&, std::vector<Center>&, std::vector<Course>&)’:
+../src/main.cpp:162:83: error: conversion from ‘std::multimap<int, int>::const_iterator {aka std::_Rb_tree_const_iterator<std::pair<const int, int> >}’ to non-scalar type ‘std::multimap<int, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const int, int> >}’ requested
+     multimap<int,int>::iterator it = cour[j].getCentersOfRespectiveCourses().begin();
+                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+../src/main.cpp:165:80: error: no matching function for call to ‘AdmissionSystem::is_seats_are_full(const string&, int)’
+      if(!a.is_seats_are_full(a.center[it->second].getCenterId(),cour[j].getId()))
+                                                                                ^
+In file included from ../src/Center.h:12:0,
+                 from ../src/main.cpp:14:
+../src/AdmissionSystem.h:63:6: note: candidate: int AdmissionSystem::is_seats_are_full(std::__cxx11::string, std::__cxx11::string)
+  int is_seats_are_full(string id,string course);
+      ^~~~~~~~~~~~~~~~~
+../src/AdmissionSystem.h:63:6: note:   no known conversion for argument 2 from ‘int’ to ‘std::__cxx11::string {aka std::__cxx11::basic_string<char>}’
+make: *** [src/main.o] Error 1
+src/subdir.mk:51: recipe for target 'src/main.o' failed
+13:36:54 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+15:31:59 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/AdmissionSystem.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
+Finished building: ../src/AdmissionSystem.cpp
+ 
+Building file: ../src/Center.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Center.d" -MT"src/Center.o" -o "src/Center.o" "../src/Center.cpp"
+Finished building: ../src/Center.cpp
+ 
+Building file: ../src/Course.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Course.d" -MT"src/Course.o" -o "src/Course.o" "../src/Course.cpp"
+Finished building: ../src/Course.cpp
+ 
+Building file: ../src/courses.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/courses.d" -MT"src/courses.o" -o "src/courses.o" "../src/courses.cpp"
+../src/courses.cpp:72:1: error: expected declaration before ‘}’ token
+ }
+ ^
+src/subdir.mk:51: recipe for target 'src/courses.o' failed
+make: *** [src/courses.o] Error 1
+15:32:34 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/courses.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/courses.d" -MT"src/courses.o" -o "src/courses.o" "../src/courses.cpp"
+Finished building: ../src/courses.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+15:32:56 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/Center.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Center.d" -MT"src/Center.o" -o "src/Center.o" "../src/Center.cpp"
+Finished building: ../src/Center.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+15:32:59 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+15:51:40 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘void Allocate_centers_round_1(AdmissionSystem&, std::vector<Student>&, std::vector<Center>&, std::vector<Course>&)’:
+../src/main.cpp:163:83: error: conversion from ‘std::multimap<int, int>::const_iterator {aka std::_Rb_tree_const_iterator<std::pair<const int, int> >}’ to non-scalar type ‘std::multimap<int, int>::iterator {aka std::_Rb_tree_iterator<std::pair<const int, int> >}’ requested
+     multimap<int,int>::iterator it = cour[j].getCentersOfRespectiveCourses().begin();
+                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+make: *** [src/main.o] Error 1
+src/subdir.mk:51: recipe for target 'src/main.o' failed
+15:53:03 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+15:53:10 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+15:54:10 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+15:54:13 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+15:55:18 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+15:55:25 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+15:55:34 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+16:09:28 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/AdmissionSystem.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
+../src/AdmissionSystem.cpp:52:77: error: no ‘void AdmissionSystem::increment_capacity_size_by_one(std::__cxx11::string, std::__cxx11::string)’ member function declared in class ‘AdmissionSystem’
+ void AdmissionSystem::increment_capacity_size_by_one(string id,string course)
+                                                                             ^
+make: *** [src/AdmissionSystem.o] Error 1
+src/subdir.mk:51: recipe for target 'src/AdmissionSystem.o' failed
+16:09:47 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/AdmissionSystem.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
+../src/AdmissionSystem.cpp:52:77: error: no ‘void AdmissionSystem::increment_capacity_size_by_one(std::__cxx11::string, std::__cxx11::string)’ member function declared in class ‘AdmissionSystem’
+ void AdmissionSystem::increment_capacity_size_by_one(string id,string course)
+                                                                             ^
+make: *** [src/AdmissionSystem.o] Error 1
+src/subdir.mk:51: recipe for target 'src/AdmissionSystem.o' failed
+16:10:11 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/AdmissionSystem.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
+Finished building: ../src/AdmissionSystem.cpp
+ 
+Building file: ../src/Center.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Center.d" -MT"src/Center.o" -o "src/Center.o" "../src/Center.cpp"
+Finished building: ../src/Center.cpp
+ 
+Building file: ../src/Course.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Course.d" -MT"src/Course.o" -o "src/Course.o" "../src/Course.cpp"
+Finished building: ../src/Course.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘void Allocate_centers_round_1(AdmissionSystem&, std::vector<Student>&, std::vector<Center>&, std::vector<Course>&)’:
+../src/main.cpp:158:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int ii=0;ii<stud.size();ii++)
+                ~~^~~~~~~~~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+16:11:51 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/AdmissionSystem.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AdmissionSystem.d" -MT"src/AdmissionSystem.o" -o "src/AdmissionSystem.o" "../src/AdmissionSystem.cpp"
+Finished building: ../src/AdmissionSystem.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+16:12:48 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘void Allocate_centers_round_1(AdmissionSystem&, std::vector<Student>&, std::vector<Center>&, std::vector<Course>&)’:
+../src/main.cpp:158:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int ii=0;ii<stud.size();ii++)
+                ~~^~~~~~~~~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+16:13:05 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+16:13:59 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+16:14:34 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:231:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i=0;i<a.capacitie.size();i++)
+              ~^~~~~~~~~~~~~~~~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+16:14:53 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+16:14:57 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+16:16:28 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+16:16:32 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+16:19:11 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+16:19:15 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+16:19:52 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+16:19:56 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+16:20:08 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+16:20:12 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+16:23:25 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+16:23:29 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+16:26:07 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+16:26:11 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+16:29:18 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+16:29:22 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+16:32:05 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+16:32:10 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+16:34:16 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘void Allocate_centers_round_1(AdmissionSystem&, std::vector<Student>&, std::vector<Center>&, std::vector<Course>&)’:
+../src/main.cpp:180:240: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+          if(stud[ii].getPreferences()[i].getCenterId() == a.center[it->second].getCenterId() && stud[ii].getPreferences()[i].getCourseName() == cour[j].getName() && stud[ii].getPreferences().size() != 0 && stud[ii].getPreferences().size() != -1)
+                                                                                                                                                                                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+16:34:19 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+16:36:02 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘void Allocate_centers_round_1(AdmissionSystem&, std::vector<Student>&, std::vector<Center>&, std::vector<Course>&)’:
+../src/main.cpp:185:240: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+          if(stud[ii].getPreferences()[i].getCenterId() == a.center[it->second].getCenterId() && stud[ii].getPreferences()[i].getCourseName() == cour[j].getName() && stud[ii].getPreferences().size() != 0 && stud[ii].getPreferences().size() != -1)
+                                                                                                                                                                                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+16:36:06 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+16:37:30 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘void Allocate_centers_round_1(AdmissionSystem&, std::vector<Student>&, std::vector<Center>&, std::vector<Course>&)’:
+../src/main.cpp:185:240: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+          if(stud[ii].getPreferences()[i].getCenterId() == a.center[it->second].getCenterId() && stud[ii].getPreferences()[i].getCourseName() == cour[j].getName() && stud[ii].getPreferences().size() != 0 && stud[ii].getPreferences().size() != -1)
+                                                                                                                                                                                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+16:37:33 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+16:40:30 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘void Allocate_centers_round_1(AdmissionSystem&, std::vector<Student>&, std::vector<Center>&, std::vector<Course>&)’:
+../src/main.cpp:185:240: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+          if(stud[ii].getPreferences()[i].getCenterId() == a.center[it->second].getCenterId() && stud[ii].getPreferences()[i].getCourseName() == cour[j].getName() && stud[ii].getPreferences().size() != 0 && stud[ii].getPreferences().size() != -1)
+                                                                                                                                                                                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+16:40:46 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+16:40:50 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+16:44:16 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘void Allocate_centers_round_1(AdmissionSystem&, std::vector<Student>&, std::vector<Center>&, std::vector<Course>&)’:
+../src/main.cpp:185:240: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+          if(stud[ii].getPreferences()[i].getCenterId() == a.center[it->second].getCenterId() && stud[ii].getPreferences()[i].getCourseName() == cour[j].getName() && stud[ii].getPreferences().size() != 0 && stud[ii].getPreferences().size() != -1)
+                                                                                                                                                                                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+16:47:13 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘void Allocate_centers_round_1(AdmissionSystem&, std::vector<Student>&, std::vector<Center>&, std::vector<Course>&)’:
+../src/main.cpp:185:240: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+          if(stud[ii].getPreferences()[i].getCenterId() == a.center[it->second].getCenterId() && stud[ii].getPreferences()[i].getCourseName() == cour[j].getName() && stud[ii].getPreferences().size() != 0 && stud[ii].getPreferences().size() != -1)
+                                                                                                                                                                                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+16:51:08 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘void Allocate_centers_round_1(AdmissionSystem&, std::vector<Student>&, std::vector<Center>&, std::vector<Course>&)’:
+../src/main.cpp:185:247: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+          if((stud[ii].getPreferences()[i].getCenterId() == a.center[it->second].getCenterId()) && (stud[ii].getPreferences()[i].getCourseName() == cour[j].getName()) && (stud[ii].getPreferences().size()) != 0 && (stud[ii].getPreferences().size() != -1))
+                                                                                                                                                                                                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+16:51:14 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+16:54:32 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘void Allocate_centers_round_1(AdmissionSystem&, std::vector<Student>&, std::vector<Center>&, std::vector<Course>&)’:
+../src/main.cpp:185:89: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         if((stud[ii].getPreferences().size()) != 0 && (stud[ii].getPreferences().size() != -1))
+                                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+16:54:37 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+16:55:42 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+16:55:45 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+16:57:19 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+16:57:23 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+16:59:04 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+16:59:08 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+16:59:57 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+17:00:02 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+17:00:32 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+17:00:37 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+17:01:07 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+17:01:12 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+17:01:29 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+17:01:34 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+17:02:08 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+17:02:13 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+17:02:56 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+17:07:06 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+17:07:09 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+17:09:51 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+17:09:55 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+17:13:48 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+17:13:53 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+17:15:19 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+17:15:22 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+17:15:47 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+17:15:51 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+17:16:01 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+17:16:04 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+17:16:38 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+17:16:42 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+17:17:35 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+17:17:38 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+17:18:23 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+17:18:28 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+17:19:10 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+17:19:19 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+17:19:28 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+17:20:15 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+17:20:20 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+17:21:51 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘void Allocate_centers_round_1(AdmissionSystem&, std::vector<Student>&, std::vector<Center>&, std::vector<Course>&)’:
+../src/main.cpp:180:48: error: ‘std::vector<preference> Student::preferences’ is private within this context
+        if((stud[ii].getId() == 88) && stud[ii].preferences.size() == 0)
+                                                ^~~~~~~~~~~
+In file included from ../src/main.cpp:13:0:
+../src/Student.h:32:21: note: declared private here
+  vector<preference> preferences;
+                     ^~~~~~~~~~~
+src/subdir.mk:51: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+17:22:21 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+17:22:26 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+17:23:55 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+17:23:59 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+17:25:52 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+17:26:01 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+17:27:05 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+17:29:09 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+17:29:13 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+17:31:45 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+17:32:13 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+17:32:19 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+17:33:18 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+17:33:22 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+17:42:51 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+17:42:55 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+17:46:03 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘void Allocate_centers_round_1(AdmissionSystem&, std::vector<Student>&, std::vector<Center>&, std::vector<Course>&)’:
+../src/main.cpp:174:55: warning: the address of ‘stud’ will never be NULL [-Waddress]
+        if(stud[ii].getPreferences().size() == 0 && && stud[ii].getRankA() != -1)
+                                                       ^~~~
+../src/main.cpp:174:59: error: expected ‘)’ before ‘[’ token
+        if(stud[ii].getPreferences().size() == 0 && && stud[ii].getRankA() != -1)
+                                                           ^
+../src/main.cpp:174:55: error: label ‘stud’ used but not defined
+        if(stud[ii].getPreferences().size() == 0 && && stud[ii].getRankA() != -1)
+                                                       ^~~~
+make: *** [src/main.o] Error 1
+src/subdir.mk:51: recipe for target 'src/main.o' failed
+17:47:24 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+17:48:20 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+17:48:24 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+17:49:36 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+17:49:40 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+17:56:11 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+17:56:20 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+17:56:23 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.
+18:01:58 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp:132:1: error: ‘sort_by_form_no’ does not name a type
+ sort_by_form_no
+ ^~~~~~~~~~~~~~~
+../src/main.cpp: In function ‘int main()’:
+../src/main.cpp:325:2: error: ‘Allocate_centers_round_1’ was not declared in this scope
+  Allocate_centers_round_1(a,stud,cent,cour);
+  ^~~~~~~~~~~~~~~~~~~~~~~~
+src/subdir.mk:51: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+18:02:01 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+Invoking: GCC C++ Linker
+g++  -o "CASE_STUDY_CDAC_ADMISSION_SYSTEM"  ./src/AdmissionSystem.o ./src/Center.o ./src/Course.o ./src/Student.o ./src/capacities.o ./src/centers.o ./src/courses.o ./src/degrees.o ./src/eligibilities.o ./src/main.o ./src/preference.o ./src/students.o   
+Finished building target: CASE_STUDY_CDAC_ADMISSION_SYSTEM
+ 
+18:02:05 **** Incremental Build of configuration Debug for project CASE_STUDY_CDAC_ADMISSION_SYSTEM ****
+make all 
+make: Nothing to be done for 'all'.

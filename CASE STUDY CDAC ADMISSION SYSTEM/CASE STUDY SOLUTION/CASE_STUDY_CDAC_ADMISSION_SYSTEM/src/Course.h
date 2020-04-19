@@ -7,10 +7,16 @@
 
 #ifndef COURSE_H_
 #define COURSE_H_
-#include<iostream>
-#include<vector>
+
+#include <map>
+#include <string>
+#include <vector>
+#include "AdmissionSystem.h"
+
+
 #include "eligibilities.h"
-#include "centers.h"
+
+class centers;
 
 using namespace std;
 
@@ -21,17 +27,16 @@ class Course {
 	string ccat_section;
 
 	vector<eligibilities> eligible;
-	vector<centers> center;
+	multimap<int,int> centers_of_respective_courses;
 
 private:
 
 public:
 	Course();
-	Course(int& id, string& name, double& fees, string& ccat_section,vector<eligibilities> eligible,vector<centers> center);
+	Course(int& id, string& name, double& fees, string& ccat_section,vector<eligibilities> eligible,multimap<int,int> centers_of_respective_courses);
 	const string& getCcatSection() const;
 	void setCcatSection(const string& ccatSection);
-	const vector<centers>& getCenter() const;
-	void setCenter(const vector<centers>& center);
+
 	const vector<eligibilities>& getEligible() const;
 	void setEligible(const vector<eligibilities>& eligible);
 	double getFees() const;
@@ -41,14 +46,16 @@ public:
 	const string& getName() const;
 	void setName(const string& name);
 
-	void display_Course_with_eligibilities_and_centers();
+	void display_Course_with_eligibilities_and_centers(AdmissionSystem& a);
 
 	void add_eligibilities(eligibilities& e);
-	void add_centers(centers& c);
+	void add_centers(int id, int pos);
 
 
 	virtual ~Course();
-
+	const multimap<int, int>& getCentersOfRespectiveCourses() const;
+	void setCentersOfRespectiveCourses(
+			const multimap<int, int>& centersOfRespectiveCourses);
 };
 
 #endif /* COURSE_H_ */

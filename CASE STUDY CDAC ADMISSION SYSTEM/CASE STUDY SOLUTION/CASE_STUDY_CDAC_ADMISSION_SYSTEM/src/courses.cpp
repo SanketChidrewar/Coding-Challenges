@@ -51,16 +51,16 @@ const string& courses::getName() const {
 	return name;
 }
 
-void courses::setName(const string& name) {
-	this->name = name;
-}
-
 const string& courses::getSection() const {
 	return section;
 }
 
 void courses::setSection(const string& section) {
 	this->section = section;
+}
+
+void courses::setName(const string& name) {
+	this->name = name;
 }
 
 courses::~courses() {

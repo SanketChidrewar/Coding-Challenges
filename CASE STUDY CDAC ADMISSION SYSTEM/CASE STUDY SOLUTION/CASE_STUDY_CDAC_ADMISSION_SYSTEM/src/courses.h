@@ -21,7 +21,6 @@ public:
 	courses();
 	courses(int id, string name, double fees, string section);
 
-
 	void display_courses();
 
 	virtual ~courses();
@@ -31,6 +30,8 @@ public:
 	void setId(int id);
 	const string& getName() const;
 	void setName(const string& name);
+//	const string& getSection() const;
+//	void setSection(const string& section);
 	const string& getSection() const;
 	void setSection(const string& section);
 };

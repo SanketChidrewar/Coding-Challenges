@@ -8,6 +8,7 @@
 #include<iostream>
 #include<fstream>
 #include<sstream>
+#include<algorithm>
 
 #include "Student.h"
 #include "Center.h"
@@ -22,6 +23,7 @@ void load_all_students_with_there_preference(AdmissionSystem& a,vector<Student>&
 	for(unsigned i=0;i<a.student.size();i++)
 	{
 		Student stud;
+
 		stud.setId(a.student[i].getId());
 		stud.setName(a.student[i].getName());
 		stud.setRankA(a.student[i].getRankA());
@@ -71,7 +73,6 @@ void load_all_center_with_there_courses(AdmissionSystem& a,vector<Center>& cent1
 					}
 				}
 			}
-
 		}
 		cent1.push_back(cent);
 	}
@@ -103,15 +104,193 @@ void load_all_courses_with_resp_available_centers(AdmissionSystem& a,vector<Cour
 				{
 					if(a.capacitie[k].getCenterId()== a.center[l].getCenterId())
 					{
-						cour.add_centers(a.center[l]);
+						cour.add_centers(a.course[i].getId(),l);
 					}
 				}
 			}
 		}
 		cour1.push_back(cour);
 	}
+}
+
+bool sort_by_rank_a(Student& a, Student& b)
+{
+	return (a.getRankA() < b.getRankA()) ? true : false ;
+}
+bool sort_by_rank_b(Student& a, Student& b)
+{
+	return (a.getRankB() < b.getRankB()) ? true : false ;
+}
+bool sort_by_rank_c(Student& a, Student& b)
+{
+	return (a.getRankC() < b.getRankC()) ? true : false ;
+}
+bool sort_by_form_no(Student& a, Student& b)
+{
+	return (a.getId() < b.getId()) ? true : false ;
+}
+
+
+
+//- Algorithm for your reference:
+//for n in 1 to 10:
+//    //"n"th preference allocation
+//    sort students by rank_a
+//    if "n"th preference is of 'A' section course:
+//	allocate course at that center to the student
+//	increase filled count of that center for that course
+//    sort students by rank_b
+//    if "n"th preference is of 'B' section course:
+//	allocate course at that center to the student
+//	increase filled count of that center for that course
+//    sort students by rank_c
+//    if "n"th preference is of 'C' section course:
+//	allocate course at that center to the student
+//	increase filled count of that center for that course
+
+void Allocate_centers_round_1(AdmissionSystem& a,vector<Student>& stud,vector<Center>& cent,vector<Course>& cour)
+{
+	//for RANK_A STUDENTS
+//	sort(stud.begin(),stud.end(),sort_by_rank_a);
+	cout<<endl<<"students are "<<stud.size()<<endl;
+//	for(unsigned i=0;i<stud.size();i++)
+//	{
+//		stud[i].display_stud();
+//	}
+	for(int i=0;i<10;i++)
+	{
+		// FOR RANK A COURSES
+		sort(stud.begin(),stud.end(),sort_by_rank_a);
+//		cout<<endl<<endl;
+//		cout<<"STUDENT SORTED BY RANK A"<<endl;
+			for(unsigned j=0;j<cour.size();j++)
+			{
+				//cout<<"INSIDE COURSE FILE"<<endl;
+				if(cour[j].getCcatSection() == "A" )
+				{
+				//cout<<"INSIDE COURSE HAVING SECTION A"<<endl;
+
+					auto it = cour[j].getCentersOfRespectiveCourses().begin();
+					while(it != cour[j].getCentersOfRespectiveCourses().end())
+					{
+						//cout<<"ITERATING FOR CENTERS AVAILABLE"<<endl;
+						//cout<<a.center[it->second].getCenterId()<<"  "<<cour[j].getName()<<endl;
+						for(unsigned ii=0;ii<stud.size();ii++)
+						{
+							if((stud[ii].getPreferences().size() == 0) || (stud[ii].getRankA() == -1))
+							{
+								continue;
+							}
+							if(!a.is_seats_are_full(a.center[it->second].getCenterId(),cour[j].getName()))
+							{
+//								cout<<stud[ii].getId();
+//								cout<<"SEATS ARE NOT FULL"<<endl;
+									if((stud[ii].getPreferences()[i].getCenterId() == a.center[it->second].getCenterId()) && (stud[ii].getPreferences()[i].getCourseName() == cour[j].getName()) && (stud[ii].getPreferences().size() > 0 ) && (stud[ii].getRankA() != -1))
+									{
+//										cout<<"ALLOCATING SEAT TO STUDENT & INCREASING CAPA COUNT"<<endl;
+										stud[ii].setAllocatedPref(i+1);
+										stud[ii].setCenterId(stud[ii].getPreferences()[i].getCenterId());
+										stud[ii].setCourseName(stud[ii].getPreferences()[i].getCourseName());
+
+										a.increment_capacity_size_by_one(a.center[it->second].getCenterId(),cour[j].getName());
+									}
+							}
+						}
+						it++;
+					}
+				}
+			}
+
+
+
+			// FOR RANK B COURSES
+			sort(stud.begin(),stud.end(),sort_by_rank_b);
+	//		cout<<endl<<endl;
+	//		cout<<"STUDENT SORTED BY RANK A"<<endl;
+				for(unsigned j=0;j<cour.size();j++)
+				{
+					//cout<<"INSIDE COURSE FILE"<<endl;
+					if(cour[j].getCcatSection() == "B" )
+					{
+					//cout<<"INSIDE COURSE HAVING SECTION A"<<endl;
+
+						auto it = cour[j].getCentersOfRespectiveCourses().begin();
+						while(it != cour[j].getCentersOfRespectiveCourses().end())
+						{
+							//cout<<"ITERATING FOR CENTERS AVAILABLE"<<endl;
+							//cout<<a.center[it->second].getCenterId()<<"  "<<cour[j].getName()<<endl;
+							for(unsigned ii=0;ii<stud.size();ii++)
+							{
+								if((stud[ii].getPreferences().size() == 0) || (stud[ii].getRankB() == -1))
+								{
+									continue;
+								}
+								if(!a.is_seats_are_full(a.center[it->second].getCenterId(),cour[j].getName()))
+								{
+	//								cout<<stud[ii].getId();
+	//								cout<<"SEATS ARE NOT FULL"<<endl;
+										if((stud[ii].getPreferences()[i].getCenterId() == a.center[it->second].getCenterId()) && (stud[ii].getPreferences()[i].getCourseName() == cour[j].getName()) && (stud[ii].getPreferences().size() > 0 ) && (stud[ii].getRankB() != -1))
+										{
+	//										cout<<"ALLOCATING SEAT TO STUDENT & INCREASING CAPA COUNT"<<endl;
+											stud[ii].setAllocatedPref(i+1);
+											stud[ii].setCenterId(stud[ii].getPreferences()[i].getCenterId());
+											stud[ii].setCourseName(stud[ii].getPreferences()[i].getCourseName());
+
+											a.increment_capacity_size_by_one(a.center[it->second].getCenterId(),cour[j].getName());
+										}
+								}
+							}
+							it++;
+						}
+					}
+				}
+
+
+				// FOR RANK C COURSES
+				sort(stud.begin(),stud.end(),sort_by_rank_c);
+		//		cout<<endl<<endl;
+		//		cout<<"STUDENT SORTED BY RANK A"<<endl;
+					for(unsigned j=0;j<cour.size();j++)
+					{
+						//cout<<"INSIDE COURSE FILE"<<endl;
+						if(cour[j].getCcatSection() == "C" )
+						{
+						//cout<<"INSIDE COURSE HAVING SECTION A"<<endl;
+
+							auto it = cour[j].getCentersOfRespectiveCourses().begin();
+							while(it != cour[j].getCentersOfRespectiveCourses().end())
+							{
+								//cout<<"ITERATING FOR CENTERS AVAILABLE"<<endl;
+								//cout<<a.center[it->second].getCenterId()<<"  "<<cour[j].getName()<<endl;
+								for(unsigned ii=0;ii<stud.size();ii++)
+								{
+									if(stud[ii].getPreferences().size() == 0 || stud[ii].getRankC() == -1)
+									{
+										continue;
+									}
+									if(!a.is_seats_are_full(a.center[it->second].getCenterId(),cour[j].getName()))
+									{
+		//								cout<<stud[ii].getId();
+		//								cout<<"SEATS ARE NOT FULL"<<endl;
+											if((stud[ii].getPreferences()[i].getCenterId() == a.center[it->second].getCenterId()) && (stud[ii].getPreferences()[i].getCourseName() == cour[j].getName()) && (stud[ii].getPreferences().size() > 0 ) && (stud[ii].getRankC() != -1))
+											{
+		//										cout<<"ALLOCATING SEAT TO STUDENT & INCREASING CAPA COUNT"<<endl;
+												stud[ii].setAllocatedPref(i+1);
+												stud[ii].setCenterId(stud[ii].getPreferences()[i].getCenterId());
+												stud[ii].setCourseName(stud[ii].getPreferences()[i].getCourseName());
+
+												a.increment_capacity_size_by_one(a.center[it->second].getCenterId(),cour[j].getName());
+											}
+									}
+								}
+								it++;
+							}
+						}
+					}
+	}
 
 }
+
 
 int main()
 {
@@ -122,7 +301,7 @@ int main()
 	vector<Student> stud;
 	load_all_students_with_there_preference(a,stud);
 
-/*	for(int i=0;i<stud.size();i++)
+/*	for(unsigned i=0;i<stud.size();i++)
 	{
 		stud[i].display_stud();
 	}*/
@@ -130,22 +309,34 @@ int main()
 	vector<Center> cent;
 	load_all_center_with_there_courses(a,cent);
 
-	for(unsigned j=0;j<cent.size();j++)
+/*	for(unsigned j=0;j<cent.size();j++)
 	{
 		cent[j].display_Center_with_courses(a);
-	}
+	}*/
 
 	vector<Course> cour;
 	load_all_courses_with_resp_available_centers(a,cour);
 
-/*	for(int k=0;k<cour.size();k++)
+/*	for(unsigned k=0;k<cour.size();k++)
 	{
-		cour[k].display_Course_with_eligibilities_and_centers();
+		cour[k].display_Course_with_eligibilities_and_centers(a);
 	}*/
 
-
-
-
+	Allocate_centers_round_1(a,stud,cent,cour);
+	cout<<"ALLOCATION DONE FOR ROUND 1"<<endl;
+	sort(stud.begin(),stud.end(),sort_by_form_no);
+	for(unsigned i=0;i<stud.size();i++)
+	{
+		if(stud[i].getAllocatedPref() != 0)
+		{
+		stud[i].display_stud();
+		}
+	}
+	cout<<endl<<endl;
+	for(unsigned i=0;i<a.capacitie.size();i++)
+	{
+		a.capacitie[i].display_capacities();
+	}
 
 
 	return 0;

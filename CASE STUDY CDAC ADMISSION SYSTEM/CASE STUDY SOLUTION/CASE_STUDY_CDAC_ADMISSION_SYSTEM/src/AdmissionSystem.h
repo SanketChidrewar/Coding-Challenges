@@ -60,6 +60,10 @@ public:
 
 	void load_Files(AdmissionSystem & a);
 
+	int is_seats_are_full(string id,string course);
+	void increment_capacity_size_by_one(string id,string course);
+
+
 
 };
 #endif /* ADMISSIONSYSTEM_H_ */

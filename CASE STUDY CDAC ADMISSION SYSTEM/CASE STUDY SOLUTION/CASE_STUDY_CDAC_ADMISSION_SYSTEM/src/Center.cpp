@@ -25,7 +25,7 @@ Center::Center() {
 	this->center_id_courses = {};
 
 }
-Center::Center(string id, string name, string address, string coordinator, string password, map<string,int> center_id_courses)
+Center::Center(string id, string name, string address, string coordinator, string password, multimap<string,int> center_id_courses)
 {
 	this->id = id;
 	this->name = name;
@@ -47,7 +47,7 @@ void Center::display_Center_with_courses(AdmissionSystem& a)
 {
 	cout<<endl<<this->id<<","<<this->name<<","<<this->address<<","<<this->coordinator<<","<<this->password<<endl;
 	cout<<"\n - COURSES UNDER THIS CENTER ARE :"<<endl;
-	map<string,int>::iterator it = this->center_id_courses.begin();
+	multimap<string,int>::iterator it = this->center_id_courses.begin();
 	while(it!=this->center_id_courses.end())
 	{
 		cout<<"\t";
@@ -58,7 +58,8 @@ void Center::display_Center_with_courses(AdmissionSystem& a)
 
 void Center::add_courses_to_respective_centers(string s, int k)
 {
-	this->center_id_courses[s] = k;
+	//this->center_id_courses[s] = k;
+	this->center_id_courses.insert(pair<string,int> (s,k));
 }
 
 
@@ -98,11 +99,11 @@ const string& Center::getPassword() const {
 	return password;
 }
 
-const map<string, int>& Center::getCenterIdCourses() const {
+const multimap<string, int>& Center::getCenterIdCourses() const {
 	return center_id_courses;
 }
 
-void Center::setCenterIdCourses(const map<string, int>& centerIdCourses) {
+void Center::setCenterIdCourses(const multimap<string, int>& centerIdCourses) {
 	center_id_courses = centerIdCourses;
 }
 
