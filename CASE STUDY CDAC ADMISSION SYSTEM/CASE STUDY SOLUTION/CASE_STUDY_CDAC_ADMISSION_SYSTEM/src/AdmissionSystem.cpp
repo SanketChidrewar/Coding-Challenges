@@ -319,7 +319,7 @@ void AdmissionSystem::load_Files(AdmissionSystem & a)
 
 
 	// Loading preference data from file
-	ifstream if_preference("file/preferences.csv");
+	ifstream if_preference("file/01_preferences_set3.csv");
 
 	if(!if_preference)
 	{

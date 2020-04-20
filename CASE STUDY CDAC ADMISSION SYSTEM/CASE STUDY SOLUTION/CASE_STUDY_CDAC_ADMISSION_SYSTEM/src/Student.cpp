@@ -117,13 +117,13 @@ void Student::display_stud()
 	cout<<","<<this->degree_marks<<","<<this->allocated_pref<<","<<this->course_name<<","<<this->center_id<<","<<this->payment;
 	cout<<","<<this->reported<<","<<this->prn<<endl;
 
-	cout<<"\n - PREFERENCES OF STUDENTS ARE :"<<endl;
+/*	cout<<"\n - PREFERENCES OF STUDENTS ARE :"<<endl;
 	for(unsigned int i=0;i<preferences.size();i++)
 	{
 		cout<<"\t";
 		preferences[i].display_pref();
 	}
-	cout<<endl<<endl;
+	cout<<endl<<endl;*/
 }
 
 int Student::getAllocatedPref() const {
