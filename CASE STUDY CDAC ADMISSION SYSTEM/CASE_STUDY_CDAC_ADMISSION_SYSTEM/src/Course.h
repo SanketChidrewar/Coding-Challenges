@@ -48,6 +48,8 @@ public:
 
 	void display_Course_with_eligibilities_and_centers(AdmissionSystem& a);
 	void display_Course_with_eligibilities();
+	void display_Course_with_centers(AdmissionSystem& a);
+
 
 
 	void add_eligibilities(eligibilities& e);

@@ -132,6 +132,72 @@ bool sort_by_form_no(Student& a, Student& b)
 {
 	return (a.getId() < b.getId()) ? true : false ;
 }
+bool sort_by_level_CourseName_CenterName_Name(Student& a, Student& b)
+{
+	if(a.getCourseName() < b.getCourseName())
+	{
+			return true;
+	}
+	else if(a.getCourseName() == b.getCourseName())
+	{
+		if(a.getCenterId() < b.getCenterId())
+		{
+				return true;
+		}
+		else if(a.getCenterId() == b.getCenterId())
+		{
+			if(a.getName() < b.getName())
+			{
+					return true;
+			}
+			else
+			{
+				return false;
+			}
+		}
+		else
+		{
+			return false;
+		}
+	}
+	else
+	{
+		return false;
+	}
+}
+bool sort_by_level_CourseName_CenterName_Fees(Student& a, Student& b)
+{
+	if(a.getCourseName() < b.getCourseName())
+	{
+			return true;
+	}
+	else if(a.getCourseName() == b.getCourseName())
+	{
+		if(a.getCenterId() < b.getCenterId())
+		{
+				return true;
+		}
+		else if(a.getCenterId() == b.getCenterId())
+		{
+			if(a.getPayment() < b.getPayment())
+			{
+					return true;
+			}
+			else
+			{
+				return false;
+			}
+		}
+		else
+		{
+			return false;
+		}
+	}
+	else
+	{
+		return false;
+	}
+}
 
 
 
@@ -654,6 +720,10 @@ int main()
 	int pref_no;
 	string pref_course_name;
 	string pref_center_id;
+	int rank1,rank2,rank3;
+	string course_name;
+	int rep_status;
+
 	while((choice = main_menu_op())!=EXIT)
 	{
 		switch(choice)
@@ -667,6 +737,7 @@ int main()
 				int stud_int;
 				string stud_string;
 				preference p;
+				int no_of_pref;
 
 				switch(choice)
 				{
@@ -701,6 +772,21 @@ int main()
 
 					cout<<"ENTER DEGREE percentage :";
 					cin>>stud_int;
+					flag1 = 0;
+					for(unsigned i=0;i<a.degree.size();i++)
+					{
+						string s = a.degree[i].getDegree();
+						if(stud_string == s)
+						{
+							flag1=1;
+						}
+					}
+					if(flag1 == 0)
+					{
+						cout<<"\n###ENTERED DEGREE IS NOT ELIGIBLE###"<<endl;
+						break;
+					}
+
 					s.setDegreeMarks(stud_int);
 					s.setAllocatedPref(0);
 					s.setCenterId("NA");
@@ -786,46 +872,76 @@ int main()
 					break;
 
 				case GIVE_PREFERENCES:
-					flag1 =0;
 
-					p.setId(username);
-					cout<<"ENTER PREF NO :";
-					cin>>pref_no;
-					p.setPrefNo(pref_no);
-					cout<<"ENTER COURSE NAME :";
-					cin>>pref_course_name;
-					p.setCourseName(pref_course_name);
-					cout<<"ENTER CENTER ID :";
-					cin>>pref_center_id;
-					p.setCenterId(pref_center_id);
+					cout<<"ENTER NO OF PREF YOU WANT TO ADD :";
+					cin>>no_of_pref;
 
-					for(unsigned i=0;i<stud.size();i++)
+					cout<<"\nCOURSES AND CENTERS YOU ARE ELIGIBLE IN :\n"<<endl;
+					for(unsigned k=0;k<cour.size();k++)
 					{
-						if(stud[i].getId() == username)
+						for(unsigned i=0;i<stud.size();i++)
 						{
-							for(unsigned j=0;j<a.eligibilitie.size();j++)
+							if(stud[i].getId() == username)
 							{
-								if(a.eligibilitie[j].getDegree() == stud[i].getDegree())
+								for(unsigned j=0;j<a.eligibilitie.size();j++)
 								{
-									if(p.getCourseName() == a.eligibilitie[j].getCourseName())
+									if(a.eligibilitie[j].getDegree() == stud[i].getDegree())
 									{
 										if(stud[i].getDegreeMarks() >= a.eligibilitie[j].getMinPer())
 										{
-											cout<<"STIUDENT IS ELIGIBLE FOR THIS PREFERENCE :"<<endl;
-											a.preferences.push_back(p);
-											stud[i].add_preferences(p);
-											cout<<"PREFERENCE IS ADDED TO PREFERENCE FILE";
-											flag1 = 1;
+											if(cour[k].getName()== a.eligibilitie[j].getCourseName())
+												{
+													cour[k].display_Course_with_centers(a);
+												}
 										}
 									}
 								}
 							}
-							break;
 						}
 					}
-					if(flag1 == 0)
+
+					for(int k=0;k<no_of_pref;k++)
 					{
-						cout<<"STUDENT IS NOT ELIGIBLE TO ADD THIS PREFERENCE "<<endl;
+						flag1 =0;
+
+						p.setId(username);
+						cout<<"ENTER PREF NO :";
+						cin>>pref_no;
+						p.setPrefNo(pref_no);
+						cout<<"ENTER COURSE NAME :";
+						cin>>pref_course_name;
+						p.setCourseName(pref_course_name);
+						cout<<"ENTER CENTER ID :";
+						cin>>pref_center_id;
+						p.setCenterId(pref_center_id);
+
+						for(unsigned i=0;i<stud.size();i++)
+						{
+							if(stud[i].getId() == username)
+							{
+								for(unsigned j=0;j<a.eligibilitie.size();j++)
+								{
+									if(a.eligibilitie[j].getDegree() == stud[i].getDegree())
+									{
+										if(p.getCourseName() == a.eligibilitie[j].getCourseName())
+										{
+											if(stud[i].getDegreeMarks() >= a.eligibilitie[j].getMinPer())
+											{
+												cout<<"STIUDENT IS ELIGIBLE FOR THIS PREFERENCE :"<<endl;
+												a.preferences.push_back(p);
+												stud[i].add_preferences(p);
+												cout<<"PREFERENCE IS ADDED TO PREFERENCE FILE";
+												flag1 = 1;
+											}
+										}
+									}
+								}
+							}
+						}
+						if(flag1 == 0)
+						{
+							cout<<"STUDENT IS NOT ELIGIBLE TO ADD THIS PREFERENCE "<<endl;
+						}
 					}
 					break;
 
@@ -863,6 +979,7 @@ int main()
 								{
 									if(stud[i].getCourseName() == cour[j].getName())
 									{
+										cout<<"FEES PAID BY STUDENT :"<<stud[i].getPayment()<<endl;
 										cout<<"REMAINING FEES OF THIS STUDENT IS :"<<cour[j].getFees()-stud[i].getPayment()<<endl;
 									}
 								}
@@ -940,7 +1057,7 @@ int main()
 				case UPDATE_STUDENT_RANK:
 					cout<<"ENTER FORM NO : ";
 					cin>>form_no;
-					cout<<"\n1.RANK_1_UPDATION \n2.RANK_2_UPDATION \n3.RANK_3_UPDATION"<<endl;
+					cout<<"\n1.RANK_1_UPDATION \n2.RANK_2_UPDATION \n3.RANK_3_UPDATION \n4.ALL_RANKS"<<endl;
 					cout<<"ENTER OPTION :";
 					cin>>choice;
 
@@ -983,6 +1100,26 @@ int main()
 							{
 								stud[i].display_only_stud();
 								stud[i].setRankC(rank);
+								stud[i].display_only_stud();
+							}
+						}
+						cout<<"RANK OF FORM NO"<<form_no<<" IS SUCCESSFULLY UPDATED TO "<<rank<<endl;
+						break;
+					case 4:
+						cout<<"ENTER RANK 1 TO BE UPDATED :";
+						cin>>rank1;
+						cout<<"ENTER RANK 2 TO BE UPDATED :";
+						cin>>rank2;
+						cout<<"ENTER RANK 3 TO BE UPDATED :";
+						cin>>rank3;
+						for(unsigned i=0;i<stud.size();i++)
+						{
+							if(stud[i].getId() == form_no)
+							{
+								stud[i].display_only_stud();
+								stud[i].setRankA(rank1);
+								stud[i].setRankB(rank2);
+								stud[i].setRankC(rank3);
 								stud[i].display_only_stud();
 							}
 						}
@@ -1060,7 +1197,7 @@ int main()
 				case LIST_ALLOCATED_STUDENTS:
 
 					cout<<endl<<"LIST OF ALLOCATED STUDENTS"<<endl;
-					sort(stud.begin(),stud.end(),sort_by_form_no);
+					sort(stud.begin(),stud.end(),sort_by_level_CourseName_CenterName_Name);
 					for(unsigned i=0;i<stud.size();i++)
 					{
 						if(stud[i].getAllocatedPref() != 0)
@@ -1073,7 +1210,7 @@ int main()
 
 				case LIST_PAID_STUDENTS:
 					flag1 = 0;
-					sort(stud.begin(),stud.end(),sort_by_form_no);
+					sort(stud.begin(),stud.end(),sort_by_level_CourseName_CenterName_Fees);
 					for(unsigned i=0;i<stud.size();i++)
 					{
 						if(stud[i].getPayment() != 0 && stud[i].getPayment() != -1)
@@ -1094,6 +1231,7 @@ int main()
 
 				case LIST_REPORTED_STUDENTS:
 					flag1 = 0;
+					sort(stud.begin(),stud.end(),sort_by_level_CourseName_CenterName_Name);
 					for(unsigned i=0;i<stud.size();i++)
 					{
 						if(stud[i].getReported() == 1)
@@ -1110,6 +1248,7 @@ int main()
 
 				case GENERATE_PRN:
 					flag1 = 0;
+					sort(stud.begin(),stud.end(),sort_by_level_CourseName_CenterName_Name);
 					for(unsigned i=0;i<stud.size();i++)
 					{
 						if(stud[i].getReported() == 1)
@@ -1122,7 +1261,7 @@ int main()
 									{
 										count++;
 										stringstream ss;
-										ss<<stud[i].getCenterId()<<"_"<<stud[i].getCourseName()<<"_"<<count;
+										ss<<stud[i].getCourseName()<<stud[i].getCenterId()<<"_"<<"_"<<count;
 										string s;
 										getline(ss,s);
 										stud[i].setPrn(s);
@@ -1145,11 +1284,14 @@ int main()
 
 				case LIST_ADMITTED_STUDENTS:
 					flag1 = 0;
+					cout<<"ENTER COURSE NAME :";
+					cin>>course_name;
 					cout<<"ENTER CENTER ID TO GET IT'S ADMITTED STUDENTS :";
 					cin>>center_id_for_coordinator_login;
+					sort(stud.begin(),stud.end(),sort_by_level_CourseName_CenterName_Name);
 					for(unsigned i=0;i<stud.size();i++)
 					{
-						if((stud[i].getCenterId() == center_id_for_coordinator_login)  && (stud[i].getReported() != 0)  &&  (stud[i].getPrn() != "NA"))
+						if((stud[i].getCenterId() == center_id_for_coordinator_login) && (stud[i].getCourseName() == course_name)  && (stud[i].getReported() != 0)  &&  (stud[i].getPrn() != "NA"))
 						{
 							stud[i].display_only_stud();
 							flag1 = 1;
@@ -1213,12 +1355,18 @@ int main()
 
 				case LIST_STUDENT:
 					flag1 = 0;
+					cout<<"ENTER COURSE NAME :";
+					cin>>course_name;
+					sort(stud.begin(),stud.end(),sort_by_level_CourseName_CenterName_Name);
 					for(unsigned i=0;i<stud.size();i++)
 					{
 						if(stud[i].getCenterId() == center_id_for_coordinator_login)
 						{
-							stud[i].display_only_stud();
-							flag1 = 1;
+							if(stud[i].getCourseName() == course_name)
+							{
+								stud[i].display_only_stud();
+								flag1 = 1;
+							}
 						}
 					}
 					if(flag1 == 0)
@@ -1231,13 +1379,15 @@ int main()
 					flag1 = 0;
 					cout<<"ENTER FORM NUMBER TO UPDATE_REPORTED_STATUS :";
 					cin>>form_no;
+					cout<<"ENTER REPORTED STATUS :";
+					cin>>rep_status;
 					for(unsigned i=0;i<stud.size();i++)
 					{
 						if(stud[i].getId() == form_no)
 						{
 							if(stud[i].getCenterId() == center_id_for_coordinator_login)
 							{
-							stud[i].setReported(1);
+							stud[i].setReported(rep_status);
 							cout<<"REPORTED STATUS OF STUDENT HAVING FORM NO "<<form_no<<" IS UPDATED SUCCESSFULLY ";
 							flag1=1;
 							break;
@@ -1252,9 +1402,12 @@ int main()
 
 				case LIST_ADMITTED_STUDENT:
 					flag1 = 0;
+					cout<<"ENTER COURSE NAME :";
+					cin>>course_name;
+					sort(stud.begin(),stud.end(),sort_by_level_CourseName_CenterName_Name);
 					for(unsigned i=0;i<stud.size();i++)
 					{
-						if((stud[i].getCenterId() == center_id_for_coordinator_login)  && (stud[i].getReported() != 0)  &&  (stud[i].getPrn() != "NA"))
+						if((stud[i].getCenterId() == center_id_for_coordinator_login) && (stud[i].getCourseName() == course_name)  && (stud[i].getReported() != 0)  &&  (stud[i].getPrn() != "NA"))
 						{
 							stud[i].display_only_stud();
 							flag1 = 1;

@@ -103,6 +103,22 @@ void Course::display_Course_with_eligibilities()
 }
 
 
+void Course::display_Course_with_centers(AdmissionSystem& a)
+{
+	cout<<this->id<<","<<this->name<<","<<this->fees<<","<<this->ccat_section<<endl;
+
+	cout<<"  - CENTERS AVAILABLE FOR THIS COURSE :"<<endl;
+	multimap<int,int>::iterator it = this->centers_of_respective_courses.begin();
+	while(it != this->centers_of_respective_courses.end())
+	{
+		cout<<"\t";
+		a.center[it->second].display_centers();
+
+		it++;
+	}
+	cout<<endl<<endl;
+}
+
 void Course::add_eligibilities(eligibilities& e)
 {
 	this->eligible.push_back(e);

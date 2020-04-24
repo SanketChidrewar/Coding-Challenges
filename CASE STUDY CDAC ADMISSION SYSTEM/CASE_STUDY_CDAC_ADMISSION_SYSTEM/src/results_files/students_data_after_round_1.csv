@@ -132,7 +132,7 @@
 132,jatin,64,87,55,M.Sc. Statistics,59.22,0,NA,NA,0,0,NA
 133,ram,82,-1,-1,B.Sc.,59.19,0,NA,NA,0,0,NA
 134,arusha,66,85,93,B.E. Electrical,58.89,0,NA,NA,0,0,NA
-135,karan,140,116,-1,M.Sc. Statistics,58.85,0,NA,NA,0,0,NA
+135,karan,140,116,-1,M.Sc. Statistics,58.85,1,PG-DAC,SIP,0,0,NA
 136,vedant,122,162,109,B.Sc.,58.21,0,NA,NA,0,0,NA
 137,khushi,80,38,22,B.E. Electronics,58.2,0,NA,NA,0,0,NA
 138,ishika,150,104,49,M.Sc. Computer,58.16,0,NA,NA,0,0,NA
@@ -198,4 +198,3 @@
 198,sanjay,136,80,52,B.Sc.,45.29,0,NA,NA,0,0,NA
 199,nitin,41,27,-1,B.Sc.,45.05,0,NA,NA,0,0,NA
 200,siddharth,98,100,56,B.E. Computer,45.03,0,NA,NA,0,0,NA
-201,snehit,10,15,-1,B.E. Mechanical,82,1,PG-DAC,SIP,0,0,NA
