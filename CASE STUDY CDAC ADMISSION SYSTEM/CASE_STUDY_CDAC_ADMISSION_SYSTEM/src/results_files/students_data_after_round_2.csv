@@ -39,7 +39,7 @@
 39,dilmini,50,82,-1,B.E. Computer,76.7,1,PG-DBDA,SIP,11800,0,NA
 40,vaishnavi,85,136,89,B.Sc.,76.48,0,NA,NA,0,0,NA
 41,ashish,105,115,59,B.E. Electrical,76.47,0,NA,NA,0,0,NA
-42,amit,194,126,-1,B.E. Civil,76.43,1,PG-DAC,SIP,0,0,NA
+42,amit,194,126,-1,B.E. Civil,76.43,0,NA,NA,0,0,NA
 43,aashna,61,133,85,M.Sc. Statistics,76.41,0,NA,NA,0,0,NA
 44,varun,174,158,110,M.Sc. Statistics,76.32,0,NA,NA,0,0,NA
 45,abigail,17,84,92,M.Sc. Computer,75.96,0,NA,NA,-1,0,NA
@@ -108,7 +108,7 @@
 108,vaibhav,65,15,5,B.E. Computer,65.02,1,PG-DESD,SIP,11800,0,NA
 109,dinesh,119,103,-1,M.Sc. Statistics,64.92,0,NA,NA,-1,0,NA
 110,divya,68,70,29,M.Sc. Statistics,64.67,1,PG-DAC,SIP,11800,0,NA
-111,ira,191,142,105,M.Sc. Statistics,64.34,1,PG-DAC,SIP,0,0,NA
+111,ira,191,142,105,M.Sc. Statistics,64.34,0,NA,NA,0,0,NA
 112,prince,96,118,-1,B.Sc.,64.04,0,NA,NA,0,0,NA
 113,sakshi,135,52,-1,B.E. Electrical,63.91,0,NA,NA,0,0,NA
 114,deepro,31,12,3,M.Sc. Statistics,63.77,0,NA,NA,0,0,NA
@@ -132,7 +132,7 @@
 132,jatin,64,87,55,M.Sc. Statistics,59.22,0,NA,NA,0,0,NA
 133,ram,82,-1,-1,B.Sc.,59.19,0,NA,NA,0,0,NA
 134,arusha,66,85,93,B.E. Electrical,58.89,1,PG-DAC,ACP,0,0,NA
-135,karan,140,116,-1,M.Sc. Statistics,58.85,0,NA,NA,-1,0,NA
+135,karan,140,116,-1,M.Sc. Statistics,58.85,1,PG-DAC,SIP,0,0,NA
 136,vedant,122,162,109,B.Sc.,58.21,0,NA,NA,0,0,NA
 137,khushi,80,38,22,B.E. Electronics,58.2,1,PG-DMC,SIP,0,0,NA
 138,ishika,150,104,49,M.Sc. Computer,58.16,0,NA,NA,0,0,NA
@@ -198,3 +198,4 @@
 198,sanjay,136,80,52,B.Sc.,45.29,0,NA,NA,0,0,NA
 199,nitin,41,27,-1,B.Sc.,45.05,0,NA,NA,0,0,NA
 200,siddharth,98,100,56,B.E. Computer,45.03,0,NA,NA,0,0,NA
+201,sanket,15,20,25,B.E. Mechanical,81,1,PG-DAC,SIP,94000,1,NA

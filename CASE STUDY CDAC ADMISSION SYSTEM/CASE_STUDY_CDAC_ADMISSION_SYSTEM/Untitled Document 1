@@ -3026,4 +3026,82 @@ ALLOCATING SEAT TO STUDENT & INCREASING CAPA COUNT
 88SEATS ARE NOT FULL
 
 
+Regarding case study implementation
+Few students asked for clarification of implementation of few menus. Here are details for the same.
 
+It is suggested to write two functions save_students_csv(), save_capacities_csv() and save_preferences_csv() to write students and capacities array/vector/list back to the respective files. Note that you need to write the whole array/vector/list into csv file (editing individual record in csv is quiet complex task).
+
+The application should have nested menus. The first level menu is Register new student and Sign In. Based on sign in information keep track of current login i.e. current student or current center coordinator or admin. The rest of menus should be displayed as per login.
+
+Register new student
+1. Input student details (name, degree, percentage) from the user and append to students array. Ensure that degree must exists into degrees.txt file.
+2. Then call save_students_csv().
+
+Student -> List courses
+1. Compare student degree and marks for each course eligibility and display only those courses for which student is eligible.
+
+Student -> List centers
+1. List all centers
+
+Student -> Give preferences
+1. Ask user for number of preference he want to enter.
+2. Show him courses he is eligible for along with centers that offer the course. Student will select preferences in the order.
+3. Add them into the student (current student object) preferences (array/vector).
+4. Then call save_preferences_csv()
+
+Student -> See allocated center/course
+1. Display allocated center & course (from current student object)
+
+Student -> Update payment details
+1. Display paid fees (from current student object)
+2. Input total fees paid by student and set into student (current student object)
+3. Then call save_students_csv().
+
+Admin -> List courses & eligibility
+1. Display all courses along with their eligibilities
+
+Admin -> List centers & capacities
+1. List all centers along with their capacities for each course
+
+Admin -> List students
+1. List all students.
+
+Admin -> Update student ranks
+1. Input form no, rank a, rank b and rank c from user and update into students array.
+2. Then call save_students_csv().
+
+Admin -> List allocated students
+1. List students to whom some center is allocated - sorted by course name (1st level), center name (2nd level) and name (3rd level).
+
+Admin -> List paid students
+1. List students who have paid the fees (1st installment or full fees) - sorted by course name (1st level), center name (2nd level), name (3rd level) and fees paid (4th level).
+
+Admin -> List reported students
+1. List students who have reported to the center - sorted by course name (1st level), center name (2nd level) and name (3rd level).
+
+Admin -> Generate PRN
+1. Sort students by course name (1st level), center name (2nd level) and name (3rd level).
+2. Generate PRN number for the students who are reported to the center and also paid full course fees (as given in Course object).
+3. PRN format should be CourseName_CenterId_SrNo e.g. PG-DAC_SIP_1, PG-DAC_SIP_2, PG-DAC_SIP_3, ...
+4. Call save_students_csv()
+
+Admin -> List admitted students
+1. Input course name and center id from user.
+2. List students in sorted order of their name for the course and center.
+
+Center coordinator -> List courses
+1. List all courses offered at center (current center object)
+
+Center coordinator -> List students
+1. Input course name from user
+2. List all students for current center given course (sorted by name)
+
+Center coordinator -> Update reported status
+1. Input form no of student and his reported (attendance) status.
+2. If student is allocated to the center (any course) then update reported status in student object
+3. Otherwise give error message, indicating student is not allocated to that center
+4. Call save_students_csv()
+
+Center coordinator -> List admitted students
+1. Input course name from user.
+2. List students in sorted order of their name for the course and center

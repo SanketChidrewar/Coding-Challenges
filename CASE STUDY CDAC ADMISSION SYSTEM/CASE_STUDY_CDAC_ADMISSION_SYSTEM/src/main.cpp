@@ -16,7 +16,6 @@
 #include "preference.h"
 #include "students.h"
 
-
 #include "AdmissionSystem.h"
 
 using namespace std;
@@ -199,8 +198,6 @@ bool sort_by_level_CourseName_CenterName_Fees(Student& a, Student& b)
 	}
 }
 
-
-
 //- Algorithm for your reference:
 //for n in 1 to 10:
 //    //"n"th preference allocation
@@ -378,10 +375,30 @@ void store_result_after_round_1(AdmissionSystem& a, vector<Student>& stud)
 		{
 			of<<a.capacitie[i].getCenterId()<<","<<a.capacitie[i].getCourseName()<<","<<a.capacitie[i].getCapacity()<<","<<a.capacitie[i].getFilledCapacity()<<endl;
 		}
+
 		of.close();
 		cout<<"capacitie_after_round_1 is saved successfully "<<endl;
 	}
 
+	//for storing preferences file after round 1
+	{
+		ofstream of;
+
+		of.open("src/results_files/preferences_after_round_1.csv");
+
+		if(!of)
+		{
+			cout<<"Unable to open preferences_after_round_1 file"<<endl;
+			return ;
+		}
+
+		for(unsigned i=0;i<a.preferences.size();i++)
+		{
+			of<<a.preferences[i].getId()<<","<<a.preferences[i].getPrefNo()<<","<<a.preferences[i].getCourseName()<<","<<a.preferences[i].getCenterId()<<endl;
+		}
+		of.close();
+		cout<<"preferences_after_round_1 is saved successfully "<<endl;
+	}
 
 	//for storing studnets updated data
 	{
@@ -429,6 +446,26 @@ void store_result_after_round_2(AdmissionSystem& a, vector<Student>& stud)
 		}
 		of.close();
 		cout<<"capacitie_after_round_2 is saved successfully "<<endl;
+	}
+
+	//for storing preferences file after round 2
+	{
+		ofstream of;
+
+		of.open("src/results_files/preferences_after_round_2.csv");
+
+		if(!of)
+		{
+			cout<<"Unable to open preferences_after_round_2 file"<<endl;
+			return ;
+		}
+
+		for(unsigned i=0;i<a.preferences.size();i++)
+		{
+			of<<a.preferences[i].getId()<<","<<a.preferences[i].getPrefNo()<<","<<a.preferences[i].getCourseName()<<","<<a.preferences[i].getCenterId()<<endl;
+		}
+		of.close();
+		cout<<"preferences_after_round_2 is saved successfully "<<endl;
 	}
 
 
@@ -1123,7 +1160,7 @@ int main()
 								stud[i].display_only_stud();
 							}
 						}
-						cout<<"RANK OF FORM NO"<<form_no<<" IS SUCCESSFULLY UPDATED TO "<<rank<<endl;
+						cout<<"ALL RANK OF FORM NO"<<form_no<<" IS SUCCESSFULLY UPDATED "<<endl;
 						break;
 					default:
 						cout<<"ENTER VALID OPTION :"<<endl;
@@ -1261,7 +1298,7 @@ int main()
 									{
 										count++;
 										stringstream ss;
-										ss<<stud[i].getCourseName()<<stud[i].getCenterId()<<"_"<<"_"<<count;
+										ss<<stud[i].getCourseName()<<"_"<<stud[i].getCenterId()<<"_"<<count;
 										string s;
 										getline(ss,s);
 										stud[i].setPrn(s);
